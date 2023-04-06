@@ -12,10 +12,10 @@ const StyledMain = styled.main`
   display: flex;
   width: 80%;
   flex-direction: column;
+  align-items: center;
   position: relative;
   margin-top: 60px;
   padding: 20px;
-  align-items: center;
   min-height: 100%;
 
   @media screen and (min-width: 375px) {

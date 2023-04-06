@@ -1,10 +1,10 @@
 import CategorieList from "../../components/CategorieList/CategorieList";
-import HomeLink from "../../components/HomeLink";
+import BackToLink from "../../components/HomeLink";
 
 export default function CategoriesPage() {
   return (
     <div>
-      <HomeLink />
+      <BackToLink />
       <h2>Categories</h2>
       <CategorieList />
     </div>
