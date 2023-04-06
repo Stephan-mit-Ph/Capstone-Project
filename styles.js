@@ -58,6 +58,7 @@ export default createGlobalStyle`
 }
   ul {
     list-style: none;
+    padding: 0;
   }
   a {
     display: flex;

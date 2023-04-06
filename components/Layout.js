@@ -9,12 +9,11 @@ const StyledContainer = styled.div`
     `;
 
 const StyledMain = styled.main`
-  padding: 2rem;
   display: flex;
   width: 80%;
   flex-direction: column;
   position: relative;
-  top: 3rem;
+  padding-top: 15%;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
