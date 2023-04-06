@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { categories } from '../../lib/data';
 import Link from 'next/link';
-
+ 
 export default function CategorieList() {
     return (
         <ul>
