@@ -4,7 +4,6 @@ import ChevronLeft from '/components/Icons/ChevronLeft';
 
 const StyledLink = styled.a`
     display: flex;
-    padding-top: 10%;
 `;
 
 

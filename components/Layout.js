@@ -19,7 +19,8 @@ const StyledMain = styled.main`
   min-height: 100%;
 
   @media screen and (min-width: 375px) {
-    padding: 30px;
+    padding: 0px;
+    padding-top: 15px;
   }
 
   @media screen and (min-width: 414px) {
