@@ -20,9 +20,6 @@ export default createGlobalStyle`
     overflow-x: hidden;
     }
 
-    main {
-      display: flex;
-    }
     img, 
     picture, 
     video, 
