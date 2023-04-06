@@ -13,7 +13,7 @@ const StyledMain = styled.main`
   width: 80%;
   flex-direction: column;
   position: relative;
-  top: 3rem;
+  padding-top: 15%;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
