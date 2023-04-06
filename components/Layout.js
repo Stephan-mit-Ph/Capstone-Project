@@ -9,7 +9,6 @@ const StyledContainer = styled.div`
     `;
 
 const StyledMain = styled.main`
-  padding: 2rem;
   display: flex;
   width: 80%;
   flex-direction: column;
