@@ -13,10 +13,23 @@ const StyledMain = styled.main`
   width: 80%;
   flex-direction: column;
   position: relative;
-  padding-top: 15%;
-  justify-content: center;
+  margin-top: 60px;
+  padding: 20px;
   align-items: center;
-  min-height: 100vh;
+  min-height: 100%;
+
+  @media screen and (min-width: 375px) {
+    padding: 0px;
+    padding-top: 15px;
+  }
+
+  @media screen and (min-width: 414px) {
+    padding: 30px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 30px;
+  }
   `;
 
 

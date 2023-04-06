@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import Preview from "../public/images/iphone-13-camera-graphit.png"
+import Preview from "../public/images/iphone-13-pro-max-graphit.png";
 
 export default function HomePage() {
   return (

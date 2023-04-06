@@ -5,14 +5,14 @@ import styled from 'styled-components';
 const StyledHeader = styled.header`
     display: flex;
     width: 100%;
+    height: 60px;
     position: fixed;
     top: 0;
     left: 0;
+    padding: 0 1rem;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
     z-index: 100;
-    padding-left: 2rem;
     background-color: #f7f7f7;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 `;

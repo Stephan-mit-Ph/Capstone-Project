@@ -1,19 +1,17 @@
 import styled from "styled-components";
-import Link from "next/link";
 import ChevronLeft from '/components/Icons/ChevronLeft';
 
 const StyledLink = styled.a`
     display: flex;
-    padding-top: 10%;
 `;
 
 
-export default function HomeLink() {
+export default function BackToLink() {
     return (
         <>
-        <StyledLink href="/">
+        <StyledLink href="./" aria-label="back to link">
             <ChevronLeft />
-            Home
+            back to
         </StyledLink>
         </>
     );
