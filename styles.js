@@ -15,7 +15,7 @@ export default createGlobalStyle`
   body {
     line-height: 1.5;
     --webkit-font-smoothing: antialiased;
-    font-family: 'System.ui';
+    font-family: 'System.ui', sans-serif;
     font-weight: 400;
     overflow-x: hidden;
     }
