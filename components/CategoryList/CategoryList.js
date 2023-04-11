@@ -30,7 +30,7 @@ export default function CategoryList() {
       <h2>{name}</h2>
       <ul>
         {products.map((product) => (
-          <Link key={product.id} href={`/categories/${slug}/${product.slug}`}>
+          <Link key={product.id} href={`/categories/${category.slug}/${product.slug}`}>
           <li>
             <h4>{product.name}</h4>
             
