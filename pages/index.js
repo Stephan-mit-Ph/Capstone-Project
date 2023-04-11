@@ -1,17 +1,24 @@
 import Image from "next/image";
 import Link from "next/link";
 import Preview from "../public/images/iphone-13-pro-max-graphit.png";
+import styled from "styled-components";
+
+const StyledLink = styled(Link)`
+  display: flex;
+  flex-direction: column;
+`;
 
 export default function HomePage() {
   return (
     <>
+    <StyledLink href="/categories">All Categories
       <Image
         src={Preview}
         alt="iPhone 13 Collection"
         width={300}
         height={300}
       />
-      <Link href="/categories">All Categories</Link>
+      </StyledLink>      
       <p>
         Looking for high-quality refurbished Apple products at unbeatable
         prices? Look no further than our e-commerce store! We offer a wide

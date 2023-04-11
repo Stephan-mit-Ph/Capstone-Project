@@ -15,7 +15,7 @@ const StyledMain = styled.main`
   position: relative;
   margin-top: 60px;
   padding: 20px;
-  align-items: center;
+  align-items: flex-start;
   min-height: 100%;
 
   @media screen and (min-width: 375px) {
