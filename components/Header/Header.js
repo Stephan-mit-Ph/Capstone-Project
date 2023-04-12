@@ -4,12 +4,12 @@ import styled from 'styled-components';
 
 const StyledHeader = styled.header`
     display: flex;
-    width: 100%;
+    width:100%;
     height: 60px;
     position: fixed;
     top: 0;
     left: 0;
-    padding: 0 1rem;
+    padding: 0 2.2rem;
     justify-content: space-between;
     align-items: center;
     z-index: 100;

@@ -2,6 +2,7 @@ import { useRouter } from "next/router";
 import { categories } from "../../lib/data";
 import Image from "next/image";
 import styled from "styled-components";
+import Link from "next/link";
 
 
 const StyledPrice = styled.p`
@@ -29,17 +30,20 @@ export default function CategoryList() {
       <h2>{name}</h2>
       <ul>
         {products.map((product) => (
-          <li key={product.id}>
+          <Link key={product.id} href={`/categories/${category.slug}/${product.slug}`}>
+          <li>
             <h4>{product.name}</h4>
             
             <Image
-          src={product.image}
+          src={product.image[0]}
           alt={`Product image of ${product.name}`}
           width={300}
           height={300}
         />
+
         <StyledPrice>{product.price} $</StyledPrice>
           </li>
+          </Link>
         ))}
       </ul>
     </>
