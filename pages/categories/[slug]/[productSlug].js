@@ -7,7 +7,6 @@ export default function ProductPage() {
   const router = useRouter();
   const { slug, productSlug } = router.query;
 
-  console.log(slug, productSlug)
 
   const currentCategory = slug ? categories.find((category) => {
     return category.slug === slug;
