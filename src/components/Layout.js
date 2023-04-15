@@ -1,12 +1,12 @@
-import styled from "styled-components";
-import Header from "./Header/Header";
+import styled from 'styled-components'
+import Header from './Header'
 
 const StyledContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-    `;
+`
 
 const StyledMain = styled.main`
   display: flex;
@@ -30,16 +30,15 @@ const StyledMain = styled.main`
   @media screen and (min-width: 768px) {
     padding: 30px;
   }
-  `;
+`
 
-
-  export default function Layout({ children }) {
-    return (
-      <>
-        <StyledContainer>
+export default function Layout({ children }) {
+  return (
+    <>
+      <StyledContainer>
         <Header />
         <StyledMain>{children}</StyledMain>
-        </StyledContainer>
-        </>
-    );
-  }
+      </StyledContainer>
+    </>
+  )
+}

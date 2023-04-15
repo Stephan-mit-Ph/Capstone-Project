@@ -1,0 +1,168 @@
+export const categories = [
+  {
+    id: 0,
+    name: 'Smartphones',
+    slug: 'smartphones',
+    image: '/images/iphone-13-pro-max-graphit.png',
+    products: [
+      {
+        id: 0,
+        name: 'iPhone 13 Pro, graphite',
+        slug: 'iphone-13-pro-graphite',
+        price: 999,
+        color: 'graphite',
+        description: 'The iPhone 13 Pro is the best iPhone ever. It has a 6.1-inch Super Retina XDR display, a 12MP triple camera system, and a 12MP TrueDepth front camera. It also has a 5G chip, a Ceramic Shield front cover, and a new A15 Bionic chip.',
+        image: ['/images/iphone-13-pro-max-graphit.png', '/images/iphone-13-pro-front-back-graphit.png', '/images/iphone-13-pro-camera-graphit.png'],
+      },
+      {
+        id: 1,
+        name: 'iPhone 13 Pro, gold',
+        slug: 'iphone-13-pro-gold',
+        price: 999,
+        color: 'gold',
+        description: 'The iPhone 13 is the best iPhone ever. It has a 6.1-inch Super Retina XDR display, a 12MP triple camera system, and a 12MP TrueDepth front camera. It also has a 5G chip, a Ceramic Shield front cover, and a new A15 Bionic chip.',
+        image: ['/images/iphone-13-pro-max-gold.png', '/images/iphone-13-pro-front-back-gold.png', '/images/iphone-13-pro-camera-gold.png'],
+      },
+      {
+        id: 2,
+        name: 'iPhone 13 Pro, lightblue',
+        slug: 'iphone-13-pro-lightblue',
+        price: 999,
+        color: 'lightblue',
+        description: 'The iPhone 13 is the best iPhone ever. It has a 6.1-inch Super Retina XDR display, a 12MP triple camera system, and a 12MP TrueDepth front camera. It also has a 5G chip, a Ceramic Shield front cover, and a new A15 Bionic chip.',
+        image: ['/images/iphone-13-pro-max-blue.png', '/images/iphone-13-pro-front-back-blue.png', '/images/iphone-13-pro-camera-blue.png'],
+      },
+      {
+        id: 3,
+        name: 'iPhone 13, rose',
+        slug: 'iphone-13-rose',
+        price: 699,
+        color: 'rose',
+        description: 'The iPhone 13 is the best iPhone ever. It has a 6.1-inch Super Retina XDR display, a 12MP triple camera system, and a 12MP TrueDepth front camera. It also has a 5G chip, a Ceramic Shield front cover, and a new A15 Bionic chip.',
+        image: ['/images/iphone-13-max-rose.png', '/images/iphone-13-front-back-rose.png', '/images/iphone-13-camera-rose.png'],
+      },
+      {
+        id: 4,
+        name: 'iPhone 13, polarsilver',
+        slug: 'iphone-13-polarsilver',
+        price: 699,
+        color: 'polarsilver',
+        description: 'The iPhone 13 is the best iPhone ever. It has a 6.1-inch Super Retina XDR display, a 12MP triple camera system, and a 12MP TrueDepth front camera. It also has a 5G chip, a Ceramic Shield front cover, and a new A15 Bionic chip.',
+        image: ['/images/iphone-13-max-polarsilver.png', '/images/iphone-13-front-back-polarsilver.png', '/images/iphone-13-camera-polarsilver.png'],
+      },
+      {
+        id: 5,
+        name: 'iPhone 13, midnight',
+        slug: 'iphone-13-midnight',
+        price: 699,
+        color: 'midnight',
+        description: 'The iPhone 13 is the best iPhone ever. It has a 6.1-inch Super Retina XDR display, a 12MP triple camera system, and a 12MP TrueDepth front camera. It also has a 5G chip, a Ceramic Shield front cover, and a new A15 Bionic chip.',
+        image: ['/images/iphone-13-max-midnight.png', '/images/iphone-13-front-back-midnight.png', '/images/iphone-13-camera-midnight.png'],
+      },
+    ],
+  },
+  {
+    id: 1,
+    name: 'Tablets',
+    slug: 'tablets',
+    image: '/images/ipad-pro-front-silver.png',
+    products: [
+      {
+        id: 0,
+        name: 'iPad Pro, silver',
+        slug: 'ipad-pro-silver',
+        price: 999,
+        color: 'silver',
+        description:
+          "The iPad Pro 2021 is Apple's latest and most advanced tablet yet, designed for professionals and power users. With a stunning Liquid Retina XDR display and the powerful M1 chip, the iPad Pro 2021 delivers unmatched performance for demanding tasks like video editing, 3D modeling, and gaming. The iPad Pro 2021 also features 5G cellular connectivity for faster internet speeds and supports the Apple Pencil (2nd generation) and Magic Keyboard (sold separately) for an effortless creative experience. With up to 10 hours of battery life and a range of storage options, the iPad Pro 2021 is the ultimate productivity tool for anyone who needs a powerful and portable device.",
+        image: ['/images/ipad-pro-front-back-silver.png', '/images/ipad-pro-screen-silver.png', '/images/ipad-pro-side-silver.png'],
+      },
+      {
+        id: 1,
+        name: 'iPad Pro, spacegray',
+        slug: 'ipad-pro-spacegray',
+        price: 999,
+        color: 'spacegray',
+        description:
+          "The iPad Pro 2021 is Apple's latest and most advanced tablet yet, designed for professionals and power users. With a stunning Liquid Retina XDR display and the powerful M1 chip, the iPad Pro 2021 delivers unmatched performance for demanding tasks like video editing, 3D modeling, and gaming. The iPad Pro 2021 also features 5G cellular connectivity for faster internet speeds and supports the Apple Pencil (2nd generation) and Magic Keyboard (sold separately) for an effortless creative experience. With up to 10 hours of battery life and a range of storage options, the iPad Pro 2021 is the ultimate productivity tool for anyone who needs a powerful and portable device.",
+        image: ['/images/ipad-pro-front-back-spacegrey.png', '/images/ipad-pro-screen-spacegrey.png', '/images/ipad-pro-side-spacegrey.png'],
+      },
+      {
+        id: 2,
+        name: 'iPad Air, spacegray',
+        slug: 'ipad-air-spacegray',
+        price: 899,
+        color: 'spacegray',
+        description:
+          'The iPad Air (5th generation) is a powerful and versatile tablet that provides an immersive experience with its 10.9-inch Liquid Retina display. Powered by the A14 Bionic chip, it delivers impressive performance and is perfect for demanding tasks like photo and video editing. The iPad Air (4th generation) also features Touch ID for secure and convenient authentication, and supports the Apple Pencil (2nd generation) and Magic Keyboard (sold separately) for even more creative possibilities. With all-day battery life and a sleek design that comes in a range of colors, the iPad Air (4th generation) is a great choice for anyone who needs a powerful and portable device.',
+        image: ['/images/ipad-air-front-back-spacegray.png', '/images/ipad-air-front-spacegray.png', '/images/ipad-air-camera-spacegray.png'],
+      },
+      {
+        id: 1,
+        name: 'iPad Air, blue',
+        slug: 'ipad-pro-blue',
+        price: 899,
+        color: 'blue',
+        description:
+          'The iPad Air (5th generation) is a powerful and versatile tablet that provides an immersive experience with its 10.9-inch Liquid Retina display. Powered by the A14 Bionic chip, it delivers impressive performance and is perfect for demanding tasks like photo and video editing. The iPad Air (4th generation) also features Touch ID for secure and convenient authentication, and supports the Apple Pencil (2nd generation) and Magic Keyboard (sold separately) for even more creative possibilities. With all-day battery life and a sleek design that comes in a range of colors, the iPad Air (4th generation) is a great choice for anyone who needs a powerful and portable device.',
+        image: ['/images/ipad-air-front-back-blue.png', '/images/ipad-air-front-blue.png', '/images/ipad-air-camera-blue.png'],
+      },
+    ],
+  },
+  {
+    id: 2,
+    name: 'Smartwatches',
+    slug: 'smartwatches',
+    image: '/images/applewatch-front-midnight.png',
+    products: [
+      {
+        id: 0,
+        name: 'Apple Watch Series 7, midnight',
+        slug: 'apple-watch-series-7-midnight',
+        price: 699,
+        color: 'midnight',
+        description:
+          "The Apple Watch Series 7 is the latest addition to the Apple Watch lineup, featuring a larger and always-on Retina display that's 20% bigger than the Series 6. With a redesigned user interface and new watch faces, it's easier than ever to stay connected and stay on top of your health and fitness goals. The Apple Watch Series 7 offers advanced health monitoring, including a blood oxygen sensor, an ECG app, and a high and low heart rate notification feature. With cellular connectivity, you can make and receive calls and texts without your iPhone nearby. The Apple Watch Series 7 is also water-resistant and comes in a variety of materials and finishes to match your style.",
+        image: ['/images/applewatch-front-midnight.png', '/images/applewatch-side-midnight.png', '/images/applewatch-focus-midnight.png'],
+      },
+      {
+        id: 1,
+        name: 'Apple Watch Series 7, polarsilver ',
+        slug: 'apple-watch-series-7-polarsilver',
+        price: 699,
+        color: 'polarsilver',
+        description:
+          "The Apple Watch Series 7 is the latest addition to the Apple Watch lineup, featuring a larger and always-on Retina display that's 20% bigger than the Series 6. With a redesigned user interface and new watch faces, it's easier than ever to stay connected and stay on top of your health and fitness goals. The Apple Watch Series 7 offers advanced health monitoring, including a blood oxygen sensor, an ECG app, and a high and low heart rate notification feature. With cellular connectivity, you can make and receive calls and texts without your iPhone nearby. The Apple Watch Series 7 is also water-resistant and comes in a variety of materials and finishes to match your style.",
+        image: ['/images/applewatch-front-polarsilver.png', '/images/applewatch-side-polarsilver.png', '/images/applewatch-focus-polarsilver.png'],
+      },
+    ],
+  },
+  {
+    id: 3,
+    name: 'Headphones',
+    slug: 'headphones',
+    image: '/images/airpods-pro.png',
+    products: [
+      {
+        id: 0,
+        name: 'Air Pods Pro',
+        slug: 'air-pods-pro',
+        price: 199,
+        color: 'white',
+        description:
+          "The AirPods Pro are Apple's premium wireless earbuds designed for immersive sound and active noise cancellation. With a comfortable and customizable fit, the AirPods Pro deliver powerful, clear audio that adapts to the shape of your ear. Stay focused and fully immersed with the active noise cancellation feature, while the transparency mode lets you hear your surroundings when you need to. Touch controls make it easy to control your music and calls, and with up to 4.5 hours of battery life on a single charge and an additional 24 hours with the charging case, the AirPods Pro are the perfect companion for all-day listening.",
+        image: ['/images/airpods-pro-case.png', '/images/airpods-pro-top.png', '/images/airpods-pro.png'],
+      },
+      {
+        id: 0,
+        name: 'Air Pods 3',
+        slug: 'air-pods-3',
+        price: 149,
+        color: 'white',
+        description:
+          "The AirPods 3 are Apple's latest wireless earbuds with a sleek, compact design and advanced features. Enjoy an immersive listening experience with active noise cancellation and Adaptive EQ that adjusts sound to the shape of your ear. With touch controls, you can easily control your music and calls. Plus, with up to 6 hours of battery life on a single charge and an additional 24 hours with the charging case, you can keep the music going all day long.",
+        image: ['/images/airpods-3-front.png', '/images/airpods-3-side.png', '/images/airpods-3-top.png'],
+      },
+    ],
+  },
+]

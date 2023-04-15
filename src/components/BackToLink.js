@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import ChevronLeft from '/components/Icons/ChevronLeft';
+import ChevronLeft from './Icons/ChevronLeft';
 
 const StyledLink = styled.a`
     display: flex;
