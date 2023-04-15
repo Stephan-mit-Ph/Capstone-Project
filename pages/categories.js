@@ -1,4 +1,4 @@
-import Category from '../components/Category'
+import Image from 'next/image'
 
 function Categeories({ categories }) {
      return (
@@ -7,7 +7,13 @@ function Categeories({ categories }) {
                {categories.map((category) => {
                     return (
                          <div key={category.id}>
-                              <Category category={category} />
+                              <h3>{category.name}</h3>
+                              <Image
+                                   src={category.image}
+                                   alt={`Category: ${category.name}`}
+                                   width={300}
+                                   height={300}
+                              />
                          </div>
                     )
                })}
