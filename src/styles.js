@@ -9,7 +9,7 @@ export default createGlobalStyle`
 
   body {
     margin: 0;
-    font-family: system-ui;
+    font-family: 'Avenir',system-ui, sans-serif;
   }
 
   body {
