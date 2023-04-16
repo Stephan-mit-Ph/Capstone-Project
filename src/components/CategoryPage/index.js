@@ -21,7 +21,7 @@ export default function CategoryPage() {
       <ul>
         {products.map((product) => (
           <li key={product.id}>
-            <Link className="preview-link" href={`/categories/${category.slug}/${product.permalink}`}>
+            <Link className="preview-link" href={`/categories/${category.slug}/${product.permalink}`} passHref>
               <h4>{product.name}</h4>
               <Image src={product.image[0]} alt={product.name} width={300} height={300} />
             </Link>

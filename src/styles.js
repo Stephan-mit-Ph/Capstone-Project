@@ -1,4 +1,9 @@
 import { createGlobalStyle } from 'styled-components'
+import localFont from '@next/font/local'
+
+const orbiton = localFont({
+  src: '../public/fonts/Orbitron-VariableFont_wght.ttf',
+})
 
 export default createGlobalStyle`
   *,
@@ -71,6 +76,17 @@ export default createGlobalStyle`
 .preview-link:hover {
   display: flex;
   flex-direction: column;
+  color: lightblue;
+  transition: 0.5s;
+}
+
+.heading-font {
+  font-family: 'orbitron', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: grey;
+}
+.heading-font:hover {
   color: lightblue;
   transition: 0.5s;
 }

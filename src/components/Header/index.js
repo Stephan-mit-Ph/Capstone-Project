@@ -28,7 +28,7 @@ export default function Header() {
     return (
         <StyledHeader>
             <StyledLink href={"/"} aira-label="Link to Homepage">
-            SEC:Tech
+            <h1 className="heading-font">SEC:Tech</h1>
             </StyledLink>
             <CartIcon />
         </StyledHeader>
