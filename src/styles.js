@@ -63,4 +63,10 @@ export default createGlobalStyle`
   
 }
 
+.preview-image {
+  display: flex;
+  flex-direction: column;
+  color: inherit
+}
+
 `
