@@ -1,14 +1,17 @@
 export const categories = [
   {
     id: 0,
+    categoryId: 0,
     name: 'Smartphones',
     slug: 'smartphones',
     image: '/images/iphone-13-pro-max-graphit.png',
     products: [
       {
         id: 0,
+        productId: 0,
+        categoryId: 0,
         name: 'iPhone 13 Pro, graphite',
-        slug: 'iphone-13-pro-graphite',
+        permalink: 'iphone-13-pro-graphite',
         price: 999,
         color: 'graphite',
         description: 'The iPhone 13 Pro is the best iPhone ever. It has a 6.1-inch Super Retina XDR display, a 12MP triple camera system, and a 12MP TrueDepth front camera. It also has a 5G chip, a Ceramic Shield front cover, and a new A15 Bionic chip.',
@@ -16,8 +19,10 @@ export const categories = [
       },
       {
         id: 1,
+        productId: 1,
+        categoryId: 0,
         name: 'iPhone 13 Pro, gold',
-        slug: 'iphone-13-pro-gold',
+        permalink: 'iphone-13-pro-gold',
         price: 999,
         color: 'gold',
         description: 'The iPhone 13 is the best iPhone ever. It has a 6.1-inch Super Retina XDR display, a 12MP triple camera system, and a 12MP TrueDepth front camera. It also has a 5G chip, a Ceramic Shield front cover, and a new A15 Bionic chip.',
@@ -25,8 +30,10 @@ export const categories = [
       },
       {
         id: 2,
+        productId: 2,
+        categoryId: 0,
         name: 'iPhone 13 Pro, lightblue',
-        slug: 'iphone-13-pro-lightblue',
+        permalink: 'iphone-13-pro-lightblue',
         price: 999,
         color: 'lightblue',
         description: 'The iPhone 13 is the best iPhone ever. It has a 6.1-inch Super Retina XDR display, a 12MP triple camera system, and a 12MP TrueDepth front camera. It also has a 5G chip, a Ceramic Shield front cover, and a new A15 Bionic chip.',
@@ -34,8 +41,9 @@ export const categories = [
       },
       {
         id: 3,
+        productId: 3,
         name: 'iPhone 13, rose',
-        slug: 'iphone-13-rose',
+        permalink: 'iphone-13-rose',
         price: 699,
         color: 'rose',
         description: 'The iPhone 13 is the best iPhone ever. It has a 6.1-inch Super Retina XDR display, a 12MP triple camera system, and a 12MP TrueDepth front camera. It also has a 5G chip, a Ceramic Shield front cover, and a new A15 Bionic chip.',
@@ -43,8 +51,10 @@ export const categories = [
       },
       {
         id: 4,
+        productId: 4,
+        categoryId: 0,
         name: 'iPhone 13, polarsilver',
-        slug: 'iphone-13-polarsilver',
+        permalink: 'iphone-13-polarsilver',
         price: 699,
         color: 'polarsilver',
         description: 'The iPhone 13 is the best iPhone ever. It has a 6.1-inch Super Retina XDR display, a 12MP triple camera system, and a 12MP TrueDepth front camera. It also has a 5G chip, a Ceramic Shield front cover, and a new A15 Bionic chip.',
@@ -52,8 +62,10 @@ export const categories = [
       },
       {
         id: 5,
+        productId: 5,
+        categoryId: 0,
         name: 'iPhone 13, midnight',
-        slug: 'iphone-13-midnight',
+        permalink: 'iphone-13-midnight',
         price: 699,
         color: 'midnight',
         description: 'The iPhone 13 is the best iPhone ever. It has a 6.1-inch Super Retina XDR display, a 12MP triple camera system, and a 12MP TrueDepth front camera. It also has a 5G chip, a Ceramic Shield front cover, and a new A15 Bionic chip.',
@@ -63,14 +75,17 @@ export const categories = [
   },
   {
     id: 1,
+    categoryId: 1,
     name: 'Tablets',
     slug: 'tablets',
     image: '/images/ipad-pro-front-silver.png',
     products: [
       {
-        id: 0,
+        id: 6,
+        productId: 6,
+        categoryId: 1,
         name: 'iPad Pro, silver',
-        slug: 'ipad-pro-silver',
+        permalink: 'ipad-pro-silver',
         price: 999,
         color: 'silver',
         description:
@@ -78,9 +93,11 @@ export const categories = [
         image: ['/images/ipad-pro-front-back-silver.png', '/images/ipad-pro-screen-silver.png', '/images/ipad-pro-side-silver.png'],
       },
       {
-        id: 1,
+        id: 7,
+        productId: 7,
+        categoryId: 1,
         name: 'iPad Pro, spacegray',
-        slug: 'ipad-pro-spacegray',
+        permalink: 'ipad-pro-spacegray',
         price: 999,
         color: 'spacegray',
         description:
@@ -88,9 +105,11 @@ export const categories = [
         image: ['/images/ipad-pro-front-back-spacegrey.png', '/images/ipad-pro-screen-spacegrey.png', '/images/ipad-pro-side-spacegrey.png'],
       },
       {
-        id: 2,
+        id: 8,
+        productId: 8,
+        categoryId: 1,
         name: 'iPad Air, spacegray',
-        slug: 'ipad-air-spacegray',
+        permalink: 'ipad-air-spacegray',
         price: 899,
         color: 'spacegray',
         description:
@@ -98,9 +117,10 @@ export const categories = [
         image: ['/images/ipad-air-front-back-spacegray.png', '/images/ipad-air-front-spacegray.png', '/images/ipad-air-camera-spacegray.png'],
       },
       {
-        id: 1,
+        id: 9,
+        productId: 9,
         name: 'iPad Air, blue',
-        slug: 'ipad-pro-blue',
+        permalink: 'ipad-pro-blue',
         price: 899,
         color: 'blue',
         description:
@@ -111,14 +131,17 @@ export const categories = [
   },
   {
     id: 2,
+    categoryId: 2,
     name: 'Smartwatches',
     slug: 'smartwatches',
     image: '/images/applewatch-front-midnight.png',
     products: [
       {
-        id: 0,
+        id: 10,
+        productId: 10,
+        categoryId: 2,
         name: 'Apple Watch Series 7, midnight',
-        slug: 'apple-watch-series-7-midnight',
+        permalink: 'apple-watch-series-7-midnight',
         price: 699,
         color: 'midnight',
         description:
@@ -126,9 +149,11 @@ export const categories = [
         image: ['/images/applewatch-front-midnight.png', '/images/applewatch-side-midnight.png', '/images/applewatch-focus-midnight.png'],
       },
       {
-        id: 1,
+        id: 11,
+        productId: 12,
+        categoryId: 2,
         name: 'Apple Watch Series 7, polarsilver ',
-        slug: 'apple-watch-series-7-polarsilver',
+        permalink: 'apple-watch-series-7-polarsilver',
         price: 699,
         color: 'polarsilver',
         description:
@@ -139,14 +164,17 @@ export const categories = [
   },
   {
     id: 3,
+    categoryId: 3,
     name: 'Headphones',
     slug: 'headphones',
     image: '/images/airpods-pro.png',
     products: [
       {
-        id: 0,
+        id: 12,
+        productId: 12,
+        categoryId: 3,
         name: 'Air Pods Pro',
-        slug: 'air-pods-pro',
+        permalink: 'air-pods-pro',
         price: 199,
         color: 'white',
         description:
@@ -154,9 +182,11 @@ export const categories = [
         image: ['/images/airpods-pro-case.png', '/images/airpods-pro-top.png', '/images/airpods-pro.png'],
       },
       {
-        id: 0,
+        id: 13,
+        productId: 13,
+        categoryId: 3,
         name: 'Air Pods 3',
-        slug: 'air-pods-3',
+        permalink: 'air-pods-3',
         price: 149,
         color: 'white',
         description:

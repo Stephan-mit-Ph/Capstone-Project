@@ -63,10 +63,16 @@ export default createGlobalStyle`
   
 }
 
-.preview-image {
+.preview-link {
   display: flex;
   flex-direction: column;
   color: inherit
+}
+.preview-link:hover {
+  display: flex;
+  flex-direction: column;
+  color: lightblue;
+  transition: 0.5s;
 }
 
 `
