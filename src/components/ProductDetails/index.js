@@ -1,9 +1,11 @@
 import { useRouter } from 'next/router'
+import { useState } from 'react'
 import { categories } from '../../data/categories'
 import Image from 'next/image'
 import BackToLink from '../BackToLink'
 import ReadMoreLess from '../ReadMoreLess'
 import { StyledImageThumbnail, StyledTitle } from './ProductDetails.styled'
+import ProductQuantity from '../ProductQuantity'
 
 export default function ProductDetails() {
   const router = useRouter()
@@ -21,7 +23,9 @@ export default function ProductDetails() {
     return null
   }
 
-  const { name, description, image, price, categoryName, color } = product
+  const { name, description, image, price } = product
+
+
   return (
     <>
       <BackToLink href={`/categories/${category.slug}`} />
@@ -42,6 +46,7 @@ export default function ProductDetails() {
         </StyledImageThumbnail>
       </div>
       <p>Price: {price} $</p>
+      <ProductQuantity price={price} />
       <ReadMoreLess text="Details" content={description} />
     </>
   )
