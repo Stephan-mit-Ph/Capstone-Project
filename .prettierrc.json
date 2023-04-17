@@ -1,9 +1,9 @@
 {
-  "printWidth": 80,
+  "printWidth": 150,
   "tabWidth": 2,
   "useTabs": false,
-  "semi": true,
-  "singleQuote": false,
+  "semi": false,
+  "singleQuote": true,
   "quoteProps": "as-needed",
   "jsxSingleQuote": false,
   "trailingComma": "es5",
