@@ -79,10 +79,13 @@ export default createGlobalStyle`
   color: lightblue;
   transition: 0.5s;
 }
+.tile-font{
+  font-family: 'orbitron', sans-serif;
+}
 
 .heading-font {
   font-family: 'orbitron', sans-serif;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: 500;
   color: grey;
 }

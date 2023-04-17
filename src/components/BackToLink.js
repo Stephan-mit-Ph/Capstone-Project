@@ -3,6 +3,7 @@ import ChevronLeft from './Icons/ChevronLeft';
 
 const StyledLink = styled.a`
     display: flex;
+    align-items: center;
 `;
 
 

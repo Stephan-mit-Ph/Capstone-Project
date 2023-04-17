@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import CartIcon from '../Icons/CartIcon';
+import Cart from '../Icons/Cart';
 import styled from 'styled-components';
 
 const StyledHeader = styled.header`
@@ -30,7 +30,7 @@ export default function Header() {
             <StyledLink href={"/"} aira-label="Link to Homepage">
             <h1 className="heading-font">SEC:Tech</h1>
             </StyledLink>
-            <CartIcon />
+            <Cart />
         </StyledHeader>
     );
 }
