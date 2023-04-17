@@ -4,7 +4,6 @@ import Image from 'next/image'
 
 function CategoriesList() {
   return (
-    <>
       <ul>
         {categories.map((category) => (
           <li key={category.id}>
@@ -15,7 +14,6 @@ function CategoriesList() {
           </li>
         ))}
       </ul>
-    </>
   )
 }
 
