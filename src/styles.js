@@ -67,31 +67,4 @@ export default createGlobalStyle`
     text-decoration: none;
   
 }
-
-.preview-link {
-  display: flex;
-  flex-direction: column;
-  color: inherit
-}
-.preview-link:hover {
-  display: flex;
-  flex-direction: column;
-  color: lightblue;
-  transition: 0.5s;
-}
-.tile-font{
-  font-family: 'orbitron', sans-serif;
-}
-
-.heading-font {
-  font-family: 'orbitron', sans-serif;
-  font-size: 1.5rem;
-  font-weight: 500;
-  color: grey;
-}
-.heading-font:hover {
-  color: lightblue;
-  transition: 0.5s;
-}
-
 `

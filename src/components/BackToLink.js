@@ -7,13 +7,14 @@ const StyledLink = styled.a`
 `;
 
 
-export default function BackToLink() {
+export default function BackToLink({children, href}) {
     return (
         <>
-        <StyledLink href="./" aria-label="back to link">
-            <ChevronLeft />
-            back to
-        </StyledLink>
+            <StyledLink href={href}>
+                <ChevronLeft />
+                {children}
+            </StyledLink>
+            
         </>
     );
 }

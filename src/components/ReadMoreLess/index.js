@@ -20,16 +20,11 @@ export default function ReadMoreLess({ text, content }) {
   }
 
   return (
-    <>
+    
       <div>
         {content.length < 100 ? content : isReadMore ? content + ' ' : content.slice(0, 100)}
         <StyledButton onClick={toggle}>{content.length < 100 ? '' : isReadMore ? ' show less' : '... read more'}</StyledButton>
       </div>
-    </>
+    
   )
 }
-
-/*{content.length < 100 ? content : isReadMore ? content + ' ' : content.slice(0, 100)}
-        <span onClick={toggle} style={{ color: 'blue', cursor: 'pointer' }}>
-            {content.length < 100 ? '' : isReadMore ? ' show less' : '... read more'}
-        </span>*/

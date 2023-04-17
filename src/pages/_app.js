@@ -17,8 +17,8 @@ export default function App({ Component, pageProps }) {
     >
       <GlobalStyle />
       <Layout>
-      <Component {...pageProps} />
-          </Layout>
+        <Component {...pageProps} />
+      </Layout>
     </SWRConfig>
   )
 }
