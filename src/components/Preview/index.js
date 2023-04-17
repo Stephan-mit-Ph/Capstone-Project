@@ -2,15 +2,18 @@ import Link from 'next/link'
 import Image from 'next/image'
 import PreviewImage from '../../../public/images/iphone-13-pro-max-graphit.png'
 
-function Preview() {
+export default function Preview() {
   return (
     <>
       <Link className="preview-link" href="/categories">
         All Categories
         <Image src={PreviewImage} alt="iPhone 13 Collection" width={300} height={300} />
       </Link>
+      <p>
+        Looking for high-quality refurbished Apple products at unbeatable prices? Look no further than our e-commerce store! We offer a wide selection
+        of top-of-the-line Apple products,including iPhones, iPads, MacBooks, and more, all professionally refurbished to like-new condition and
+        backed by our quality guarantee.
+      </p>
     </>
   )
 }
-
-export default Preview

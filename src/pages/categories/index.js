@@ -4,9 +4,9 @@ import CategoriesList from '../../components/CategoriesList'
 export default function CategoriesPage() {
   return (
     <>
-    <BackToLink href={'/'} />
+      <BackToLink href={'/'} />
       <h1>All Categories</h1>
       <CategoriesList />
     </>
-    )
+  )
 }
