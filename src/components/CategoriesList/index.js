@@ -1,19 +1,27 @@
 import { categories } from '../../data/categories'
-import Link from 'next/link'
 import Image from 'next/image'
+import StyledLink from '../StyledLink'
+import { StyledList } from './CategoriesList.styled'
+import BackToLink from '../BackToLink'
+import { StyledTitle } from '../ProductDetails/ProductDetails.styled'
 
 function CategoriesList() {
   return (
-      <ul>
+    <>
+      <BackToLink href="/" alt="go to Homepage">
+        Home
+      </BackToLink>
+      <StyledList role='list'>
         {categories.map((category) => (
           <li key={category.id}>
-            <Link className="preview-link" href={`/categories/${category.slug}`} passHref>
-              <h4>{category.name}</h4>
+            <StyledLink href={`/categories/${category.slug}`} passHref>
+              <StyledTitle>{category.name}</StyledTitle>
               <Image src={category.image} alt={category.name} width={300} height={300} />
-            </Link>
+            </StyledLink>
           </li>
         ))}
-      </ul>
+      </StyledList>
+    </>
   )
 }
 

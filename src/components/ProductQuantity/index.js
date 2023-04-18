@@ -17,13 +17,14 @@ function ProductQuantity({ price }) {
   return (
     <div>
       <label htmlFor="quantity">Quantity:</label>
-      <input type="number" id="quantity" name="quantity" min="1" value={quantity} />
-      <button type="button" onClick={incrementQuantity}>
-        +
-      </button>
-      <button type="button" onClick={decrementQuantity}>
+      <button type="button" onClick={decrementQuantity} aia-label="increase the amount of products">
         -
       </button>
+      <input style={{ width: '50px', textAlign: 'center' }} maxLength={5} type="number" id="quantity" name="quantity" min="1" value={quantity} />
+      <button type="button" onClick={incrementQuantity} aria-label="decreasethe amount of products">
+        +
+      </button>
+
       <p>Total Price: ${sum.toFixed(2)}</p>
     </div>
   )

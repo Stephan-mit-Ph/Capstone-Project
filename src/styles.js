@@ -14,7 +14,8 @@ export default createGlobalStyle`
 
   body {
     margin: 0;
-    font-family: 'Avenir',system-ui, sans-serif;
+    font-family: ${orbiton}, sans-serif;
+
   }
 
   body {
@@ -55,14 +56,5 @@ export default createGlobalStyle`
 
     #root, #__next {
   isolation: isolate;
-}
-  ul {
-    list-style: none;
-    padding: 0;
-  }
-  a {
-    display: flex;
-    text-decoration: none;
-  
 }
 `

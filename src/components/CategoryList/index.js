@@ -1,7 +1,10 @@
 import { categories } from '../../data/categories'
 import { useRouter } from 'next/router'
 import Image from 'next/image'
-import Link from 'next/link'
+import StyledLink from '../StyledLink'
+import BackToLink from '../BackToLink'
+import { StyledList } from '../CategoriesList/CategoriesList.styled'
+import { StyledSubTitle} from '../ProductDetails/ProductDetails.styled'
 
 export default function CategoryPage() {
   const router = useRouter()
@@ -17,17 +20,20 @@ export default function CategoryPage() {
 
   return (
     <>
-      <h1>{name}</h1>
-      <ul>
+      <BackToLink href="/categories" alt="all categories">
+        Categories
+      </BackToLink>
+      <StyledSubTitle>{name}</StyledSubTitle>
+      <StyledList>
         {products.map((product) => (
           <li key={product.id}>
-            <Link className="preview-link" href={`/categories/${category.slug}/${product.permalink}`} passHref>
-              <h4>{product.name}</h4>
+            <StyledLink href={`/categories/${category.slug}/${product.permalink}`} passHref>
+              <StyledSubTitle>{product.name}</StyledSubTitle>
               <Image src={product.image[0]} alt={product.name} width={300} height={300} />
-            </Link>
+            </StyledLink>
           </li>
         ))}
-      </ul>
+      </StyledList>
     </>
   )
 }
