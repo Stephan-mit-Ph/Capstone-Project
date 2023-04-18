@@ -3,11 +3,9 @@ import Header from '../Header'
 
 export default function Layout({ children }) {
   return (
-    <>
-      <StyledContainer>
-        <Header />
-        <StyledMain>{children}</StyledMain>
-      </StyledContainer>
-    </>
+    <StyledContainer>
+      <Header />
+      <StyledMain>{children}</StyledMain>
+    </StyledContainer>
   )
 }

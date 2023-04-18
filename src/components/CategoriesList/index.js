@@ -11,7 +11,7 @@ function CategoriesList() {
       <BackToLink href="/" alt="go to Homepage">
         Home
       </BackToLink>
-      <StyledList>
+      <StyledList role='list'>
         {categories.map((category) => (
           <li key={category.id}>
             <StyledLink href={`/categories/${category.slug}`} passHref>

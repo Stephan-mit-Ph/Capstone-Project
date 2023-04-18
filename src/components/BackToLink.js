@@ -1,8 +1,9 @@
 import styled from 'styled-components'
 import ChevronLeft from './Icons/ChevronLeft'
+import Link from 'next/link'
 
-const StyledLink = styled.a`
-width: 300px;
+const StyledLink = styled(Link)`
+  width: 300px;
   display: flex;
   align-items: center;
   color: inherit;
