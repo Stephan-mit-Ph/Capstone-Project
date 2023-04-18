@@ -22,7 +22,7 @@ export const StyledSubTitle = styled.h5`
   margin-bottom: 0;
   margin-top: 10px;
   text-align: left;
-  width: 290px;
+  width: 320px;
 `
 export const StyledImage = styled(Image)`
   border: 2px solid #f7f7f7;
