@@ -1,36 +1,17 @@
-import Link from 'next/link';
-import Cart from '../Icons/Cart';
-import styled from 'styled-components';
+import Cart from '../Icons/Cart'
+import { StyledLinkTitle, StyledHeader, ShopLink } from './Header.styled'
 
-const StyledHeader = styled.header`
-    display: flex;
-    width:100%;
-    height: 60px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    padding: 0 2.2rem;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
-    background-color: #f7f7f7;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-`;
 
-const StyledLink = styled(Link)`
-    font-size: 1.5rem;
-    font-weight: 600;
-    text-decoration: none;
-    color: inherit;
-`;
 
 export default function Header() {
-    return (
-        <StyledHeader>
-            <StyledLink href={"/"} aira-label="Link to Homepage">
-            <h4>SEC:Tech</h4>
-            </StyledLink>
-            <Cart />
-        </StyledHeader>
-    );
+  return (
+    <>
+      <StyledHeader>
+        <ShopLink href={'/'} aira-label="Link to Homepage">
+          <StyledLinkTitle>SEC:Tech</StyledLinkTitle>
+        </ShopLink>
+        <Cart />
+      </StyledHeader>
+    </>
+  )
 }

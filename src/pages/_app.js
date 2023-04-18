@@ -1,6 +1,6 @@
 import useSWR, { SWRConfig } from 'swr'
 import GlobalStyle from '../styles'
-import Layout from '../components/Layout'
+import Layout from '../components/Layout/index.js'
 
 export default function App({ Component, pageProps }) {
   return (

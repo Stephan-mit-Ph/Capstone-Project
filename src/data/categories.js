@@ -242,7 +242,7 @@ export const categories = [
     categoryId: 3,
     name: 'Headphones',
     slug: 'headphones',
-    image: '/images/airpods-pro.png',
+    image: '/images/airpods-pro-top.png',
     products: [
       {
         id: 12,

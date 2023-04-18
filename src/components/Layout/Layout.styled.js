@@ -1,21 +1,22 @@
-import styled from 'styled-components'
-import Header from './Header'
+import styled from "styled-components";
 
-const StyledContainer = styled.div`
+export const StyledContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 `
 
-const StyledMain = styled.main`
+export const StyledMain = styled.main`
   display: flex;
-  width: 80%;
-  flex-direction: column;
   position: relative;
+  top: 0;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin-top: 60px;
   padding: 20px;
-  align-items: flex-start;
   min-height: 100%;
 
   @media screen and (min-width: 375px) {
@@ -31,14 +32,3 @@ const StyledMain = styled.main`
     padding: 30px;
   }
 `
-
-export default function Layout({ children }) {
-  return (
-    <>
-      <StyledContainer>
-        <Header />
-        <StyledMain>{children}</StyledMain>
-      </StyledContainer>
-    </>
-  )
-}

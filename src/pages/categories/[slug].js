@@ -1,11 +1,11 @@
-import CategoryPage from '../../components/CategoryPage'
+import CategoryList from '../../components/CategoryList'
 import BackToLink from '../../components/BackToLink'
 
-export default function CategoryPa() {
+export default function CategoryPage() {
   return (
     <>
-      <BackToLink href={'/categories'} />
-      <CategoryPage/>
+ 
+      <CategoryList/>
     </>
   )
 }
