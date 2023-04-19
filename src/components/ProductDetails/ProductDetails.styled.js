@@ -23,11 +23,4 @@ export const StyledSubTitle = styled.h5`
   margin-top: 10px;
   text-align: left;
   width: 320px;
-`
-export const StyledImage = styled(Image)`
-  border: 2px solid #f7f7f7;
-  padding: 0;
-  border-radius: 20px;
-
-  
 `;

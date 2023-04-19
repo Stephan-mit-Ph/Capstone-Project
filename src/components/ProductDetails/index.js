@@ -2,8 +2,9 @@ import { useRouter } from 'next/router'
 import { categories } from '../../data/categories'
 import BackToLink from '../BackToLink'
 import ReadMoreLess from '../ReadMoreLess'
-import { StyledImage, StyledSubTitle} from './ProductDetails.styled'
+import { StyledSubTitle } from './ProductDetails.styled'
 import ProductQuantity from '../ProductQuantity'
+import ProductPreview from '../ProductPreview'
 
 export default function ProductDetails() {
   const router = useRouter()
@@ -27,7 +28,7 @@ export default function ProductDetails() {
     <>
       <BackToLink href={`/categories/${slug}`}>{category.name}</BackToLink>
       <StyledSubTitle>{name}</StyledSubTitle>
-      <StyledImage src={image[0]} alt={name} width={300} height={300} />
+      <ProductPreview images={image} />
       <p>Price: {price} $</p>
       <ProductQuantity price={price} />
       <ReadMoreLess text="Details" content={description} />
