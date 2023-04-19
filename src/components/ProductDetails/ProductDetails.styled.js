@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import Image from 'next/image'
+
 
 export const StyledTitle = styled.h4`
   font-size: 1.2rem;
@@ -23,11 +23,4 @@ export const StyledSubTitle = styled.h5`
   margin-top: 10px;
   text-align: left;
   width: 320px;
-`
-export const StyledImage = styled(Image)`
-  border: 2px solid #f7f7f7;
-  padding: 0;
-  border-radius: 20px;
-
-  
 `;
