@@ -10,14 +10,14 @@ export const PreviewContainer = styled.div`
 `
 
 export const Thumbnail = styled.div`
-  width: 80px;
-  height: 80px;
+  width: 5rem;
+  height: 5rem;
   cursor: pointer;
 `
 
 export const PreviewImage = styled(Image)`
-  max-width: 300px;
-  max-height: 300px;
+  max-width: 18.75rem;
+  max-height: 18.75rem;
 `
 
 export const ThumbnailWrapper = styled.div`
