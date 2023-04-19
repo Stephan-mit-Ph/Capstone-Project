@@ -6,18 +6,18 @@ import { PreviewContainer, Thumbnail, PreviewImage, ThumbnailWrapper } from './P
 
 const ProductPreview = ({ images }) => {
   const [selectedImage, setSelectedImage] = useState(images[0])
-
+  console.log(selectedImage)
   const handleThumbnailClick = (image) => {
     setSelectedImage(image)
   }
 
   return (
     <PreviewContainer>
-      <PreviewImage src={selectedImage} width={300} height={300} alt='product-preview' />
+      <PreviewImage src={selectedImage.path} width={300} height={300} alt='product-preview' />
       <ThumbnailWrapper>
       {images.map((image) => (
         <Thumbnail key={image.id} onClick={() => handleThumbnailClick(image)}>
-          <Image src={image} width={80} height={80} alt='product-preview' />
+          <Image src={image.path} width={80} height={80} alt='product-preview' />
         </Thumbnail>
         
       ))}

@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import Image from 'next/image';
+import styled from 'styled-components'
+import Image from 'next/image'
 
 export const PreviewContainer = styled.div`
   display: flex;
@@ -12,17 +12,18 @@ export const PreviewContainer = styled.div`
 export const Thumbnail = styled.div`
   width: 5rem;
   height: 5rem;
+  margin: 0;
   cursor: pointer;
 `
 
 export const PreviewImage = styled(Image)`
   max-width: 18.75rem;
   max-height: 18.75rem;
+  margin: 0;
 `
 
 export const ThumbnailWrapper = styled.div`
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    
-    `;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+`

@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import Image from 'next/image'
+
 
 export const StyledTitle = styled.h4`
   font-size: 1.2rem;
