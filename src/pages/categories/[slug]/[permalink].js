@@ -4,7 +4,6 @@ import ProductDetails from '../../../components/ProductDetails'
 export default function ProductsPage({ categories }) {
   const router = useRouter()
   const { slug, permalink } = router.query
-  console.log(categories)
   const category = categories.find((category) => category.slug === slug)
 
   if (!category) {
