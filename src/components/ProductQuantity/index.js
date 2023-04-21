@@ -2,7 +2,7 @@ function ProductQuantity({ sum, onIncrementQuantity, onDecrementQuantity, quanti
   return (
     <div>
       <label htmlFor="quantity">Quantity:</label>
-      <button type="button" onClick={onDecrementQuantity} aia-label="increase the amount of products">
+      <button type="button" onClick={onDecrementQuantity} aria-label="increase the amount of products">
         -
       </button>
       <input

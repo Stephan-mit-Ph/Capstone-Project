@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import Link from 'next/link';
+import Link from 'next/link'
 
 export const StyledHeader = styled.header`
   display: flex;
@@ -27,12 +27,30 @@ export const StyledLinkTitle = styled.h1`
     color: lightblue;
     transition: 1s;
   }
-
-`;
+`
 
 export const ShopLink = styled(Link)`
   font-size: 1.5rem;
   font-weight: 600;
   text-decoration: none;
   color: inherit;
-`;
+`
+
+export const CartLink = styled(Link)`
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.2rem;
+`
+
+export const StyledBadge = styled.div`
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: red;
+  color: black;
+  position: relative;
+  top: -0.5rem;
+  right: 1rem;
+`
