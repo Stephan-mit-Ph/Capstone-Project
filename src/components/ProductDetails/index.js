@@ -2,9 +2,10 @@ import BackToLink from '../BackToLink'
 import ProductPreview from '../ProductPreview'
 import ProductQuantity from '../ProductQuantity'
 import ReadMoreLess from '../ReadMoreLess'
-import { StyledSubTitle } from './ProductDetails.styled'
+import { StyledSubTitle, StyledButton } from './ProductDetails.styled'
 import { useState } from 'react'
 import { useShopStore } from '../../store'
+
 
 export default function ProductDetails({ category, product }) {
   const [quantity, setQuantity] = useState(1)
@@ -39,9 +40,9 @@ export default function ProductDetails({ category, product }) {
       <ProductPreview images={product.image} />
       <p>Price: {product.price} $</p>
       <ProductQuantity onDecrementQuantity={decrementQuantity} onIncrementQuantity={incrementQuantity} sum={sum} quantity={quantity} />
-      <button type="button" onClick={() => addToCart(product.id, productData, quantity)}>
+      <StyledButton type="button" onClick={() => addToCart(product.id, productData, quantity)}>
         Add to Cart
-      </button>
+    </StyledButton>
       <ReadMoreLess text="Details" content={product.description} />
     </>
   )

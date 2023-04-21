@@ -23,4 +23,10 @@ export const StyledSubTitle = styled.h5`
   margin-top: 10px;
   text-align: left;
   width: 320px;
-`;
+`
+
+export const StyledButton = styled.button`
+  border: 1px solid #000;
+  background-color: transparent;
+`
+;
