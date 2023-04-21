@@ -6,6 +6,7 @@ import ProductQuantity from '../ProductQuantity'
 import ProductPreview from '../ProductPreview'
 
 export default function ProductDetails({ category, product }) {
+  
   return (
     <>
       <BackToLink href={`/categories/${category.slug}`}>{category.name}</BackToLink>
