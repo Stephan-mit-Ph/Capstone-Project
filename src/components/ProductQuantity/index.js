@@ -1,27 +1,21 @@
-import React, { useState } from 'react'
-
-function ProductQuantity({ price }) {
-  const [quantity, setQuantity] = useState(1)
-  const sum = price * quantity
-
-  const incrementQuantity = () => {
-    setQuantity(quantity + 1)
-  }
-
-  const decrementQuantity = () => {
-    if (quantity > 1) {
-      setQuantity(quantity - 1)
-    }
-  }
-
+function ProductQuantity({ sum, onIncrementQuantity, onDecrementQuantity, quantity }) {
   return (
     <div>
       <label htmlFor="quantity">Quantity:</label>
-      <button type="button" onClick={decrementQuantity} aia-label="increase the amount of products">
+      <button type="button" onClick={onDecrementQuantity} aria-label="increase the amount of products">
         -
       </button>
-      <input style={{ width: '50px', textAlign: 'center' }} maxLength={5} type="number" id="quantity" name="quantity" min="1" value={quantity} />
-      <button type="button" onClick={incrementQuantity} aria-label="decreasethe amount of products">
+      <input
+        style={{ width: '50px', textAlign: 'center' }}
+        maxLength={5}
+        type="number"
+        id="quantity"
+        name="quantity"
+        min="1"
+        value={quantity}
+        readOnly
+      />
+      <button type="button" onClick={onIncrementQuantity} aria-label="decreasethe amount of products">
         +
       </button>
 
