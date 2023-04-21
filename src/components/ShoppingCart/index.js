@@ -15,7 +15,6 @@ export default function ShoppingCart() {
           cart.map((item) => (
             <li key={item.id}>
               <p>{item.name}</p>
-              <p>{item.price}</p>
               <p>{item.quantity}</p>
               <p>{formatCurrency(item.price)}</p>
               <Image src={item.image[0].path} alt={item.name} width={100} height={100} />
