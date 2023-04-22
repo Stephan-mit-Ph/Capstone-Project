@@ -12,7 +12,6 @@ function getTotalSum(cart) {
 export default function ShoppingCart() {
   const cart = useShopStore((state) => state.cart)
   const totalSum = getTotalSum(cart);
-  /*  const currentProduct = cart[0].id */
   return (
     <>
       <StyledSubTitle>My Cart</StyledSubTitle>
