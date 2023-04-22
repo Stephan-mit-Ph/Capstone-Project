@@ -1,8 +1,8 @@
 import Link from 'next/link'
 import styled from 'styled-components'
 import { useShopStore } from '../../store'
-import Cart from '../Icons/Cart'
-import { ShopLink, CartLink, StyledHeader, StyledLinkTitle, StyledBadge } from './Header.styled'
+import Shop from '../Icons/Shop.js'
+import { ShopLink, CartLink, StyledHeader, StyledLinkTitle, StyledBadge, StyledShopIcon } from './Header.styled'
 
 
 
@@ -15,7 +15,7 @@ export default function Header() {
           <StyledLinkTitle>SEC:Tech</StyledLinkTitle>
         </ShopLink>
         <CartLink href={'/cart'} aria-label="Link to Cart">
-          <Cart />
+          <StyledShopIcon  />
           {cart.length > 0 && <StyledBadge />}
         </CartLink>
       </StyledHeader>

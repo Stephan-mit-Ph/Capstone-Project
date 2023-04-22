@@ -26,6 +26,10 @@ export const StyledSubTitle = styled.h5`
 `
 
 export const StyledButton = styled.button`
+display: flex;
+justify-content: center;
+align-items: center;
+
   border: 1px solid #000;
   background-color: transparent;
 `

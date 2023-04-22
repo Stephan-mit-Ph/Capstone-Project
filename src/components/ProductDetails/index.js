@@ -5,6 +5,7 @@ import ReadMoreLess from '../ReadMoreLess'
 import { StyledSubTitle, StyledButton } from './ProductDetails.styled'
 import { useState } from 'react'
 import { useShopStore } from '../../store'
+import Cart from '../Icons/Cart'
 
 export default function ProductDetails({ category, product }) {
   const { addToCart, cart } = useShopStore()
@@ -37,7 +38,7 @@ export default function ProductDetails({ category, product }) {
   }
 
 
-  
+
 
   console.log(cart)
   return (
@@ -48,7 +49,7 @@ export default function ProductDetails({ category, product }) {
       <p>Price: {product.price} $</p>
       <ProductQuantity onDecrementQuantity={decrementQuantity} onIncrementQuantity={incrementQuantity} sum={sum} quantity={quantity} />
       <StyledButton type="button" onClick={() => addToCart(product.id, productData, quantity)}>
-        Add to Cart
+        Add to Cart <Cart />
       </StyledButton>
       <ReadMoreLess text="Details" content={product.description} />
     </>

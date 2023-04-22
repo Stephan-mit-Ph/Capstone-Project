@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import Link from 'next/link'
+import Shop from '../Icons/Shop.js'
 
 export const StyledHeader = styled.header`
   display: flex;
@@ -54,3 +55,13 @@ export const StyledBadge = styled.div`
   top: -0.5rem;
   right: 1rem;
 `
+
+export const StyledShopIcon = styled(Shop)`
+  font-size: 1.5rem;
+  fill-rule: red;
+  
+  :hover {
+    color: lightblue;
+  }
+  
+`;
