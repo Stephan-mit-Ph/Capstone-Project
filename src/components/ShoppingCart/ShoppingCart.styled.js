@@ -24,6 +24,6 @@ export const StyledProductDetails = styled.div`
   flex-direction: column;
   gap: 10px;
 `
-export const StyeledProductInfo = styled.p`
+export const StyledProductInfo = styled.p`
   margin: 0;
 `

@@ -2,7 +2,7 @@ import Image from 'next/image'
 import formatCurrency from '../../helpers/formatNumberToCurrency'
 import { useShopStore } from '../../store'
 import { StyledSubTitle } from '../ProductDetails/ProductDetails.styled'
-import { StyeledProductInfo, StyledCartItem, StyledCartList, StyledProductDetails, StyledProductName } from './ShoppingCart.styled'
+import { StyledProductInfo, StyledCartItem, StyledCartList, StyledProductDetails, StyledProductName } from './ShoppingCart.styled'
 
 function getTotalSum(cart) {
     return cart.reduce((total, item) => total + item.sum, 0);
@@ -22,9 +22,9 @@ export default function ShoppingCart() {
               <Image src={item.image[0].path} alt={item.name} width={100} height={100} />
               <StyledProductDetails>
               <StyledProductName>{item.name}</StyledProductName>
-              <StyeledProductInfo>Qty: {item.quantity}</StyeledProductInfo>
-              <StyeledProductInfo>Price: {formatCurrency(item.price)}</StyeledProductInfo>
-              <StyeledProductInfo>{formatCurrency(item.sum)}</StyeledProductInfo>
+              <StyledProductInfo>Qty: {item.quantity}</StyledProductInfo>
+              <StyledProductInfo>Price: {formatCurrency(item.price)}</StyledProductInfo>
+              <StyledProductInfo>{formatCurrency(item.sum)}</StyledProductInfo>
               </StyledProductDetails>
            
             </StyledCartItem>
