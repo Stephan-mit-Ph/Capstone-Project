@@ -11,3 +11,5 @@ export { default as PlusSquare } from './PlusSquare'
 export { default as Shop } from './Shop'
 export { default as Star } from './Star'
 export { default as TrashBin } from './TrashBin'
+export { default as Cart3 } from './Cart3'
+

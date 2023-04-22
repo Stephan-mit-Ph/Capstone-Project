@@ -38,8 +38,7 @@ export const categories = [
           { id: '0', path: '/images/iphone-13-pro-max-gold.png', alt: 'iPhone 13 pro' },
           { id: '1', path: '/images/iphone-13-pro-front-back-gold.png', alt: 'iPhone 13 pro' },
           { id: '2', path: '/images/iphone-13-pro-camera-gold.png', alt: 'iPhone 13 pro' },
-          { id: '3', path: '/images/iphone-13-pro-collection.png', alt: 'iPhone 13 pro' }
-          
+          { id: '3', path: '/images/iphone-13-pro-collection.png', alt: 'iPhone 13 pro' },
         ],
       },
       {
@@ -55,7 +54,8 @@ export const categories = [
         image: [
           { id: '0', path: '/images/iphone-13-pro-max-blue.png', alt: 'iPhone 13 pro' },
           { id: '1', path: '/images/iphone-13-pro-front-back-blue.png', alt: 'iPhone 13 pro' },
-          { id: '2', path: '/images/iphone-13-pro-camera-blue.png', alt: 'iPhone 13 pro' },{ id: '3', path: '/images/iphone-13-pro-collection.png', alt: 'iPhone 13 pro' }
+          { id: '2', path: '/images/iphone-13-pro-camera-blue.png', alt: 'iPhone 13 pro' },
+          { id: '3', path: '/images/iphone-13-pro-collection.png', alt: 'iPhone 13 pro' },
         ],
       },
       {
@@ -266,16 +266,11 @@ export const categories = [
           },
           {
             id: '1',
-            path: '/images/applewatch-front-midnight.png',
-            alt: 'Apple Watch',
-          },
-          {
-            id: '2',
             path: '/images/applewatch-side-midnight.png',
             alt: 'Apple Watch',
           },
           {
-            id: '3',
+            id: '2',
             path: '/images/applewatch-focus-midnight.png',
             alt: 'Apple Watch',
           },
@@ -300,16 +295,11 @@ export const categories = [
           },
           {
             id: '1',
-            path: '/images/applewatch-front-polarsilver.png',
-            alt: 'Apple Watch',
-          },
-          {
-            id: '2',
             path: '/images/applewatch-side-polarsilver.png',
             alt: 'Apple Watch',
           },
           {
-            id: '3',
+            id: '2',
             path: '/images/applewatch-focus-polarsilver.png',
             alt: 'Apple Watch',
           },

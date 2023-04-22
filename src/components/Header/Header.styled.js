@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import Link from 'next/link'
-import Shop from '../Icons/Shop.js'
+import Cart from '../Icons/Cart3'
 
 export const StyledHeader = styled.header`
   display: flex;
@@ -56,12 +56,7 @@ export const StyledBadge = styled.div`
   right: 1rem;
 `
 
-export const StyledShopIcon = styled(Shop)`
-  font-size: 1.5rem;
-  fill-rule: red;
-  
-  :hover {
-    color: lightblue;
-  }
-  
-`;
+export const StyledShopIcon = styled(Cart)`
+  color: gray;
+  font-size: 3rem;
+`
