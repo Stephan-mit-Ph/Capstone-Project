@@ -27,3 +27,15 @@ export const StyledProductDetails = styled.div`
 export const StyledProductInfo = styled.p`
   margin: 0;
 `
+export const StyledButton = styled.button`
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        margin: 0;
+        align-items: center;
+        color: red;
+        `

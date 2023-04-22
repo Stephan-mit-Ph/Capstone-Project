@@ -2,13 +2,18 @@ import Image from 'next/image'
 import formatCurrency from '../../helpers/formatNumberToCurrency'
 import { useShopStore } from '../../store'
 import { StyledSubTitle } from '../ProductDetails/ProductDetails.styled'
-import { StyledProductInfo, StyledCartItem, StyledCartList, StyledProductDetails, StyledProductName } from './ShoppingCart.styled'
+import { StyledProductInfo, StyledButton, StyledCartItem, StyledCartList, StyledProductDetails, StyledProductName } from './ShoppingCart.styled'
 
 function getTotalSum(cart) {
   return cart.reduce((total, item) => total + item.sum, 0)
 }
 
+
+
+
 export default function ShoppingCart() {
+  const removeFromCart = useShopStore((state) => state.removeFromCart)
+  
   const cart = useShopStore((state) => state.cart)
   const totalSum = getTotalSum(cart)
   return (
@@ -25,6 +30,7 @@ export default function ShoppingCart() {
                 <StyledProductInfo>Price: {formatCurrency(item.price)}</StyledProductInfo>
                 <StyledProductInfo>{formatCurrency(item.sum)}</StyledProductInfo>
               </StyledProductDetails>
+              <StyledButton onClick={() => removeFromCart(item.id)}>Remove</StyledButton>
             </StyledCartItem>
           ))}
         <StyledProductInfo>Total: {formatCurrency(totalSum)}</StyledProductInfo>
