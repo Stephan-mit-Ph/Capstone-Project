@@ -1,40 +1,28 @@
 import Image from 'next/image'
-import formatCurrency from '../../helpers/formatNumberToCurrency'
 import { useShopStore } from '../../store'
 import { StyledSubTitle } from '../ProductDetails/ProductDetails.styled'
 import { StyledProductInfo, StyledButton, StyledCartItem, StyledCartList, StyledProductDetails, StyledProductName } from './ShoppingCart.styled'
-
-function getTotalSum(cart) {
-  return cart.reduce((total, item) => total + item.sum, 0)
-}
+import formatCurrency from '../../helpers/formatNumberToCurrency';
 
 
+function Cart() {
+  const { cart, total, removeFromCart, removeAllItems } = useShopStore()
 
-
-export default function ShoppingCart() {
-  const removeFromCart = useShopStore((state) => state.removeFromCart)
-  
-  const cart = useShopStore((state) => state.cart)
-  const totalSum = getTotalSum(cart)
   return (
-    <>
-      <StyledSubTitle>My Cart</StyledSubTitle>
-      <StyledCartList role="list">
-        {cart &&
-          cart.map((item) => (
-            <StyledCartItem key={item.id}>
-              <Image src={item.image[0].path} alt={item.name} width={100} height={100} />
-              <StyledProductDetails>
-                <StyledProductName>{item.name}</StyledProductName>
-                <StyledProductInfo>Qty: {item.quantity}</StyledProductInfo>
-                <StyledProductInfo>Price: {formatCurrency(item.price)}</StyledProductInfo>
-                <StyledProductInfo>{formatCurrency(item.sum)}</StyledProductInfo>
-              </StyledProductDetails>
-              <StyledButton onClick={() => removeFromCart(item.id)}>Remove</StyledButton>
-            </StyledCartItem>
-          ))}
-        <StyledProductInfo>Total: {formatCurrency(totalSum)}</StyledProductInfo>
-      </StyledCartList>
-    </>
+    <div>
+      {cart.map((item) => (
+        <div key={item.id}>
+          <p>{item.name}</p>
+          <p>{formatCurrency(item.price)}</p>
+          <p>{item.quantity}</p>
+          <Image src={item.image[0].path} alt={item.name} width={100} height={100} />
+          <button onClick={() => removeFromCart(item.id)}>Remove</button>
+        </div>
+      ))}
+      <p>Total: {formatCurrency(total)}</p> {/* display the total sum */}
+      <button onClick={removeAllItems}>Clear cart</button>
+    </div>
   )
 }
+
+export default Cart
