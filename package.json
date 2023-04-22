@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "test": "jest --watchAll",
-    "svgr": "svgr --icon --title-prop --replace-attr-values '#1d1d1d=currentColor' -d src assets"
+    "svgr": "svgr --icon --title-prop --replace-attr-values '#000000=currentColor' -d src assets"
   },
   "dependencies": {
     "@next/font": "^13.3.0",
