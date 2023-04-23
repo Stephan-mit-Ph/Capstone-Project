@@ -36,7 +36,7 @@ export const categories = [
           'The iPhone 13 Pro featuring advanced technology and premium design. It boasts a stunning Super Retina XDR display with ProMotion technology for smooth scrolling and an A15 Bionic chip for fast and responsive performance. The iPhone 13 Pro also features a triple-camera system with 12MP ultra-wide, wide, and telephoto lenses, offering exceptional photo and video capabilities. It supports Dolby Vision HDR recording, Night mode, and ProRAW for professional-level photography. The device is water-resistant and includes a Ceramic Shield front cover for increased durability. The iPhone 13 Pro also features 5G connectivity, MagSafe technology, and supports iOS 15. With its sleek design, advanced features, and long-lasting battery life, the iPhone 13 Pro is the ultimate smartphone for professionals and power users.',
         image: [
           { id: '0', path: '/images/iphone-13-pro-max-gold.png', alt: 'iPhone 13 pro' },
-          { id: '1', path: '/images/iphone-13-pro-font-back-gold.png', alt: 'iPhone 13 pro' },
+          { id: '1', path: '/images/iphone-13-pro-front-back-gold.png', alt: 'iPhone 13 pro' },
           { id: '2', path: '/images/iphone-13-pro-camera-gold.png', alt: 'iPhone 13 pro' },
           { id: '3', path: '/images/iphone-13-pro-collection.png', alt: 'iPhone 13 pro' },
         ],
@@ -156,7 +156,7 @@ export const categories = [
           },
           {
             id: '1',
-            path: '/images/ipad-air-front-spacegray.png',
+            path: '/images/ipad-pro-side-spacegray.png',
             alt: 'iPad Pro',
           },
           {

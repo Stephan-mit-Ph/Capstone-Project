@@ -1,12 +1,14 @@
 import { StyledInput } from './ProductQuantity.styled'
+import { StyledPlusSquare, StyledMinusSquare, StyledButton, StyledWrapper } from './ProductQuantity.styled'
 
 function ProductQuantity({ sum, onIncrementQuantity, onDecrementQuantity, quantity }) {
   return (
-    <div>
+    <>
+    <StyledWrapper>
       <label htmlFor="quantity">Quantity:</label>
-      <button type="button" onClick={onDecrementQuantity} aria-label="increase the amount of products">
-        -
-      </button>
+      <StyledButton type="button" onClick={onDecrementQuantity} aria-label="increase the amount of products">
+        <StyledMinusSquare />
+      </StyledButton>
       <StyledInput
         style={{ width: '50px', textAlign: 'center' }}
         maxLength={5}
@@ -17,12 +19,14 @@ function ProductQuantity({ sum, onIncrementQuantity, onDecrementQuantity, quanti
         value={quantity}
         readOnly
       />
-      <button type="button" onClick={onIncrementQuantity} aria-label="decreasethe amount of products">
-        +
-      </button>
+      <StyledButton type="button" onClick={onIncrementQuantity} aria-label="decreasethe amount of products">
+        <StyledPlusSquare />
+      </StyledButton>
 
-      <p>Total Price: ${sum.toFixed(2)}</p>
-    </div>
+      
+    </StyledWrapper>
+    <p>Total Price: ${sum.toFixed(2)}</p>
+    </>
   )
 }
 

@@ -33,9 +33,9 @@ export const StyledButton = styled.button`
   border: 1px solid white;
   padding: 8px 16px;
   gap: 0.5rem;
-  font-size: var(--font-headline-1);
+  font-size: 0.85rem;
   background-color: transparent;
-  border-radius: 10px;
+  border-radius: 5px;
 
   :hover {
     background-color: red;
@@ -45,4 +45,6 @@ export const StyledButton = styled.button`
 
 export const StyledCartIcon = styled(Cart)`
   fill: currentColor;
+  width: 1.5rem;
+  height: 1.5rem;
 `;

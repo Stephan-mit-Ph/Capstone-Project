@@ -50,11 +50,10 @@ export const StyledBadge = styled.div`
   width: 1rem;
   height: 1rem;
   border-radius: 50%;
-  background-color: red;
-  color: black;
+  background-color: lightblue;
   position: relative;
-  top: -0.5rem;
-  right: 1rem;
+  bottom: 1rem;
+  left: 2.5rem;
 `
 
 export const StyledShopIcon = styled(Cart)`

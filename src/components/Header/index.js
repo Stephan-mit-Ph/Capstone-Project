@@ -10,8 +10,8 @@ export default function Header() {
           <StyledLinkTitle>SEC:Tech</StyledLinkTitle>
         </ShopLink>
         <CartButton href={'/cart'} aira-label="Link to Cart">
-          <StyledShopIcon />
           {cart.length > 0 && <StyledBadge />}
+          <StyledShopIcon />
         </CartButton>
       </StyledHeader>
     </>
