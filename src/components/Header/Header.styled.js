@@ -61,13 +61,4 @@ export const StyledShopIcon = styled(Cart)`
   font-size: 3rem;
 `
 
-export const CartButton = styled.button`
-  display: flex;
-  align-items: center;
-  padding: 0.5rem;
-  font-size: 1.5rem;
-  color: #000;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-`
+
