@@ -10,7 +10,8 @@ export const StyledContainer = styled.div`
 export const StyledMain = styled.main`
   display: flex;
   position: relative;
-  width: 100%;
+  width: min-content(90%, 1140px);
+  margin-inline: auto;
   flex-direction: column;
   justify-content: center;
   align-items: center;
