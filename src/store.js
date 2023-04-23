@@ -10,10 +10,7 @@ const useShopStore = createLocalStorageStore((set) => {
     addToCart: (id, productData, quantity) =>
       set((state) => {
         if (state.cart.some((item) => item.id === id)) {
-
-
           return {
-
             cart: state.cart.map((item) => (item.id === id ? { ...item, quantity: item.quantity + quantity } : item)),
             total: state.total + quantity * productData.price, // update the total sum
           }
@@ -22,10 +19,6 @@ const useShopStore = createLocalStorageStore((set) => {
           cart: [...state.cart, { ...productData, quantity }],
           total: state.total + quantity * productData.price, // update the total sum
         } // add the new item to the cart
-
-        
-
-
       }),
     removeFromCart: (id) =>
       set((state) => {
@@ -40,9 +33,15 @@ const useShopStore = createLocalStorageStore((set) => {
       set((state) => {
         return { cart: [], total: 0 } // reset the total sum to 0
       }),
+
+    toggleCart: () => {
+      set((state) => ({ isCartOpen: !state.isCartOpen }))
+    },
+    closeCart: () => {
+      set({ isCartOpen: false })
+    },
   }
 }, 'shop-store')
-
 
 function createLocalStorageStore(initialStore, name) {
   // Create a Zustand store without persistence.
