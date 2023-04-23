@@ -12,6 +12,7 @@ export const StyledHeader = styled.header`
   padding: 0 2.2rem;
   justify-content: space-between;
   align-items: center;
+
   z-index: 100;
   background-color: #f7f7f7;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
@@ -59,4 +60,15 @@ export const StyledBadge = styled.div`
 export const StyledShopIcon = styled(Cart)`
   color: gray;
   font-size: 3rem;
+`
+
+export const CartButton = styled.button`
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  color: #000;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 `

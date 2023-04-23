@@ -6,4 +6,6 @@ export const StyledAbout = styled.p`
     text-align: left;
     max-width: 600px;
     padding: 1.5rem;
+    text-align: center;
+    
 `;

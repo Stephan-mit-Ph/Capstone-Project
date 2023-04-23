@@ -1,9 +1,16 @@
 import { createGlobalStyle } from 'styled-components'
 import localFont from '@next/font/local'
 
+const montserrat = localFont({
+  src: '../public/fonts/Montserrat-Italic-VariableFont_wght.ttf',
+  src: '../public/fonts/Montserrat-VariableFont_wght.ttf',
+})
+
 const orbiton = localFont({
   src: '../public/fonts/Orbitron-VariableFont_wght.ttf',
 })
+
+
 
 export default createGlobalStyle`
   *,
@@ -14,7 +21,8 @@ export default createGlobalStyle`
 
   body {
     margin: 0;
-    font-family: ${orbiton}, sans-serif;
+    font-family: 'Montserrat', sans-serif;
+
 
   }
 
