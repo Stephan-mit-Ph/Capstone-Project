@@ -1,3 +1,5 @@
+import { StyledInput } from './ProductQuantity.styled'
+
 function ProductQuantity({ sum, onIncrementQuantity, onDecrementQuantity, quantity }) {
   return (
     <div>
@@ -5,7 +7,7 @@ function ProductQuantity({ sum, onIncrementQuantity, onDecrementQuantity, quanti
       <button type="button" onClick={onDecrementQuantity} aria-label="increase the amount of products">
         -
       </button>
-      <input
+      <StyledInput
         style={{ width: '50px', textAlign: 'center' }}
         maxLength={5}
         type="number"

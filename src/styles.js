@@ -10,7 +10,7 @@ const orbiton = localFont({
   src: '../public/fonts/Orbitron-VariableFont_wght.ttf',
 })
 
-export default createGlobalStyle`
+export const GlobalStyle = createGlobalStyle`
   :root {
     
     html {
@@ -20,7 +20,7 @@ export default createGlobalStyle`
 
     --font-family: ${montserrat.style}, sans-serif;
 
-    --font-headine-1: normal 600 3rem var(--font-family);
+    --font-headline-1: normal 600 3rem var(--font-family);
     --font-headline-2: normal 600 2.5rem var(--font-family);
     --font-headline-3: normal 600 2rem var(--font-family);
     --font-headline-4: normal 500 1.75rem var(--font-family);
@@ -45,7 +45,7 @@ export default createGlobalStyle`
 
        --font-family: ${montserrat.style}, sans-serif;
 
-      --font-headine-1: normal 600 3rem var(--font-family);
+      --font-headline-1: normal 600 3rem var(--font-family);
       --font-headline-2: normal 600 2.5rem var(--font-family);
       --font-headline-3: normal 600 2rem var(--font-family);
       --font-headline-4: normal 500 1.75rem var(--font-family);
@@ -119,4 +119,8 @@ export default createGlobalStyle`
     #root, #__next {
   isolation: isolate;
 }
+
+
 `
+
+export default GlobalStyle

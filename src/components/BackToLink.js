@@ -18,11 +18,15 @@ const StyledLink = styled(Link)`
     transition: 1s;
   }
 `
+const StyledChevronLeft = styled(ChevronLeft)`
+  fill: currentColor;
+  color: white;
+`;
 
 export default function BackToLink({ children, href }) {
   return (
     <StyledLink href={href}>
-      <ChevronLeft />
+      <StyledChevronLeft />
       {children}
     </StyledLink>
   )

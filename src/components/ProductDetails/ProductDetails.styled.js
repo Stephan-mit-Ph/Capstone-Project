@@ -31,9 +31,16 @@ export const StyledButton = styled.button`
   align-items: center;
   color: white;
   border: 1px solid white;
-  padding: 12px 24px;
+  padding: 8px 16px;
   gap: 0.5rem;
+  font-size: var(--font-headline-1);
   background-color: transparent;
+  border-radius: 10px;
+
+  :hover {
+    background-color: red;
+    transition: 0.5s;
+  }
 `
 
 export const StyledCartIcon = styled(Cart)`
