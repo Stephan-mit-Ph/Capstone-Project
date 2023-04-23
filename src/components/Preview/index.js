@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import PreviewImage from '../../../public/images/iphone-13-pro-camera-silver.png'
+import PreviewImage from '../../../public/images/iphone-13-pro-max-silver.png'
 import { StyledAbout } from './Preview.styled'
 import StyledLink from '../StyledLink'
 

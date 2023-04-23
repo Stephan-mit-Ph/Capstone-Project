@@ -119,7 +119,7 @@ export const categories = [
     category: 'tablets',
     name: 'Tablets',
     slug: 'tablets',
-    image: '/images/ipad-pro-front-silver.png',
+    image: '/images/ipad-pro-front-back-silver.png',
     products: [
       {
         id: 6,
@@ -245,7 +245,7 @@ export const categories = [
     categoryId: 2,
     name: 'Smartwatches',
     slug: 'smartwatches',
-    image: '/images/applewatch-front-midnight.png',
+    image: '/images/applewatch-series-7-front-midnight.png',
     products: [
       {
         id: 10,
@@ -312,7 +312,7 @@ export const categories = [
     categoryId: 3,
     name: 'Headphones',
     slug: 'headphones',
-    image: '/images/airpods-pro-top.png',
+    image: '/images/airpods-pro.png',
     products: [
       {
         id: 12,
