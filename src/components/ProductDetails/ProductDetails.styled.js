@@ -1,4 +1,6 @@
 import styled from 'styled-components'
+import Cart from '../Icons/Cart'
+import { StyledCartList } from '../ShoppingCart/ShoppingCart.styled';
 
 export const StyledTitle = styled.h4`
   font-size: 1.2rem;
@@ -27,7 +29,13 @@ export const StyledButton = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
-
-  border: 1px solid #000;
+  color: white;
+  border: 1px solid white;
+  padding: 12px 24px;
+  gap: 0.5rem;
   background-color: transparent;
 `
+
+export const StyledCartIcon = styled(Cart)`
+  fill: currentColor;
+`;

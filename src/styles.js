@@ -60,8 +60,7 @@ export default createGlobalStyle`
       --font-button: normal 500 0.85rem var(--font-family);
 
     }     
-  }
-  
+
   *,
   *::before,
   *::after {
@@ -73,6 +72,8 @@ export default createGlobalStyle`
   }
 
   body {
+    color: lightgrey;
+    background-color: #262626;
     margin: 0;
     font-family: 'Montserrat', system-ui, -apple-system, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
 

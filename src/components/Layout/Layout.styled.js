@@ -11,6 +11,7 @@ export const StyledMain = styled.main`
   display: flex;
   position: relative;
   width: min-content(90%, 1140px);
+  background-color: #262626;
   margin-inline: auto;
   flex-direction: column;
   justify-content: center;

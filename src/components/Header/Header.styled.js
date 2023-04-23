@@ -12,10 +12,10 @@ export const StyledHeader = styled.header`
   padding: 0 2.2rem;
   justify-content: space-between;
   align-items: center;
-
+  background-color: #262626;
   z-index: 100;
-  background-color: #f7f7f7;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 8px 8px 4px rgba(0, 0, 0, 0.12);
 `
 export const StyledLinkTitle = styled.h1`
   font-family: 'orbitron', sans-serif;
