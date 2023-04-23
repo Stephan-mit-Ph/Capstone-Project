@@ -328,7 +328,7 @@ export const categories = [
         image: [
           {
             id: '0',
-            path: '/images/airpods-pro-case.png',
+            path: '/images/airpods-pro.png',
             alt: 'Air Pods Pro',
           },
           {
@@ -338,12 +338,12 @@ export const categories = [
           },
           {
             id: '2',
-            path: '/images/airpods-pro-detailed.png',
+            path: '/images/airpods-pro-case-open.png',
             alt: 'Air Pods Pro',
           },
           {
             id: '3',
-            path: '/images/airpods-pro.png',
+            path: '/images/airpods-pro-case-front.png',
             alt: 'Air Pods Pro',
           },
         ],
@@ -362,7 +362,7 @@ export const categories = [
         image: [
           {
             id: '0',
-            path: '/images/airpods-3-front.png',
+            path: '/images/airpods-3.png',
             alt: 'Air Pods 3',
           },
           {
