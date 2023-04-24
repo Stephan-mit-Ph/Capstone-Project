@@ -278,7 +278,7 @@ export const categories = [
       },
       {
         id: 11,
-        productId: 12,
+        productId: 11,
         category: 'smartwatches',
         categoryId: 2,
         name: 'Apple Watch Series 7, polarsilver ',
@@ -302,6 +302,90 @@ export const categories = [
             id: '2',
             path: '/images/applewatch-series-7-focus-polarsilver.png',
             alt: 'Apple Watch',
+          },
+        ],
+      },
+      {
+        id: 15,
+        productId: 15,
+        category: 'smartwatches',
+        categoryId: 2,
+        name: 'Apple Watch Series 6, spacegray',
+        permalink: 'apple-watch-series-6-spacegray',
+        price: 299,
+        color: 'spacegray',
+        description:
+          'The Apple Watch Series 6 is the ultimate smartwatch, packed with features to keep you connected and on top of your fitness goals. With a stunning always-on Retina display, you can easily access your favorite apps and see your important notifications at a glance. The Series 6 also features advanced health monitoring, including a blood oxygen sensor and ECG app, so you can stay on top of your health and track your fitness progress with ease. And with customizable watch faces and interchangeable bands, you can make your Apple Watch Series 6 truly your own. Stay connected, stay healthy, and stay stylish with the Apple Watch Series 6.',
+        image: [
+          {
+            id: '0',
+            path: '/images/applewatch-series-6-front-spacegray.png',
+            alt: 'Apple Watch',
+          },
+          {
+            id: '1',
+            path: '/images/applewatch-series-6-horizontal-spacegray.png',
+            alt: 'Apple Watch',
+          },
+          {
+            id: '2',
+            path: '/images/applewatch-series-6-side-spacegray.png',
+            alt: 'Apple Watch',
+          },
+        ],
+      },
+      {
+        id: 16,
+        productId: 16,
+        category: 'smartwatches',
+        categoryId: 2,
+        name: 'Apple Watch Series 6, rose',
+        permalink: 'apple-watch-series-6-rose',
+        price: 299,
+        color: 'spacegray',
+        description:
+          'The Apple Watch Series 6 is the ultimate smartwatch, packed with features to keep you connected and on top of your fitness goals. With a stunning always-on Retina display, you can easily access your favorite apps and see your important notifications at a glance. The Series 6 also features advanced health monitoring, including a blood oxygen sensor and ECG app, so you can stay on top of your health and track your fitness progress with ease. And with customizable watch faces and interchangeable bands, you can make your Apple Watch Series 6 truly your own. Stay connected, stay healthy, and stay stylish with the Apple Watch Series 6.',
+        image: [
+          {
+            id: '0',
+            path: '/images/applewatch-series-6-front-rose.png',
+            alt: 'Apple Watch',
+          },
+          {
+            id: '1',
+            path: '/images/applewatch-series-6-left-rose.png',
+            alt: 'Apple Watch',
+          },
+          {
+            id: '2',
+            path: '/images/applewatch-series-6-right-rose.png',
+            alt: 'Apple Watch',
+          },
+        ],
+      },
+
+      {
+        id: 17,
+        productId: 17,
+        category: 'smartwatches',
+        categoryId: 2,
+        name: 'Apple Watch SE, spacegray',
+        permalink: 'apple-watch-se-spacegray',
+        price: 199,
+        color: 'spacegray',
+        description:
+          'The Apple Watch Series 7 is the latest addition to the Apple Watch lineup, offering a powerful and advanced smartwatch experience. With its larger and always-on Retina display, you can easily view your notifications, messages, and fitness data at a glance. The Apple Watch Series 7 features a redesigned charging system, which provides fast charging and up to 8 hours of battery life in just 45 minutes. It also comes with a range of health and fitness features, including an ECG app, blood oxygen sensor, and advanced workout tracking. With its water-resistant design, you can wear it while swimming, surfing, or doing other water activities. The Apple Watch Series 7 also offers customizable watch faces, interchangeable bands, and a range of finishes to match your personal style. With its seamless integration with other Apple products, the Apple Watch Series 7 is the ultimate smartwatch for staying connected and staying active.',
+        image: [
+          {
+            id: '0',
+            path: '/images/applewatch-se-front-spacegray.png',
+            alt: 'Apple Watch SE',
+          },
+
+          {
+            id: '2',
+            path: '/images/applewatch-se-spacegray.png',
+            alt: 'Apple Watch SE',
           },
         ],
       },
@@ -367,17 +451,51 @@ export const categories = [
           },
           {
             id: '0',
-            path: '/images/airpods-3-side.png',
+            path: '/images/airpods-3-case-top.png',
             alt: 'Air Pods 3',
           },
           {
             id: '0',
-            path: '/images/airpods-3-top.png',
+            path: '/images/airpods-3-case.png',
             alt: 'Air Pods 3',
           },
           {
             id: '0',
-            path: '/images/airpods-3-case-open.png',
+            path: '/images/airpods-3-case-front.png',
+            alt: 'Air Pods 3',
+          },
+        ],
+      },
+      {
+        id: 14,
+        productId: 14,
+        category: 'headphones',
+        categoryId: 3,
+        name: 'Air Pods 2',
+        permalink: 'air-pods-2',
+        price: 89,
+        color: 'white',
+        description:
+          'The AirPods 3 are the latest addition to Apple`s popular wireless earbuds lineup. With their advanced technology, the AirPods 3 offer a superior audio experience and long-lasting battery life. They feature an all-new design with shorter stems and a contoured shape that fits comfortably in your ears. The AirPods 3 use Apple`s latest H1 chip, which provides fast and seamless connectivity, and support hands-free "Hey Siri" commands. They also offer high-quality sound and improved bass performance. With their wireless charging case, the AirPods 3 offer up to 24 hours of battery life, and the case can be charged using a Lightning cable or a Qi-compatible wireless charger. The AirPods 3 seamlessly integrate with Apple devices and offer easy setup and automatic switching between devices. They are perfect for anyone who wants a reliable and convenient wireless earbuds experience.',
+        image: [
+          {
+            id: '0',
+            path: '/images/airpods-2.png',
+            alt: 'Air Pods 2',
+          },
+          {
+            id: '0',
+            path: '/images/airpods-2-top.png',
+            alt: 'Air Pods 2',
+          },
+          {
+            id: '0',
+            path: '/images/airpods-2-side.png',
+            alt: 'Air Pods 2',
+          },
+          {
+            id: '0',
+            path: '/images/airpods-2-case-side.png',
             alt: 'Air Pods 3',
           },
         ],
