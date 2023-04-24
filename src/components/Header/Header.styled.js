@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import Link from 'next/link'
+import Cart from '../Icons/Cart3'
 
 export const StyledHeader = styled.header`
   display: flex;
@@ -11,9 +12,10 @@ export const StyledHeader = styled.header`
   padding: 0 2.2rem;
   justify-content: space-between;
   align-items: center;
+  background-color: #262626;
   z-index: 100;
-  background-color: #f7f7f7;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 8px 8px 4px rgba(0, 0, 0, 0.12);
 `
 export const StyledLinkTitle = styled.h1`
   font-family: 'orbitron', sans-serif;
@@ -48,9 +50,15 @@ export const StyledBadge = styled.div`
   width: 1rem;
   height: 1rem;
   border-radius: 50%;
-  background-color: red;
-  color: black;
+  background-color: lightblue;
   position: relative;
-  top: -0.5rem;
-  right: 1rem;
+  bottom: 1rem;
+  left: 2.5rem;
 `
+
+export const StyledShopIcon = styled(Cart)`
+  color: gray;
+  font-size: 3rem;
+`
+
+

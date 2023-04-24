@@ -1,3 +1,6 @@
-export default function formatCurrency(num) {
-  return '$' + num.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,')
+export default function formatNumberToCurrency(number) {
+  return new Intl.NumberFormat('en-US', {
+    style: 'currency',
+    currency: 'USD',
+  }).format(number)
 }

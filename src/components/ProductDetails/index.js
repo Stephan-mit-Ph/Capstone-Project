@@ -2,16 +2,21 @@ import BackToLink from '../BackToLink'
 import ProductPreview from '../ProductPreview'
 import ProductQuantity from '../ProductQuantity'
 import ReadMoreLess from '../ReadMoreLess'
-import { StyledSubTitle, StyledButton } from './ProductDetails.styled'
+import { StyledSubTitle, StyledButton, StyledCartIcon } from './ProductDetails.styled'
 import { useState } from 'react'
 import { useShopStore } from '../../store'
 
 
 export default function ProductDetails({ category, product }) {
+  const { addToCart, cart } = useShopStore()
   const [quantity, setQuantity] = useState(1)
-  const cart = useShopStore((state) => state.cart)
-  const addToCart = useShopStore((state) => state.addToCart)
-  const sum = product.price * quantity
+  const sum = quantity * product.price
+  
+  const handleAddToCart = () => {
+    addToCart(product.id, productData, quantity)
+  }
+
+  
 
   const productData = {
     id: product.id,
@@ -32,7 +37,10 @@ export default function ProductDetails({ category, product }) {
     }
   }
 
-  console.log(cart)
+
+
+
+
   return (
     <>
       <BackToLink href={`/categories/${category.slug}`}>{category.name}</BackToLink>
@@ -41,8 +49,8 @@ export default function ProductDetails({ category, product }) {
       <p>Price: {product.price} $</p>
       <ProductQuantity onDecrementQuantity={decrementQuantity} onIncrementQuantity={incrementQuantity} sum={sum} quantity={quantity} />
       <StyledButton type="button" onClick={() => addToCart(product.id, productData, quantity)}>
-        Add to Cart
-    </StyledButton>
+        Add to Cart <StyledCartIcon />
+      </StyledButton>
       <ReadMoreLess text="Details" content={product.description} />
     </>
   )

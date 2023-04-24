@@ -10,12 +10,13 @@ export const StyledContainer = styled.div`
 export const StyledMain = styled.main`
   display: flex;
   position: relative;
-  top: 0;
-  width: 100%;
+  width: min-content(90%, 1140px);
+  background-color: #262626;
+  margin-inline: auto;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 60px;
+  margin-top: 30px;
   padding: 20px;
   min-height: 100%;
 

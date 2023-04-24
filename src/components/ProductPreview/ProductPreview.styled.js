@@ -10,8 +10,8 @@ export const PreviewContainer = styled.div`
 `
 
 export const Thumbnail = styled.div`
-  width: 5rem;
-  height: 5rem;
+  width: 3.5rem;
+  height: 3.5rem;
   margin: 0;
   cursor: pointer;
 `
@@ -23,7 +23,18 @@ export const PreviewImage = styled(Image)`
 `
 
 export const ThumbnailWrapper = styled.div`
+  width: 300px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-start;
+  gap: 1rem;
   align-items: center;
+  flex-wrap: wrap;
+
 `
+
+export const StyledImage = styled(Image)`
+margin: 0 ;
+padding: 0;
+
+
+`;

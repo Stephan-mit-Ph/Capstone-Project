@@ -20,7 +20,7 @@ export const categories = [
           { id: '0', path: '/images/iphone-13-pro-max-graphit.png', alt: 'iPhone 13 Pro' },
           { id: '1', path: '/images/iphone-13-pro-front-back-graphit.png', alt: 'iPhone 13 Pro' },
           { id: '2', path: '/images/iphone-13-pro-camera-graphit.png', alt: 'iPhone 13 Pro' },
-          { id: '3', path: '/images/ipad-air-collection.png', alt: 'iPhone 13 Pro' },
+          { id: '3', path: '/images/iphone-13-pro-collection.png', alt: 'iPhone 13 Pro' },
         ],
       },
       {
@@ -38,8 +38,7 @@ export const categories = [
           { id: '0', path: '/images/iphone-13-pro-max-gold.png', alt: 'iPhone 13 pro' },
           { id: '1', path: '/images/iphone-13-pro-front-back-gold.png', alt: 'iPhone 13 pro' },
           { id: '2', path: '/images/iphone-13-pro-camera-gold.png', alt: 'iPhone 13 pro' },
-          { id: '3', path: '/images/iphone-13-pro-collection.png', alt: 'iPhone 13 pro' }
-          
+          { id: '3', path: '/images/iphone-13-pro-collection.png', alt: 'iPhone 13 pro' },
         ],
       },
       {
@@ -55,7 +54,8 @@ export const categories = [
         image: [
           { id: '0', path: '/images/iphone-13-pro-max-blue.png', alt: 'iPhone 13 pro' },
           { id: '1', path: '/images/iphone-13-pro-front-back-blue.png', alt: 'iPhone 13 pro' },
-          { id: '2', path: '/images/iphone-13-pro-camera-blue.png', alt: 'iPhone 13 pro' },{ id: '3', path: '/images/iphone-13-pro-collection.png', alt: 'iPhone 13 pro' }
+          { id: '2', path: '/images/iphone-13-pro-camera-blue.png', alt: 'iPhone 13 pro' },
+          { id: '3', path: '/images/iphone-13-pro-collection.png', alt: 'iPhone 13 pro' },
         ],
       },
       {
@@ -119,7 +119,7 @@ export const categories = [
     category: 'tablets',
     name: 'Tablets',
     slug: 'tablets',
-    image: '/images/ipad-pro-front-silver.png',
+    image: '/images/ipad-pro-front-back-silver.png',
     products: [
       {
         id: 6,
@@ -156,7 +156,7 @@ export const categories = [
           },
           {
             id: '1',
-            path: '/images/ipad-air-front-spacegray.png',
+            path: '/images/ipad-pro-side-spacegray.png',
             alt: 'iPad Pro',
           },
           {
@@ -245,7 +245,7 @@ export const categories = [
     categoryId: 2,
     name: 'Smartwatches',
     slug: 'smartwatches',
-    image: '/images/applewatch-front-midnight.png',
+    image: '/images/applewatch-series-7-front-midnight.png',
     products: [
       {
         id: 10,
@@ -261,22 +261,17 @@ export const categories = [
         image: [
           {
             id: '0',
-            path: '/images/applewatch-front-midnight.png',
+            path: '/images/applewatch-series-7-front-midnight.png',
             alt: 'Apple Watch',
           },
           {
             id: '1',
-            path: '/images/applewatch-front-midnight.png',
+            path: '/images/applewatch-series-7-focus-midnight.png',
             alt: 'Apple Watch',
           },
           {
             id: '2',
-            path: '/images/applewatch-side-midnight.png',
-            alt: 'Apple Watch',
-          },
-          {
-            id: '3',
-            path: '/images/applewatch-focus-midnight.png',
+            path: '/images/applewatch-series-7-side-midnight.png',
             alt: 'Apple Watch',
           },
         ],
@@ -295,22 +290,17 @@ export const categories = [
         image: [
           {
             id: '0',
-            path: '/images/applewatch-front-polarsilver.png',
+            path: '/images/applewatch-series-7-front-polarsilver.png',
             alt: 'Apple Watch',
           },
           {
             id: '1',
-            path: '/images/applewatch-front-polarsilver.png',
+            path: '/images/applewatch-series-7-side-polarsilver.png',
             alt: 'Apple Watch',
           },
           {
             id: '2',
-            path: '/images/applewatch-side-polarsilver.png',
-            alt: 'Apple Watch',
-          },
-          {
-            id: '3',
-            path: '/images/applewatch-focus-polarsilver.png',
+            path: '/images/applewatch-series-7-focus-polarsilver.png',
             alt: 'Apple Watch',
           },
         ],
@@ -322,7 +312,7 @@ export const categories = [
     categoryId: 3,
     name: 'Headphones',
     slug: 'headphones',
-    image: '/images/airpods-pro-top.png',
+    image: '/images/airpods-pro.png',
     products: [
       {
         id: 12,
@@ -338,7 +328,7 @@ export const categories = [
         image: [
           {
             id: '0',
-            path: '/images/airpods-pro-case.png',
+            path: '/images/airpods-pro.png',
             alt: 'Air Pods Pro',
           },
           {
@@ -348,12 +338,12 @@ export const categories = [
           },
           {
             id: '2',
-            path: '/images/airpods-pro-detailed.png',
+            path: '/images/airpods-pro-case-open.png',
             alt: 'Air Pods Pro',
           },
           {
             id: '3',
-            path: '/images/airpods-pro.png',
+            path: '/images/airpods-pro-case-front.png',
             alt: 'Air Pods Pro',
           },
         ],
@@ -372,7 +362,7 @@ export const categories = [
         image: [
           {
             id: '0',
-            path: '/images/airpods-3-front.png',
+            path: '/images/airpods-3.png',
             alt: 'Air Pods 3',
           },
           {
