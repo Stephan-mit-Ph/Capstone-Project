@@ -40,7 +40,7 @@ export default function ProductDetails({ category, product }) {
 
 
 
-  console.log(cart)
+
   return (
     <>
       <BackToLink href={`/categories/${category.slug}`}>{category.name}</BackToLink>
