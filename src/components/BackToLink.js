@@ -3,13 +3,13 @@ import ChevronLeft from './Icons/ChevronLeft'
 import Link from 'next/link'
 
 const StyledLink = styled(Link)`
-  width: 300px;
+  width: 100%;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   color: inherit;
   text-decoration: none;
   font-size: 1.1rem;
-  padding-top: 0.5rem;
+  padding-top: 1rem;
   font-weight: 400;
   letter-spacing: 0.03em;
 

@@ -5,7 +5,7 @@ import Cart from '../Icons/Cart3'
 export const StyledHeader = styled.header`
   display: flex;
   width: 100%;
-  height: 60px;
+  height: 4rem;
   position: fixed;
   top: 0;
   left: 0;
@@ -18,12 +18,9 @@ export const StyledHeader = styled.header`
   box-shadow: 0px 8px 8px 4px rgba(0, 0, 0, 0.12);
 `
 export const StyledLinkTitle = styled.h1`
-  font-family: 'orbitron', sans-serif;
-  font-weight: 500;
-  letter-spacing: 3px;
-  font-size: 1.5rem;
+  font: var(--font-display-title);
   margin: 0;
-  color: gray;
+  color: var(--text-color);
 
   :hover {
     color: lightblue;
@@ -57,8 +54,10 @@ export const StyledBadge = styled.div`
 `
 
 export const StyledShopIcon = styled(Cart)`
-  color: gray;
+  color: var(--text-color);
   font-size: 3rem;
+
+  @media screen and (max-width: 568px) {
+    font-size: 2.3rem;
+  }
 `
-
-
