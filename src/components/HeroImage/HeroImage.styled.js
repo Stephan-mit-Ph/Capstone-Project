@@ -1,26 +1,43 @@
 import styled from 'styled-components'
+import Image from 'next/image'
 
 export const StyledHeroWrapper = styled.div`
   position: relative;
-  height: 400px;
-  width: 1000px;
-  position: relative;
+  height: 12rem;
+  width: 100%;
   top: 0rem;
   right: 0px;
   overflow: hidden;
-  background-color: lightgrey;
   margin: 0;
   padding: 0px;
 
-
-  @media screen and (max-width: 768px) {
-    height: 300px;
-    width: 100%;
-    
+  @media (min-width: 768px) {
+    height: 25rem;
   }
-  @media screen and (max-width: 567px) {
-    height: 200px;
-    width: 100%;
 
-    }
+ 
+
+  
+
+  /* @media (max-width: 568px) {
+    width: 366px;
+    height: 129px;
+  }
+
+  @media (min-width: 568px) {
+    width: 568px;
+    height: 200px;
+  }
+
+  @media (min-width: 768px) {
+    width: 100%;
+    height: 400px;
+  } */
+
+`;
+
+export const StyledHeroImage = styled(Image)`
+  max-width: 100%;
+  background-repeat: no-repeat;
+  align-self: center;
 `;

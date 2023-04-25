@@ -16,6 +16,5 @@ export const StyledMain = styled.main`
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 1.2rem;
   padding-top: 4rem;
 `;

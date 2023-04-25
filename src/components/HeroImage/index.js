@@ -1,10 +1,9 @@
-import { StyledHeroWrapper } from './HeroImage.styled.js'
-import Image from 'next/image'
+import { StyledHeroWrapper, StyledHeroImage } from './HeroImage.styled.js'
 
 export default function HeroImage({ src, alt }) {
   return (
     <StyledHeroWrapper>
-      <Image src={src} alt={alt} fill quality={100} />
+      <StyledHeroImage src={src} alt={alt} fill quality={100} />
     </StyledHeroWrapper>
   )
 }

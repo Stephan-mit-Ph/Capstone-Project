@@ -25,5 +25,9 @@ export const StyledTitle = styled.h1`
   padding-top: 2rem;
   padding-bottom: 2rem;
   width: 100%;
+
+  @media (max-width: 568px) {
+    padding-bottom: 1rem;
+  }
   
 `

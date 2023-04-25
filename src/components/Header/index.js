@@ -1,11 +1,12 @@
 import { useShopStore } from '../../store'
-import { ShopLink, CartLink, StyledHeader, StyledLinkTitle, StyledBadge, StyledShopIcon } from './Header.styled'
+import { ShopLink, CartLink, StyledHeader, StyledLinkTitle, StyledBadge, StyledShopIcon, StyledNavbar } from './Header.styled'
 
 export default function Header() {
   const cart = useShopStore((state) => state.cart)
   return (
     <>
       <StyledHeader>
+        <StyledNavbar>
         <ShopLink href={'/'} aira-label="Link to Homepage">
           <StyledLinkTitle>SEC:Tech</StyledLinkTitle>
         </ShopLink>
@@ -13,6 +14,7 @@ export default function Header() {
           {cart.length > 0 && <StyledBadge />}
           <StyledShopIcon />
         </CartLink>
+        </StyledNavbar>
       </StyledHeader>
     </>
   )

@@ -4,8 +4,8 @@ import SvgChevronRight from '../Icons/ChevronRight';
 
 export const StyledList = styled.ul`
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
-  flex-direction: column;
   align-items: center;
   list-style: none;
   padding: 0;
@@ -22,6 +22,7 @@ export const StyledCard = styled.article`
   background-color: var(--bg-color-400);
   padding: 2.25rem;
   border-radius: 15px;
+  box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.25);
 `;
 
 export const StyledImage = styled(Image)`
