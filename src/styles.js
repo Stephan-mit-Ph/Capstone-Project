@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
-import localFont from '@next/font/local'
+import { Orbitron } from '@next/font/google'
 
 const orbitron = localFont({
   src: 'public/fonts/Orbitron-VariableFont_wght.ttf',
