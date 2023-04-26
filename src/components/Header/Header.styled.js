@@ -22,7 +22,7 @@ export const StyledNavbar = styled.nav`
   width: 100%;
   max-width: 1140px;
   justify-content: space-between;
-    `;
+`
 
 export const StyledLinkTitle = styled.h1`
   font: var(--font-display-title);
