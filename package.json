@@ -11,7 +11,7 @@
     "svgr": "svgr --icon --title-prop --replace-attr-values '#000000=currentColor' -d src assets"
   },
   "dependencies": {
-    "@next/font": "^13.3.1",
+    "@next/font": "^13.2.4",
     "eslint": "8.29.0",
     "eslint-config-next": "13.0.6",
     "next": "13.0.6",
