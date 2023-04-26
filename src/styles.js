@@ -1,9 +1,4 @@
 import { createGlobalStyle } from 'styled-components'
-import { Orbitron } from '@next/font/google'
-
-const orbitron = localFont({
-  src: 'public/fonts/Orbitron-VariableFont_wght.ttf',
-})
 
 const GlobalStyle = createGlobalStyle`
   :root {
@@ -23,7 +18,7 @@ const GlobalStyle = createGlobalStyle`
     --tertiary-color-500: #FF00F5;
 
 
-    --font-family-1: ${orbitron.style.fontFamily}, sans-serif;
+    --font-family-1: 'Orbitron', sans-serif;
     --font-family-2: 'Montserrat', sans-serif;
 
     --font-display-title: normal 400 2rem/1.5 var(--font-family-1);
