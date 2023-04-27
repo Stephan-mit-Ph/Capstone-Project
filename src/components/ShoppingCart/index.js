@@ -11,11 +11,13 @@ import {
   StyledBin,
 } from './ShoppingCart.styled'
 import formatPrice from '../../helpers/formatNumberToCurrency'
+import { StyledSubTitle } from '../ProductDetails/ProductDetails.styled'
 
 function ShoppingCart() {
   const { cart, total, removeFromCart, removeAllItems } = useShopStore()
   return (
     <StyledCartList role="list">
+      <StyledSubTitle>My Cart</StyledSubTitle>
       {cart.length === 0 && <p>Your cart is empty</p>}
       {cart.map((item) => (
         <StyledCartItem key={item.id}>
