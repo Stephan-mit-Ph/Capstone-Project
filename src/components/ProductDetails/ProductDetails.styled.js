@@ -29,7 +29,7 @@ export const StyledButton = styled.button`
   border-radius: 5px;
 
   :hover {
-    background-color: var(--primary-color-500);
+    background-color: rgba(225, 8, 86, 0.5);
     opacity: 0.5;
     transition: 0.5s;
   }

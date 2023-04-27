@@ -9,6 +9,7 @@ import {
   StyledCartList,
   StyledProductName,
   StyledBin,
+  StyledCardBin
 } from './ShoppingCart.styled'
 import formatPrice from '../../helpers/formatNumberToCurrency'
 import { StyledSubTitle } from '../ProductDetails/ProductDetails.styled'
@@ -29,15 +30,15 @@ function ShoppingCart() {
               <StyledProductInfo>Qty: {item.quantity}</StyledProductInfo>
             </StyledDetailsWrapper>
             <StyledButton type="button" onClick={() => removeFromCart(item.id)}>
-              <StyledBin />
+              <StyledCardBin />
             </StyledButton>
           </StyledImageWrapper>
         </StyledCartItem>
       ))}
       <StyledProductInfo>Total: {formatPrice(total)}</StyledProductInfo> {/* display the total sum */}
       <StyledButton type="button" onClick={removeAllItems}>
-        <StyledBin />
         Delete all items
+        <StyledBin />
       </StyledButton>
     </StyledCartList>
   )
