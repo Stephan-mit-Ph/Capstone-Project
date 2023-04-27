@@ -2,7 +2,7 @@ import BackToLink from '../BackToLink'
 import ProductPreview from '../ProductPreview'
 import ProductQuantity from '../ProductQuantity'
 import ReadMoreLess from '../ReadMoreLess'
-import { StyledButton, StyledCartIcon, StyledProductDetails, StyledQuantity } from './ProductDetails.styled'
+import { StyledButton, StyledCartIcon, StyledProductDetails, StyledQuantity, StyledSubTitle, StyledPrice } from './ProductDetails.styled'
 import { useState } from 'react'
 import { useShopStore } from '../../store'
 import { StyledCard } from '../CategoriesList/CategoriesList.styled'
@@ -39,10 +39,11 @@ export default function ProductDetails({ category, product }) {
   return (
     <>
       <BackToLink href={`/categories/${category.slug}`}>{category.name}</BackToLink>
+      <StyledSubTitle>{product.name}</StyledSubTitle>
       <StyledCard>
       <ProductPreview images={product.image} />
       <StyledProductDetails>
-      <p>Price: {formatNumberToCurrency(product.price)}</p>
+      <StyledPrice>Price: {formatNumberToCurrency(product.price)}</StyledPrice>
       <StyledQuantity>Quantity</StyledQuantity>
       <ProductQuantity onDecrementQuantity={decrementQuantity} onIncrementQuantity={incrementQuantity} sum={sum} quantity={quantity} />
       <StyledButton type="button" onClick={() => addToCart(product.id, productData, quantity)}>

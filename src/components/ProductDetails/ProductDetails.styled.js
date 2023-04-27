@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 import Cart from '../Icons/Cart'
 
-
 export const StyledTitle = styled.h2`
   font: var(--font-title);
   margin-bottom: 0;
@@ -18,7 +17,7 @@ export const StyledSubTitle = styled.h3`
 
 export const StyledButton = styled.button`
   display: flex;
-  width: fit-content ;
+  width: fit-content;
   justify-content: center;
   align-items: center;
   color: var(--text-color);
@@ -40,7 +39,7 @@ export const StyledCartIcon = styled(Cart)`
   fill: currentColor;
   width: 1.5rem;
   height: 1.5rem;
-`;
+`
 
 export const StyledProductDetails = styled.ul`
   display: flex;
@@ -48,10 +47,12 @@ export const StyledProductDetails = styled.ul`
   align-items: center;
   flex-direction: column;
   gap: 1rem;
-`;
+`
 
 export const StyledQuantity = styled.p`
-  margin: 0;
-  padding: 0;
+  font: var(--font-body-medium);
 `
-;
+
+export const StyledPrice = styled.p`
+  font: var(--font-body-medium);
+`

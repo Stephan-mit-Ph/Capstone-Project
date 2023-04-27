@@ -8,10 +8,9 @@ import {
   StyledCartItem,
   StyledCartList,
   StyledProductName,
-  StyledItemCard,
+  StyledBin,
 } from './ShoppingCart.styled'
 import formatPrice from '../../helpers/formatNumberToCurrency'
-import Bin from '../Icons/Bin'
 
 function ShoppingCart() {
   const { cart, total, removeFromCart, removeAllItems } = useShopStore()
@@ -28,14 +27,14 @@ function ShoppingCart() {
               <StyledProductInfo>Qty: {item.quantity}</StyledProductInfo>
             </StyledDetailsWrapper>
             <StyledButton type="button" onClick={() => removeFromCart(item.id)}>
-              <Bin />
+              <StyledBin />
             </StyledButton>
           </StyledImageWrapper>
         </StyledCartItem>
       ))}
       <StyledProductInfo>Total: {formatPrice(total)}</StyledProductInfo> {/* display the total sum */}
       <StyledButton type="button" onClick={removeAllItems}>
-        <Bin />
+        <StyledBin />
         Delete all items
       </StyledButton>
     </StyledCartList>

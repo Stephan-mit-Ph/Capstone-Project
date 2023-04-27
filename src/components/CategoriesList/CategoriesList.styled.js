@@ -19,7 +19,7 @@ export const StyledCardTitle = styled.h3`
 export const StyledCard = styled.article`
   flex: 1 1 300px;
   max-width: 330px;
-  margin: 20px;
+  margin: 0 1.25rem 2rem 1.25rem;
   gap: 0.5rem;
   background-color: var(--bg-color-400);
   padding: 2.25rem;
@@ -43,6 +43,7 @@ export const StyledLinkWrapper = styled.div`
   align-items: center;
   gap: 0.5rem;
 `
+
 export const StyledChevronWrapper = styled.div`
   display: flex;
   justify-content: flex-end;

@@ -1,4 +1,6 @@
 import styled from 'styled-components'
+import Bin from '../Icons/Bin'
+
 
 export const StyledCartList = styled.ul`
   list-style: none;
@@ -20,7 +22,7 @@ export const StyledCartItem = styled.li`
 `
 
 export const StyledProductName = styled.h5`
-  font: var(--font-card-title);
+  font: var(--font-body-medium);
 `
 
 export const StyledProductDetails = styled.div`
@@ -30,18 +32,18 @@ export const StyledProductDetails = styled.div`
 `
 export const StyledProductInfo = styled.p`
   margin: 0;
-  font-size: 0.9rem;
+  font: var(--font-body-small);
 `
 export const StyledButton = styled.button`
   background-color: transparent;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  align-self: flex-start;
   align-items: center;
   border: none;
   cursor: pointer;
   padding: 0;
   margin: 0;
-  align-items: center;
   color: var(--text-color);
 `
 
@@ -57,3 +59,9 @@ export const StyledImageWrapper = styled.div`
   display: flex;
   justify-content: space-between;
 `
+export const StyledBin = styled(Bin)`
+  fill: var(--text-color);
+  width: 1.5rem;
+  height: 1.5rem;
+  
+`;
