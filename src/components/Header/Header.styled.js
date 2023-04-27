@@ -56,8 +56,8 @@ export const StyledBadge = styled.div`
   border-radius: 50%;
   background-color: var(--primary-color-500);
   position: relative;
-  bottom: 1rem;
-  left: 2.5rem;
+  bottom: 0.8rem;
+  left: 2rem;
 `
 
 export const StyledShopIcon = styled(Cart)`

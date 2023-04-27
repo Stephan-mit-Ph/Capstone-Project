@@ -21,7 +21,7 @@ export const StyledButton = styled.button`
   justify-content: center;
   align-items: center;
   color: var(--text-color);
-  border: 1px solid var(--text-color);
+  border: 0.5px solid var(--text-color);
   padding: 8px 16px;
   gap: 0.5rem;
   font-size: 0.85rem;
