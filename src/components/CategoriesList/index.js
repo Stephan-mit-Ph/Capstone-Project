@@ -1,10 +1,10 @@
 import { categories } from '../../data/categories'
-import StyledLink from '../StyledLink'
-import { StyledCardTitle, StyledList, StyledCard, StyledImage, StyledChevron, StyledLinkWrapper, StyledChevronWrapper } from './CategoriesList.styled'
 import BackToLink from '../BackToLink'
-import {  StyledSubTitle } from '../ProductDetails/ProductDetails.styled'
-import { StyledWrapper } from '../Preview/Preview.styled'
-import { StyledPrice} from '../CategoryList/CategoryList.styled'
+import { StyledPrice } from '../CategoryList/CategoryList.styled'
+import { StyledWrapper } from '../HomePreview/HomePreview.styled'
+import { StyledSubTitle } from '../ProductDetails/ProductDetails.styled'
+import StyledLink from '../StyledLink'
+import { StyledCard, StyledCardTitle, StyledChevron, StyledChevronWrapper, StyledImage, StyledLinkWrapper, StyledList } from './CategoriesList.styled'
 
 function CategoriesList() {
   return (

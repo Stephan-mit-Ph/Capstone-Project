@@ -1,18 +1,18 @@
 import Image from 'next/image'
+import formatPrice from '../../helpers/formatNumberToCurrency'
 import { useShopStore } from '../../store'
+import { StyledSubTitle } from '../ProductDetails/ProductDetails.styled'
 import {
-  StyledProductInfo,
-  StyledDetailsWrapper,
-  StyledImageWrapper,
+  StyledBin,
   StyledButton,
+  StyledCardBin,
   StyledCartItem,
   StyledCartList,
-  StyledProductName,
-  StyledBin,
-  StyledCardBin
+  StyledDetailsWrapper,
+  StyledImageWrapper,
+  StyledProductInfo,
+  StyledProductName
 } from './ShoppingCart.styled'
-import formatPrice from '../../helpers/formatNumberToCurrency'
-import { StyledSubTitle } from '../ProductDetails/ProductDetails.styled'
 
 function ShoppingCart() {
   const { cart, total, removeFromCart, removeAllItems } = useShopStore()

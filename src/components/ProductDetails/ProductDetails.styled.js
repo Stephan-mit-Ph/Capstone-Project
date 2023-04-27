@@ -29,8 +29,14 @@ export const StyledButton = styled.button`
   border-radius: 5px;
 
   :hover {
-    background-color: rgba(225, 8, 86, 0.5);
-    opacity: 0.5;
+    color: var(--secondary-color-500);
+    border: 0.5px solid var(--secondary-color-500);
+    transition: 1s;
+  }
+
+  :active {
+    color: var(--primary-color-500);
+    border: 0.5px solid var(--primary-color-500);
     transition: 0.5s;
   }
 `

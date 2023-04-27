@@ -12,7 +12,7 @@ export const categories = [
         categoryId: 0,
         name: 'iPhone 13 Pro, graphit',
         permalink: 'iphone-13-pro-graphit',
-        price: 999,
+        price: 799,
         color: 'graphit',
         description:
           'The iPhone 13 Pro featuring advanced technology and premium design. It boasts a stunning Super Retina XDR display with ProMotion technology for smooth scrolling and an A15 Bionic chip for fast and responsive performance. The iPhone 13 Pro also features a triple-camera system with 12MP ultra-wide, wide, and telephoto lenses, offering exceptional photo and video capabilities. It supports Dolby Vision HDR recording, Night mode, and ProRAW for professional-level photography. The device is water-resistant and includes a Ceramic Shield front cover for increased durability. The iPhone 13 Pro also features 5G connectivity, MagSafe technology, and supports iOS 15. With its sleek design, advanced features, and long-lasting battery life, the iPhone 13 Pro is the ultimate smartphone for professionals and power users.',
@@ -30,7 +30,7 @@ export const categories = [
         categoryName: 'Smartphones',
         name: 'iPhone 13 Pro, gold',
         permalink: 'iphone-13-pro-gold',
-        price: 999,
+        price: 799,
         color: 'gold',
         description:
           'The iPhone 13 Pro featuring advanced technology and premium design. It boasts a stunning Super Retina XDR display with ProMotion technology for smooth scrolling and an A15 Bionic chip for fast and responsive performance. The iPhone 13 Pro also features a triple-camera system with 12MP ultra-wide, wide, and telephoto lenses, offering exceptional photo and video capabilities. It supports Dolby Vision HDR recording, Night mode, and ProRAW for professional-level photography. The device is water-resistant and includes a Ceramic Shield front cover for increased durability. The iPhone 13 Pro also features 5G connectivity, MagSafe technology, and supports iOS 15. With its sleek design, advanced features, and long-lasting battery life, the iPhone 13 Pro is the ultimate smartphone for professionals and power users.',
@@ -47,7 +47,7 @@ export const categories = [
         categoryId: 0,
         name: 'iPhone 13 Pro, blue',
         permalink: 'iphone-13-pro-lightblue',
-        price: 999,
+        price: 799,
         color: 'lightblue',
         description:
           'The iPhone 13 Pro featuring advanced technology and premium design. It boasts a stunning Super Retina XDR display with ProMotion technology for smooth scrolling and an A15 Bionic chip for fast and responsive performance. The iPhone 13 Pro also features a triple-camera system with 12MP ultra-wide, wide, and telephoto lenses, offering exceptional photo and video capabilities. It supports Dolby Vision HDR recording, Night mode, and ProRAW for professional-level photography. The device is water-resistant and includes a Ceramic Shield front cover for increased durability. The iPhone 13 Pro also features 5G connectivity, MagSafe technology, and supports iOS 15. With its sleek design, advanced features, and long-lasting battery life, the iPhone 13 Pro is the ultimate smartphone for professionals and power users.',
@@ -64,7 +64,7 @@ export const categories = [
         category: 'smartphones',
         name: 'iPhone 13, rose',
         permalink: 'iphone-13-rose',
-        price: 699,
+        price: 599,
         color: 'rose',
         description:
           'The iPhone 13 offering advanced features and innovative technology. With its stunning Super Retina XDR display and A15 Bionic chip, the iPhone 13 delivers fast and responsive performance, making it perfect for gaming, streaming, and other demanding tasks. The device comes in four sizes, including a new 6.1-inch model, and features a Ceramic Shield front cover for increased durability. The iPhone 13 also features an advanced dual-camera system, including a 12MP ultra-wide lens and a 12MP wide lens, offering stunning photo and video capabilities. The device also includes new cinematic mode features, such as focus shifting and Dolby Vision HDR recording. The iPhone 13 comes with iOS 15, the latest version of Apple`s operating system, and supports 5G connectivity for fast internet access. With its long-lasting battery life, water-resistant design, and support for MagSafe accessories, the iPhone 13 is the ultimate smartphone for staying connected and productive.',
@@ -82,7 +82,7 @@ export const categories = [
         categoryId: 0,
         name: 'iPhone 13, polarsilver',
         permalink: 'iphone-13-polarsilver',
-        price: 699,
+        price: 599,
         color: 'polarsilver',
         description:
           'The iPhone 13 offering advanced features and innovative technology. With its stunning Super Retina XDR display and A15 Bionic chip, the iPhone 13 delivers fast and responsive performance, making it perfect for gaming, streaming, and other demanding tasks. The device comes in four sizes, including a new 6.1-inch model, and features a Ceramic Shield front cover for increased durability. The iPhone 13 also features an advanced dual-camera system, including a 12MP ultra-wide lens and a 12MP wide lens, offering stunning photo and video capabilities. The device also includes new cinematic mode features, such as focus shifting and Dolby Vision HDR recording. The iPhone 13 comes with iOS 15, the latest version of Apple`s operating system, and supports 5G connectivity for fast internet access. With its long-lasting battery life, water-resistant design, and support for MagSafe accessories, the iPhone 13 is the ultimate smartphone for staying connected and productive.',
@@ -100,7 +100,7 @@ export const categories = [
         categoryId: 0,
         name: 'iPhone 13, midnight',
         permalink: 'iphone-13-midnight',
-        price: 699,
+        price: 599,
         color: 'midnight',
         description:
           'The iPhone 13 offering advanced features and innovative technology. With its stunning Super Retina XDR display and A15 Bionic chip, the iPhone 13 delivers fast and responsive performance, making it perfect for gaming, streaming, and other demanding tasks. The device comes in four sizes, including a new 6.1-inch model, and features a Ceramic Shield front cover for increased durability. The iPhone 13 also features an advanced dual-camera system, including a 12MP ultra-wide lens and a 12MP wide lens, offering stunning photo and video capabilities. The device also includes new cinematic mode features, such as focus shifting and Dolby Vision HDR recording. The iPhone 13 comes with iOS 15, the latest version of Apple`s operating system, and supports 5G connectivity for fast internet access. With its long-lasting battery life, water-resistant design, and support for MagSafe accessories, the iPhone 13 is the ultimate smartphone for staying connected and productive.',
@@ -498,6 +498,51 @@ export const categories = [
             path: '/images/airpods-2-case-side.png',
             alt: 'Air Pods 3',
           },
+        ],
+      },
+    ],
+  },
+  {
+    id: 4,
+    categoryId: 4,
+    name: 'MacBooks',
+    slug: 'mac-books',
+    image: '/images/macbook-pro-front-silver.png',
+    products: [
+      {
+        id: 15,
+        productId: 15,
+        category: 'macbooks',
+        categoryId: 4,
+        name: 'MacBook Pro 16',
+        permalink: 'macbook-pro-16',
+        price: 1899,
+        color: 'silver',
+        description:
+          'The MacBook Pro 16 is Apple`s most powerful laptop yet. With its stunning Retina display, powerful Intel Core i9 processor, and AMD Radeon Pro 5500M graphics, it`s the ultimate laptop for professionals and power users. The MacBook Pro 16 also features a new Magic Keyboard with a redesigned scissor mechanism that delivers 1mm of key travel for a comfortable and stable typing experience. It also has a Touch Bar with Touch ID, which allows you to unlock your Mac and make secure online purchases with Apple Pay. The MacBook Pro 16 is available in Space Gray and Silver.',
+        image: [
+          { id: '0', path: '/images/macbook-pro-front-silver.png', alt: 'MacBook Pro' },
+          { id: '1', path: '/images/macbook-pro-side-silver.png', alt: 'MacBook Pro' },
+          { id: '2', path: '/images/macbook-pro-top-silver.png', alt: 'MacBook Pro' },
+          { id: '3', path: '/images/macbook-pro-detailed-silver.png', alt: 'MacBook Pro' },
+        ],
+      },
+      {
+        id: 16,
+        productId: 16,
+        category: 'macbooks',
+        categoryId: 4,
+        name: 'MacBook Air 14',
+        permalink: 'macbook-air-14-spacegray',
+        price: 999,
+        color: 'spaygray',
+        description:
+          'The MacBook Air 14 is Apple`s thinnest and lightest notebook ever. It features a stunning Retina display, Touch ID, the latest-generation keyboard, and a Force Touch trackpad. The MacBook Air 14 also comes with a 1.6GHz dual-core Intel Core i5 processor, 8GB of memory, and 128GB of SSD storage. It`s available in Space Gray, Silver, and Gold.',
+        image: [
+          { id: '0', path: '/images/macbook-air-front-spacegray.png', alt: 'MacBook Air' },
+          { id: '1', path: '/images/macbook-air-side-spacegray.png', alt: 'MacBook Air' },
+          { id: '2', path: '/images/macbook-air-top-spacegray.png', alt: 'MacBook Air' },
+          { id: '3', path: '/images/macbook-air-closed-spacegray.png', alt: 'MacBook Air' },
         ],
       },
     ],

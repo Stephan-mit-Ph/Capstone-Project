@@ -1,9 +1,9 @@
 import PreviewImage from '../../../public/images/iphone-13-pro-max-silver.png'
-import { StyledAbout, StyledTitle, StyledWrapper, StyledImage } from './Preview.styled'
-import StyledLink from '../StyledLink'
 import { StyledCard, StyledCardTitle } from '../CategoriesList/CategoriesList.styled'
+import StyledLink from '../StyledLink'
+import { StyledAbout, StyledImage, StyledTitle, StyledWrapper } from './HomePreview.styled'
 
-export default function Preview() {
+export default function HomePreview() {
   return (
     <StyledWrapper>
       <StyledTitle>
