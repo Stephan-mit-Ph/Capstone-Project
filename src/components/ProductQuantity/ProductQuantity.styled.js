@@ -3,17 +3,18 @@ import { PlusSquare, MinusSquare } from "../Icons";
 
 export const StyledInput = styled.input`
    background-color : transparent ;
-   color: white;
+   color: var(--text-color);
+   margin: 0.5rem;
 `;
 
 export const StyledPlusSquare = styled(PlusSquare)`
-    color: white;
+    color: var(--text-color);
     width: 2rem;
     height: 2rem;
 `;
 
 export const StyledMinusSquare = styled(MinusSquare)`
-    color: white;
+    color: var(--text-color);
     width: 2rem;
     height: 2rem;
 `;
@@ -27,4 +28,8 @@ export const StyledWrapper = styled.div`
     display: flex;
     width: fit-content;
 
+`;
+
+export const StyledLabel = styled.label`
+    
 `;

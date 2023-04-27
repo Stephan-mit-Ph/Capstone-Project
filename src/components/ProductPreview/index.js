@@ -1,6 +1,6 @@
-import Image from 'next/image'
 import { useState } from 'react'
 import { PreviewContainer, Thumbnail, StyledImage, PreviewImage, ThumbnailWrapper } from './ProductPreview.styled'
+import { StyledCardTitle } from '../CategoriesList/CategoriesList.styled'
 
 const ProductPreview = ({ images }) => {
   const [selectedImage, setSelectedImage] = useState(images[0])

@@ -54,7 +54,7 @@ export const StyledBadge = styled.div`
   width: 1rem;
   height: 1rem;
   border-radius: 50%;
-  background-color: lightblue;
+  background-color: var(--primary-color-500);
   position: relative;
   bottom: 1rem;
   left: 2.5rem;

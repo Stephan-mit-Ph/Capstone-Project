@@ -7,6 +7,8 @@ export const PreviewContainer = styled.div`
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  padding-bottom: 2rem;
+  gap: 1rem;
 `
 
 export const Thumbnail = styled.div`
@@ -19,7 +21,8 @@ export const Thumbnail = styled.div`
 export const PreviewImage = styled(Image)`
   max-width: 18.75rem;
   max-height: 18.75rem;
-  margin: 0;
+  max-width: 100%;
+  height: auto;
 `
 
 export const ThumbnailWrapper = styled.div`
@@ -33,8 +36,8 @@ export const ThumbnailWrapper = styled.div`
 `
 
 export const StyledImage = styled(Image)`
-margin: 0 ;
-padding: 0;
+ max-width: 100%;
+  height: auto;
 
 
 `;

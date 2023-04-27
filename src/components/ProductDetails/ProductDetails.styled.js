@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import Cart from '../Icons/Cart'
 
+
 export const StyledTitle = styled.h2`
   font: var(--font-title);
   margin-bottom: 0;
@@ -17,10 +18,11 @@ export const StyledSubTitle = styled.h3`
 
 export const StyledButton = styled.button`
   display: flex;
+  width: fit-content ;
   justify-content: center;
   align-items: center;
-  color: white;
-  border: 1px solid white;
+  color: var(--text-color);
+  border: 1px solid var(--text-color);
   padding: 8px 16px;
   gap: 0.5rem;
   font-size: 0.85rem;
@@ -28,7 +30,8 @@ export const StyledButton = styled.button`
   border-radius: 5px;
 
   :hover {
-    background-color: red;
+    background-color: var(--primary-color-500);
+    opacity: 0.5;
     transition: 0.5s;
   }
 `
@@ -38,3 +41,17 @@ export const StyledCartIcon = styled(Cart)`
   width: 1.5rem;
   height: 1.5rem;
 `;
+
+export const StyledProductDetails = styled.ul`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+`;
+
+export const StyledQuantity = styled.p`
+  margin: 0;
+  padding: 0;
+`
+;

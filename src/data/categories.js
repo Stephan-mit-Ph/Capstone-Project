@@ -45,7 +45,7 @@ export const categories = [
         id: 2,
         productId: 2,
         categoryId: 0,
-        name: 'iPhone 13 Pro, lightblue',
+        name: 'iPhone 13 Pro, blue',
         permalink: 'iphone-13-pro-lightblue',
         price: 999,
         color: 'lightblue',
@@ -412,12 +412,12 @@ export const categories = [
         image: [
           {
             id: '0',
-            path: '/images/airpods-pro.png',
+            path: '/images/airpods-pro-top.png',
             alt: 'Air Pods Pro',
           },
           {
             id: '1',
-            path: '/images/airpods-pro-top.png',
+            path: '/images/airpods-pro.png',
             alt: 'Air Pods Pro',
           },
           {
@@ -446,12 +446,12 @@ export const categories = [
         image: [
           {
             id: '0',
-            path: '/images/airpods-3.png',
+            path: '/images/airpods-3-case-top.png',
             alt: 'Air Pods 3',
           },
           {
             id: '0',
-            path: '/images/airpods-3-case-top.png',
+            path: '/images/airpods-3.png',
             alt: 'Air Pods 3',
           },
           {
@@ -480,12 +480,12 @@ export const categories = [
         image: [
           {
             id: '0',
-            path: '/images/airpods-2.png',
+            path: '/images/airpods-2-top.png',
             alt: 'Air Pods 2',
           },
           {
             id: '0',
-            path: '/images/airpods-2-top.png',
+            path: '/images/airpods-2.png',
             alt: 'Air Pods 2',
           },
           {

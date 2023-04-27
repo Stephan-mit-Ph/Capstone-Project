@@ -3,7 +3,6 @@ import { createGlobalStyle } from 'styled-components'
 const GlobalStyle = createGlobalStyle`
   :root {
 
-
     --bg-color-200: #C4C4C4;
     --bg-color-300: #333333;
     --bg-color-400: #262626;
@@ -17,7 +16,6 @@ const GlobalStyle = createGlobalStyle`
 
     --tertiary-color-500: #FF00F5;
 
-
     --font-family-1: 'Orbitron', sans-serif;
     --font-family-2: 'Montserrat', sans-serif;
 
@@ -26,7 +24,7 @@ const GlobalStyle = createGlobalStyle`
     --font-title: normal 400 3rem/1.5 var(--font-family-2);
     --font-subtitle: normal 400 2.5rem/1.5 var(--font-family-2);
 
-    --font-card-title: normal 300 1.5rem/1.5 var(--font-family-2);
+    --font-card-title: normal 400 1.2rem/1.5 var(--font-family-2);
 
     --font-body-large: normal 300 1.2rem/1.5 var(--font-family-2);
     --font-body-medium: normal 300 1.1rem/1.5 var(--font-family-2);
@@ -39,7 +37,7 @@ const GlobalStyle = createGlobalStyle`
       --font-title: normal 400 1.8rem/1.2 var(--font-family-2);
       --font-subtitle: normal 400 1.8rem/1.2 var(--font-family-2);
 
-      --font-card-title: normal 300 1.25rem/1.5 var(--font-family-2);
+      --font-card-title: normal 400 1rem/1.5 var(--font-family-2);
 
       --font-body-large: normal 300 1.06rem/1.2 var(--font-family-2);
       --font-body-medium: normal 300 0.875rem/1.2 var(--font-family-2);

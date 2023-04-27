@@ -6,19 +6,21 @@ export const StyledCartList = styled.ul`
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  padding: 0;
+  padding-top: 1.5rem;
 `
 
 export const StyledCartItem = styled.li`
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  background-color: var(--bg-color-400);
+  border-radius: 15px;
+  box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.25);
+  max-width: 90%;
 `
 
 export const StyledProductName = styled.h5`
-  font-size: 1rem;
-  font-weight: 500;
-  margin: 0;
+  font: var(--font-card-title);
 `
 
 export const StyledProductDetails = styled.div`
@@ -40,7 +42,7 @@ export const StyledButton = styled.button`
   padding: 0;
   margin: 0;
   align-items: center;
-  color: red;
+  color: var(--text-color);
 `
 
 export const StyledDetailsWrapper = styled.div`
@@ -49,10 +51,9 @@ export const StyledDetailsWrapper = styled.div`
   gap: 10px;
   justify-content: flex-start;
   align-items: flex-end;
-
-`;
+`
 
 export const StyledImageWrapper = styled.div`
   display: flex;
-  justify-content:  space-between;
-`;
+  justify-content: space-between;
+`

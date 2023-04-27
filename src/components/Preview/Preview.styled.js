@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import Image from 'next/image'
 
 export const StyledWrapper= styled.div`
   display: flex;
@@ -28,6 +29,10 @@ export const StyledTitle = styled.h1`
 
   @media (max-width: 568px) {
     padding-bottom: 1rem;
-  }
-  
+  } 
+`
+
+export const StyledImage = styled(Image)`
+  max-width: 100%;
+  height: auto;
 `

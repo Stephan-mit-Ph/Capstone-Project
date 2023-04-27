@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import { useShopStore } from '../../store'
-import { StyledSubTitle } from '../ProductDetails/ProductDetails.styled'
 import {
   StyledProductInfo,
   StyledDetailsWrapper,
@@ -8,8 +7,8 @@ import {
   StyledButton,
   StyledCartItem,
   StyledCartList,
-  StyledProductDetails,
   StyledProductName,
+  StyledItemCard,
 } from './ShoppingCart.styled'
 import formatPrice from '../../helpers/formatNumberToCurrency'
 import Bin from '../Icons/Bin'

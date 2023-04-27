@@ -1,11 +1,10 @@
 import { StyledInput } from './ProductQuantity.styled'
-import { StyledPlusSquare, StyledMinusSquare, StyledButton, StyledWrapper } from './ProductQuantity.styled'
+import { StyledPlusSquare, StyledMinusSquare, StyledButton, StyledWrapper, StyledLabel } from './ProductQuantity.styled'
 
 function ProductQuantity({ sum, onIncrementQuantity, onDecrementQuantity, quantity }) {
   return (
     <>
     <StyledWrapper>
-      <label htmlFor="quantity">Quantity:</label>
       <StyledButton type="button" onClick={onDecrementQuantity} aria-label="increase the amount of products">
         <StyledMinusSquare />
       </StyledButton>
@@ -25,7 +24,7 @@ function ProductQuantity({ sum, onIncrementQuantity, onDecrementQuantity, quanti
 
       
     </StyledWrapper>
-    <p>Total Price: ${sum.toFixed(2)}</p>
+    <p>Total Price: $ {sum.toFixed(2)}</p>
     </>
   )
 }
