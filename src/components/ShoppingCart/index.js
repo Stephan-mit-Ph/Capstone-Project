@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import { useShopStore } from '../../store'
-import { StyledSubTitle } from '../ProductDetails/ProductDetails.styled'
 import {
   StyledProductInfo,
   StyledDetailsWrapper,
@@ -8,16 +7,18 @@ import {
   StyledButton,
   StyledCartItem,
   StyledCartList,
-  StyledProductDetails,
   StyledProductName,
+  StyledBin,
+  StyledCardBin
 } from './ShoppingCart.styled'
 import formatPrice from '../../helpers/formatNumberToCurrency'
-import Bin from '../Icons/Bin'
+import { StyledSubTitle } from '../ProductDetails/ProductDetails.styled'
 
 function ShoppingCart() {
   const { cart, total, removeFromCart, removeAllItems } = useShopStore()
   return (
     <StyledCartList role="list">
+      <StyledSubTitle>My Cart</StyledSubTitle>
       {cart.length === 0 && <p>Your cart is empty</p>}
       {cart.map((item) => (
         <StyledCartItem key={item.id}>
@@ -29,15 +30,15 @@ function ShoppingCart() {
               <StyledProductInfo>Qty: {item.quantity}</StyledProductInfo>
             </StyledDetailsWrapper>
             <StyledButton type="button" onClick={() => removeFromCart(item.id)}>
-              <Bin />
+              <StyledCardBin />
             </StyledButton>
           </StyledImageWrapper>
         </StyledCartItem>
       ))}
       <StyledProductInfo>Total: {formatPrice(total)}</StyledProductInfo> {/* display the total sum */}
       <StyledButton type="button" onClick={removeAllItems}>
-        <Bin />
         Delete all items
+        <StyledBin />
       </StyledButton>
     </StyledCartList>
   )

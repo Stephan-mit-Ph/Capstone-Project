@@ -1,6 +1,6 @@
-import Image from 'next/image'
 import { useState } from 'react'
-import { PreviewContainer, Thumbnail, StyledImage, PreviewImage, ThumbnailWrapper } from './ProductPreview.styled'
+import { PreviewContainer, Thumbnail, ThumbnailWrapper } from './ProductPreview.styled'
+import { StyledImage } from '../CategoriesList/CategoriesList.styled'
 
 const ProductPreview = ({ images }) => {
   const [selectedImage, setSelectedImage] = useState(images[0])
@@ -10,7 +10,7 @@ const ProductPreview = ({ images }) => {
 
   return (
     <PreviewContainer>
-      <PreviewImage src={selectedImage.path} width={300} height={300} alt="product-preview" />
+      <StyledImage src={selectedImage.path} width={300} height={300} alt="product-preview" />
       <ThumbnailWrapper>
         {images.map((image) => (
           <Thumbnail key={image.id} onClick={() => handleThumbnailClick(image)}>

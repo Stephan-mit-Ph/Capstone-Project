@@ -1,36 +1,27 @@
 import styled from 'styled-components'
 import Cart from '../Icons/Cart'
-import { StyledCartList } from '../ShoppingCart/ShoppingCart.styled';
 
-export const StyledTitle = styled.h4`
-  font-size: 1.2rem;
+export const StyledTitle = styled.h2`
+  font: var(--font-title);
   margin-bottom: 0;
   margin-top: 0;
-  padding: 0;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  color: inherit;
-  font-weight: 370;
   text-align: left;
-  font-weight: 400;
-  letter-spacing: 0.1em;
-  width: 325px;
 `
-export const StyledSubTitle = styled.h5`
-  font-size: 1rem;
-  font-weight: 400;
-  letter-spacing: 0.05em;
-  margin-bottom: 0;
-  margin-top: 10px;
-  text-align: left;
+export const StyledSubTitle = styled.h3`
+  font: var(--font-subtitle);
+  width: 100%;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  text-align: center;
 `
 
 export const StyledButton = styled.button`
   display: flex;
+  width: fit-content;
   justify-content: center;
   align-items: center;
-  color: white;
-  border: 1px solid white;
+  color: var(--text-color);
+  border: 0.5px solid var(--text-color);
   padding: 8px 16px;
   gap: 0.5rem;
   font-size: 0.85rem;
@@ -38,7 +29,8 @@ export const StyledButton = styled.button`
   border-radius: 5px;
 
   :hover {
-    background-color: red;
+    background-color: rgba(225, 8, 86, 0.5);
+    opacity: 0.5;
     transition: 0.5s;
   }
 `
@@ -47,4 +39,20 @@ export const StyledCartIcon = styled(Cart)`
   fill: currentColor;
   width: 1.5rem;
   height: 1.5rem;
-`;
+`
+
+export const StyledProductDetails = styled.ul`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+`
+
+export const StyledQuantity = styled.p`
+  font: var(--font-body-medium);
+`
+
+export const StyledPrice = styled.p`
+  font: var(--font-body-medium);
+`

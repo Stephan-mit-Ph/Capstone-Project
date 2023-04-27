@@ -1,35 +1,20 @@
 import styled from "styled-components";
 
+
 export const StyledContainer = styled.div`
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-`
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1140px;
+  margin: 0 auto;
+  
+`;
 
 export const StyledMain = styled.main`
+  flex: 1 1 100%;
   display: flex;
-  position: relative;
-  width: min-content(90%, 1140px);
-  background-color: #262626;
-  margin-inline: auto;
-  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin-top: 30px;
-  padding: 20px;
-  min-height: 100%;
-
-  @media screen and (min-width: 375px) {
-    padding: 0px;
-    padding-top: 15px;
-  }
-
-  @media screen and (min-width: 414px) {
-    padding: 30px;
-  }
-
-  @media screen and (min-width: 768px) {
-    padding: 30px;
-  }
-`
+  padding-top: 4rem;
+`;

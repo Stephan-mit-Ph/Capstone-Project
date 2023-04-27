@@ -1,27 +1,37 @@
 import { categories } from '../../data/categories'
-import Image from 'next/image'
 import StyledLink from '../StyledLink'
-import { StyledList } from './CategoriesList.styled'
+import { StyledCardTitle, StyledList, StyledCard, StyledImage, StyledChevron, StyledLinkWrapper, StyledChevronWrapper } from './CategoriesList.styled'
 import BackToLink from '../BackToLink'
-import { StyledTitle } from '../ProductDetails/ProductDetails.styled'
+import {  StyledSubTitle } from '../ProductDetails/ProductDetails.styled'
+import { StyledWrapper } from '../Preview/Preview.styled'
+import { StyledPrice} from '../CategoryList/CategoryList.styled'
 
 function CategoriesList() {
   return (
-    <>
+    <StyledWrapper>
       <BackToLink href="/" alt="go to Homepage">
         Home
       </BackToLink>
-      <StyledList role='list'>
+      <StyledSubTitle>All Categories</StyledSubTitle>
+      <StyledList role="list">
         {categories.map((category) => (
           <li key={category.id}>
-            <StyledLink href={`/categories/${category.slug}`} passHref>
-              <StyledTitle>{category.name}</StyledTitle>
-              <Image src={category.image} alt={category.name} width={300} height={300} />
+            <StyledCard>
+            <StyledLink href={`/categories/${category.slug}`}>
+              <StyledLinkWrapper>
+              <StyledCardTitle>{category.name}</StyledCardTitle></StyledLinkWrapper>
+              <StyledImage src={category.image} alt={category.name} width={300} height={300}
+              />
+              <StyledChevronWrapper>
+                <StyledPrice>Shop Now</StyledPrice>
+              <StyledChevron />
+              </StyledChevronWrapper>
             </StyledLink>
+            </StyledCard>
           </li>
         ))}
       </StyledList>
-    </>
+    </StyledWrapper>
   )
 }
 

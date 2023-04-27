@@ -3,25 +3,29 @@ import ChevronLeft from './Icons/ChevronLeft'
 import Link from 'next/link'
 
 const StyledLink = styled(Link)`
-  width: 300px;
+  width: 100%;
   display: flex;
-  align-items: center;
-  color: inherit;
+  align-items: flex-start;
+  color: var(--text-color);
   text-decoration: none;
   font-size: 1.1rem;
-  padding-top: 0.5rem;
+  padding-top: 1rem;
+  padding-left: 1rem;
   font-weight: 400;
-  letter-spacing: 0.03em;
 
   :hover {
-    color: lightblue;
+    color: var(--secondary-color-500);
     transition: 1s;
   }
 `
 const StyledChevronLeft = styled(ChevronLeft)`
   fill: currentColor;
   color: white;
-`;
+
+  :hover {
+    color: var(--secondary-color-500);
+  }
+`
 
 export default function BackToLink({ children, href }) {
   return (
