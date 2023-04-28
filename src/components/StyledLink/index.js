@@ -8,7 +8,7 @@ const LinkStyle = styled(Link)`
   text-align: center;
   font-weight: 500;
   :hover {
-    color: lightblue;
+    color: var(--secondary-color-700);
     transition: 1s;
   }
 `
