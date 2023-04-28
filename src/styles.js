@@ -89,6 +89,10 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
   }
 
+  html {
+    -webkit-tap-highlight-color: transparent;
+  }
+
   html, body {
     height: 100%;
   }
