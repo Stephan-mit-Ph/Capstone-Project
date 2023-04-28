@@ -11,11 +11,46 @@ import {
   StyledDetailsWrapper,
   StyledImageWrapper,
   StyledProductInfo,
-  StyledProductName
+  StyledProductName,
 } from './ShoppingCart.styled'
+import { toast } from 'react-toastify'
 
 function ShoppingCart() {
   const { cart, total, removeFromCart, removeAllItems } = useShopStore()
+
+  const removeFromCartNotification = () => {
+    toast.error(
+      `Item removed from cart!
+    `,
+      {
+        position: 'bottom-center',
+        autoClose: 4000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: 'dark',
+      }
+    )
+  }
+
+  const removeAllItemsNotification = () => {
+    toast.error(
+      `All items removed from cart!
+    `,
+      {
+        position: 'bottom-center',
+        autoClose: 4000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: 'dark',
+      }
+    )
+  }
   return (
     <StyledCartList role="list">
       <StyledSubTitle>My Cart</StyledSubTitle>
@@ -29,14 +64,16 @@ function ShoppingCart() {
               <StyledProductInfo>{formatPrice(item.price)}</StyledProductInfo>
               <StyledProductInfo>Qty: {item.quantity}</StyledProductInfo>
             </StyledDetailsWrapper>
-            <StyledButton type="button" onClick={() => removeFromCart(item.id)}>
+            <StyledButton type="button" onClick={() => removeFromCart(item.id) & removeFromCartNotification()}>
               <StyledCardBin />
             </StyledButton>
           </StyledImageWrapper>
         </StyledCartItem>
       ))}
       <StyledProductInfo>Total: {formatPrice(total)}</StyledProductInfo> {/* display the total sum */}
-      <StyledButton type="button" onClick={removeAllItems}>
+      <StyledButton type="button" onClick={() =>
+        removeAllItems() & removeAllItemsNotification()
+      }>
         Delete all items
         <StyledBin />
       </StyledButton>

@@ -7,10 +7,12 @@ const LinkStyle = styled(Link)`
   text-decoration: none;
   text-align: center;
   font-weight: 500;
+  @media (min-width: 568px) {
   :hover {
     color: var(--secondary-color-700);
     transition: 1s ease-in-out;
   }
+}
 `
 
 function StyledLink({ href, alt, children }) {

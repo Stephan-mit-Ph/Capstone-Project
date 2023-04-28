@@ -38,12 +38,13 @@ export const StyledLink = styled(Link)`
     padding: 8px 16px;
     border-radius: 10px;
   }
-
+  @media (min-width:524px) {
   :hover {
     color: var(--secondary-color-700, 0.2);
     border: 1px solid var(--secondary-color-700);
     transition: 1s;
   }
+}
 `
 
 export const StyledButtonWrapper = styled.div`

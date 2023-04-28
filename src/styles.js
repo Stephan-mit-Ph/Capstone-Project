@@ -37,6 +37,11 @@ const GlobalStyle = createGlobalStyle`
 
     --tertiary-color-500: #FF00F5;    
 
+    --toastify-color-dark : var(--bg-color-500);
+    --toastify-text-color-dark: var(--text-color);
+    --toastify-color-success: var(--secondary-color-500);
+    --toastify-color-error: var(--primary-color-500);
+
     --font-family-1: ${orbitron.style.fontFamily}, sans-serif;
     --font-family-2: ${montserrat.style.fontFamily}, sans-serif;
 
@@ -62,7 +67,7 @@ const GlobalStyle = createGlobalStyle`
       --font-card-title: normal 400 1rem/1.5 var(--font-family-2);
 
       --font-body-large: normal 300 1.06rem/1.2 var(--font-family-2);
-      --font-body-medium: normal 300 0.875rem/1.2 var(--font-family-2);
+      --font-body-medium: normal 300 0.875rem/1.5 var(--font-family-2);
       --font-body-medium-bold: normal 500 0.875rem/1.2 var(--font-family-2);
       --font-body-small: normal 300 0.75rem/1.2 var(--font-family-2);
     }

@@ -28,18 +28,19 @@ export const StyledButton = styled.button`
   background-color: transparent;
   border-radius: 5px;
 
-  :hover {
-    color: var(--secondary-color-500);
-    border: 0.5px solid var(--secondary-color-300);
-    transition: 1s;
+  @media (min-width: 768px) {
+    :hover{
+      background-color: rgba(255, 10, 104, 0.5);
+      transition: 1s ease-in-out;
+    }
   }
 
   :active {
-    color: var(--primary-color-300);
-    border: 0.5px solid var(--primary-color-300);
-    transition: 0.5s;
+    background-color: rgba(255, 10, 104, 0.5);
+    color: var(--text-color);
+    border: 0.5px solid var(--text-color);
+    
   }
-
 `
 
 export const StyledCartIcon = styled(Cart)`
