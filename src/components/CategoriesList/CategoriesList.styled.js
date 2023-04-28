@@ -13,7 +13,7 @@ export const StyledList = styled.ul`
   margin-bottom: 5rem;
   gap: 2rem;
 `
-export const StyledCardTitle = styled.h3`
+export const StyledCardTitle = styled.h2`
   font: var(--font-card-title);
 `
 
