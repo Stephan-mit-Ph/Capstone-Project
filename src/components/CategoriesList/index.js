@@ -1,6 +1,5 @@
 import { categories } from '../../data/categories'
 import BackToLink from '../BackToLink'
-import { StyledPrice } from '../CategoryList/CategoryList.styled'
 import { StyledWrapper } from '../HomePreview/HomePreview.styled'
 import { StyledSubTitle } from '../ProductDetails/ProductDetails.styled'
 import StyledLink from '../StyledLink'

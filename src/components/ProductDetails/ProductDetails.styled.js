@@ -58,9 +58,9 @@ export const StyledProductDetails = styled.ul`
 `
 
 export const StyledQuantity = styled.p`
-  font: var(--font-body-medium);
+  font: var(--font-body-large);
 `
 
 export const StyledPrice = styled.p`
-  font: var(--font-body-medium);
+  font: var(--font-body-large);
 `

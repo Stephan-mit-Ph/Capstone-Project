@@ -14,10 +14,18 @@ export const StyledButton = styled.button`
   border: none;
   font: var(--font-body-medium-bold);
   color: var(--text-color);
-  cursor: pointer;
+  cursor: pointer;#
 
+  :active {
+    color: var(--secondary-color-600);
+  }
+  
+  @media (min-width: 768px) {
   :hover {
     color: var(--secondary-color-600);
     transition: 1s ease-in-out;
   }
+
+  
+}
 `
