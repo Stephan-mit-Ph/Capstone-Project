@@ -18,6 +18,6 @@ export const StyledHeroWrapper = styled.div`
 
 export const StyledHeroImage = styled(Image)`
   max-width: 100%;
-  background-repeat: no-repeat;
+  object-fit: cover;
   align-self: center;
 `
