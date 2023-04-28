@@ -95,8 +95,15 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     line-height: 1.5;
-    -wenkit-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  
   }
+
+  
+
 
   img, picture, video, canvas, svg {
   display: block;
