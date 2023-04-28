@@ -96,6 +96,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     line-height: 1.5;
     -wenkit-font-smoothing: antialiased;
+    overflow: hidden;
   }
 
   img, picture, video, canvas, svg {
