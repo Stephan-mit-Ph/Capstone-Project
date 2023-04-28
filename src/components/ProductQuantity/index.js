@@ -6,7 +6,7 @@ function ProductQuantity({ sum, onIncrementQuantity, onDecrementQuantity, quanti
     <>
       <StyledWrapper>
         <StyledButton type="button" onClick={onDecrementQuantity} aria-label="increase the amount of products">
-          <StyledMinusSquare />
+          <StyledMinusSquare aria-hidden='true' />
         </StyledButton>
         <StyledInput
           style={{ width: '50px', textAlign: 'center' }}
@@ -19,7 +19,7 @@ function ProductQuantity({ sum, onIncrementQuantity, onDecrementQuantity, quanti
           readOnly
         />
         <StyledButton type="button" onClick={onIncrementQuantity} aria-label="decreasethe amount of products">
-          <StyledPlusSquare />
+          <StyledPlusSquare aria-hidden='true' />
         </StyledButton>
       </StyledWrapper>
       <StyledPrice>Total Price: $ {sum.toFixed(2)}</StyledPrice>

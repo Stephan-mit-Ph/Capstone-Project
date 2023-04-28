@@ -23,7 +23,7 @@ function CategoriesList() {
                 <StyledImage src={category.image} alt={category.name} width={300} height={300} />
                 <StyledChevronWrapper>
                   Shop Now
-                  <StyledChevronRight />
+                  <StyledChevronRight aria-hidden='true'/>
                 </StyledChevronWrapper>
               </StyledLink>
             </StyledCard>
