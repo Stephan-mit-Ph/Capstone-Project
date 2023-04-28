@@ -25,7 +25,6 @@ export default function ProductDetails({ category, product }) {
       hideProgressBar: false,
       closeOnClick: true,
       pauseOnHover: true,
-      draggable: true,
       progress: undefined,
       theme: 'dark',
     })
