@@ -14,7 +14,7 @@ export const StyledButton = styled.button`
   border: none;
   font: var(--font-body-medium-bold);
   color: var(--text-color);
-  cursor: pointer;#
+  cursor: pointer;
 
   :active {
     color: var(--secondary-color-600);

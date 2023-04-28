@@ -21,7 +21,7 @@ export default function ProductDetails({ category, product }) {
   const addToCartNotification = () =>
     toast.success(`${quantity}x ${product.name} added to cart!`, {
       position: 'bottom-center',
-      autoClose: 4000,
+      autoClose: 3000,
       hideProgressBar: false,
       closeOnClick: true,
       pauseOnHover: true,
