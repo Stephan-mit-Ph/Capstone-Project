@@ -12,7 +12,12 @@ export const StyledProductDetails = styled.div`
 export const StyledButton = styled.button`
   background-color: transparent;
   border: none;
-  font: var(--font-body-medium);
-  color: var(--secondary-color-500);
+  font: var(--font-body-medium-bold);
+  color: var(--text-color);
   cursor: pointer;
+
+  :hover {
+    color: var(--secondary-color-600);
+    transition: 1s ease-in-out;
+  }
 `

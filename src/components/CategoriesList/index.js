@@ -4,7 +4,7 @@ import { StyledPrice } from '../CategoryList/CategoryList.styled'
 import { StyledWrapper } from '../HomePreview/HomePreview.styled'
 import { StyledSubTitle } from '../ProductDetails/ProductDetails.styled'
 import StyledLink from '../StyledLink'
-import { StyledCard, StyledCardTitle, StyledChevron, StyledChevronWrapper, StyledImage, StyledLinkWrapper, StyledList } from './CategoriesList.styled'
+import { StyledCard, StyledCardTitle, StyledChevronRight, StyledChevronWrapper, StyledImage, StyledLinkWrapper, StyledList } from './CategoriesList.styled'
 
 function CategoriesList() {
   return (
@@ -17,16 +17,16 @@ function CategoriesList() {
         {categories.map((category) => (
           <li key={category.id}>
             <StyledCard>
-            <StyledLink href={`/categories/${category.slug}`}>
-              <StyledLinkWrapper>
-              <StyledCardTitle>{category.name}</StyledCardTitle></StyledLinkWrapper>
-              <StyledImage src={category.image} alt={category.name} width={300} height={300}
-              />
-              <StyledChevronWrapper>
-                <StyledPrice>Shop Now</StyledPrice>
-              <StyledChevron />
-              </StyledChevronWrapper>
-            </StyledLink>
+              <StyledLink href={`/categories/${category.slug}`}>
+                <StyledLinkWrapper>
+                  <StyledCardTitle>{category.name}</StyledCardTitle>
+                </StyledLinkWrapper>
+                <StyledImage src={category.image} alt={category.name} width={300} height={300} />
+                <StyledChevronWrapper>
+                  Shop Now
+                  <StyledChevronRight />
+                </StyledChevronWrapper>
+              </StyledLink>
             </StyledCard>
           </li>
         ))}

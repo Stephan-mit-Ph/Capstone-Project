@@ -49,6 +49,7 @@ const GlobalStyle = createGlobalStyle`
 
     --font-body-large: normal 300 1.2rem/1.5 var(--font-family-2);
     --font-body-medium: normal 300 1.1rem/1.5 var(--font-family-2);
+    --font-body-medium-bold: normal 500 1.1rem/1.5 var(--font-family-2);
     --font-body-small: normal 300 0.8rem/1.5 var(--font-family-2);
 
 
@@ -62,6 +63,7 @@ const GlobalStyle = createGlobalStyle`
 
       --font-body-large: normal 300 1.06rem/1.2 var(--font-family-2);
       --font-body-medium: normal 300 0.875rem/1.2 var(--font-family-2);
+      --font-body-medium-bold: normal 500 0.875rem/1.2 var(--font-family-2);
       --font-body-small: normal 300 0.75rem/1.2 var(--font-family-2);
     }
 

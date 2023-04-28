@@ -33,10 +33,10 @@ export const StyledImage = styled(Image)`
   height: auto;
 `
 
-export const StyledChevron = styled(SvgChevronRight)`
+export const StyledChevronRight = styled(SvgChevronRight)`
   fill: currentColor;
-  color: var(--text-color);
   font-size: 1rem;
+
 `
 
 export const StyledLinkWrapper = styled.div`
@@ -47,5 +47,8 @@ export const StyledLinkWrapper = styled.div`
 
 export const StyledChevronWrapper = styled.div`
   display: flex;
+  font: var(--font-body-medium);
   justify-content: flex-end;
+  align-items: flex-start;
+  align-self: auto;
 `

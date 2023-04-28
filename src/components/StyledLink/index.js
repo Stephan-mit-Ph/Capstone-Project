@@ -9,7 +9,7 @@ const LinkStyle = styled(Link)`
   font-weight: 500;
   :hover {
     color: var(--secondary-color-700);
-    transition: 1s;
+    transition: 1s ease-in-out;
   }
 `
 

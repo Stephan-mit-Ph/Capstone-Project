@@ -39,6 +39,7 @@ export const StyledButton = styled.button`
     border: 0.5px solid var(--primary-color-300);
     transition: 0.5s;
   }
+
 `
 
 export const StyledCartIcon = styled(Cart)`
