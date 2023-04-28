@@ -24,7 +24,7 @@ export default function ProductDetails({ category, product }) {
       autoClose: 3000,
       hideProgressBar: false,
       closeOnClick: true,
-      pauseOnHover: true,
+      pauseOnHover: false,
       progress: undefined,
       theme: 'dark',
     })
