@@ -1,14 +1,14 @@
 import styled from 'styled-components'
 import Image from 'next/image'
 
-export const StyledWrapper= styled.div`
+export const StyledWrapper = styled.div`
   display: flex;
+  max-width: 1140px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding-bottom: 5rem;
-`;
-
+`
 
 export const StyledAbout = styled.p`
   font: var(--font-body-large);
@@ -16,7 +16,7 @@ export const StyledAbout = styled.p`
   text-align: center;
   width: 100%;
   margin: 0 auto;
-  padding-top: 1rem ;
+  padding-top: 1rem;
   padding-bottom: 1rem;
 `
 export const StyledTitle = styled.h1`
@@ -29,7 +29,7 @@ export const StyledTitle = styled.h1`
 
   @media (max-width: 568px) {
     padding-bottom: 1rem;
-  } 
+  }
 `
 
 export const StyledImage = styled(Image)`

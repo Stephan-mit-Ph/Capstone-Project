@@ -30,7 +30,7 @@ export const StyledLinkTitle = styled.h1`
   color: var(--text-color);
 
   :hover {
-    color: lightblue;
+    color: var(--secondary-color-800);
     transition: 1s;
   }
 `
@@ -57,7 +57,7 @@ export const StyledBadge = styled.div`
   background-color: var(--primary-color-500);
   position: relative;
   bottom: 0.8rem;
-  left: 2rem;
+  left: 2.5rem;
 `
 
 export const StyledShopIcon = styled(Cart)`

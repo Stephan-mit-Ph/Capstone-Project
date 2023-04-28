@@ -7,7 +7,7 @@ const ProductPreview = ({ images }) => {
   const handleThumbnailClick = (image) => {
     setSelectedImage(image)
   }
-
+  
   return (
     <PreviewContainer>
       <StyledImage src={selectedImage.path} width={300} height={300} alt="product-preview" />

@@ -10,6 +10,7 @@ export const StyledList = styled.ul`
   justify-content: center;
   list-style: none;
   padding: 0;
+  margin-bottom: 5rem;
   gap: 2rem;
 `
 export const StyledCardTitle = styled.h3`
@@ -19,7 +20,7 @@ export const StyledCardTitle = styled.h3`
 export const StyledCard = styled.article`
   flex: 1 1 300px;
   max-width: 330px;
-  margin: 0 1.25rem 2rem 1.25rem;
+  margin: 1.25rem 1.25rem 1.25rem 1.25rem;
   gap: 0.5rem;
   background-color: var(--bg-color-400);
   padding: 2.25rem;
@@ -32,10 +33,10 @@ export const StyledImage = styled(Image)`
   height: auto;
 `
 
-export const StyledChevron = styled(SvgChevronRight)`
+export const StyledChevronRight = styled(SvgChevronRight)`
   fill: currentColor;
-  color: var(--text-color);
   font-size: 1rem;
+
 `
 
 export const StyledLinkWrapper = styled.div`
@@ -46,5 +47,8 @@ export const StyledLinkWrapper = styled.div`
 
 export const StyledChevronWrapper = styled.div`
   display: flex;
+  font: var(--font-body-medium);
   justify-content: flex-end;
+  align-items: flex-start;
+  align-self: auto;
 `

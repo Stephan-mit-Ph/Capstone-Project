@@ -21,11 +21,21 @@ const GlobalStyle = createGlobalStyle`
 
     --text-color: #ECECEC;
 
+    --primary-color-300: #FF0A68;
+    --primary-color-400: #F7095F;
     --primary-color-500: #E10856;
+    --primary-color-600: #CA074D;
+    --primary-color-700: #B60646;
+    --primary-color-800: #A4063F;
 
+    --secondary-color-300: #16FFFF;
+    --secondary-color-400: #11FFFF;
     --secondary-color-500: #0FEFFD;
+    --secondary-color-600: #0ED7E4;
+    --secondary-color-700: #0CC2CD;
+    --secondary-color-800: #0BAEB8;
 
-    --tertiary-color-500: #FF00F5;
+    --tertiary-color-500: #FF00F5;    
 
     --font-family-1: ${orbitron.style.fontFamily}, sans-serif;
     --font-family-2: ${montserrat.style.fontFamily}, sans-serif;
@@ -39,6 +49,7 @@ const GlobalStyle = createGlobalStyle`
 
     --font-body-large: normal 300 1.2rem/1.5 var(--font-family-2);
     --font-body-medium: normal 300 1.1rem/1.5 var(--font-family-2);
+    --font-body-medium-bold: normal 500 1.1rem/1.5 var(--font-family-2);
     --font-body-small: normal 300 0.8rem/1.5 var(--font-family-2);
 
 
@@ -52,6 +63,7 @@ const GlobalStyle = createGlobalStyle`
 
       --font-body-large: normal 300 1.06rem/1.2 var(--font-family-2);
       --font-body-medium: normal 300 0.875rem/1.2 var(--font-family-2);
+      --font-body-medium-bold: normal 500 0.875rem/1.2 var(--font-family-2);
       --font-body-small: normal 300 0.75rem/1.2 var(--font-family-2);
     }
 

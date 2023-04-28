@@ -20,7 +20,6 @@ const StyledLink = styled(Link)`
 `
 const StyledChevronLeft = styled(ChevronLeft)`
   fill: currentColor;
-  color: white;
 
   :hover {
     color: var(--secondary-color-500);
