@@ -16,8 +16,16 @@ export const StyledButton = styled.button`
   color: var(--text-color);
   cursor: pointer;
 
+  :active {
+    color: var(--secondary-color-600);
+  }
+  
+  @media (min-width: 768px) {
   :hover {
     color: var(--secondary-color-600);
     transition: 1s ease-in-out;
   }
+
+  
+}
 `

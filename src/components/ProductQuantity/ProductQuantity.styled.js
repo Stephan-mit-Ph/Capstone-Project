@@ -29,5 +29,6 @@ export const StyledWrapper = styled.div`
   width: fit-content;
 `
 export const StyledPrice = styled.p`
-    font: var(--font-body-medium);
+    font: var(--font-body-large);
 `;
+
