@@ -101,7 +101,6 @@ const GlobalStyle = createGlobalStyle`
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
     -webkit-user-select: none;
-    -ms-user-select: none;
     user-select: none;
   
   }
