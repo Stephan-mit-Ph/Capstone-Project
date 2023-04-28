@@ -30,13 +30,13 @@ export const StyledButton = styled.button`
 
   :hover {
     color: var(--secondary-color-500);
-    border: 0.5px solid var(--secondary-color-500);
+    border: 0.5px solid var(--secondary-color-300);
     transition: 1s;
   }
 
   :active {
-    color: var(--primary-color-500);
-    border: 0.5px solid var(--primary-color-500);
+    color: var(--primary-color-300);
+    border: 0.5px solid var(--primary-color-300);
     transition: 0.5s;
   }
 `
