@@ -14,7 +14,7 @@ export default function Layout({ children }) {
   return (
     <StyledContainer>
       <Header>
-        <StyledButton onClick={handleToggleSidebar}>
+        <StyledButton onClick={handleToggleSidebar} aria-label="open shopping cart">
           {isSidebarOpen ? (
             <>
               <StyledBadge /> <StyledShopIcon />
@@ -28,18 +28,11 @@ export default function Layout({ children }) {
       </Header>
       <StyledMain>{children}</StyledMain>
       <StyledSidebar isOpen={isSidebarOpen}>
-        <StyledSquareButton onClick={handleToggleSidebar}>
+        <StyledSquareButton onClick={handleToggleSidebar} aria-label="close shopping cart">
           <StyledCloseSquare />
         </StyledSquareButton>
         <ShoppingCart />
       </StyledSidebar>
     </StyledContainer>
   )
-}
-
-{
-  /* <CartLink href="/cart" aria-label="go to Shopping Cart">
-            {cart.length > 0 && <StyledBadge />}
-            <StyledShopIcon aria-hidden="true" />
-          </CartLink> */
 }

@@ -42,6 +42,7 @@ export const ShopLink = styled(Link)`
   font-weight: 600;
   text-decoration: none;
   color: inherit;
+  align-items: baseline;
 `
 
 export const CartLink = styled(Link)`
@@ -59,7 +60,7 @@ export const StyledBadge = styled.div`
   background-color: var(--primary-color-500);
   position: relative;
   left: 2.2rem;
-  bottom: 0.3rem;
+  bottom: 0rem;
 `
 
 export const StyledShopIcon = styled(Cart)`
