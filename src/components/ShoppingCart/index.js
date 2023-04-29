@@ -12,6 +12,7 @@ import {
   StyledImageWrapper,
   StyledProductInfo,
   StyledProductName,
+  StyledDeleteButton,
 } from './ShoppingCart.styled'
 import { toast } from 'react-toastify'
 
@@ -71,10 +72,10 @@ function ShoppingCart() {
         </StyledCartItem>
       ))}
       <StyledProductInfo>Total: {formatPrice(total)}</StyledProductInfo> {/* display the total sum */}
-      <StyledButton type="button" onClick={() => removeAllItems() & removeAllItemsNotification()} aria-label="remove all items">
+      <StyledDeleteButton type="button" onClick={() => removeAllItems() & removeAllItemsNotification()} aria-label="remove all items">
         Delete all items
         <StyledBin aria-hidden="true" />
-      </StyledButton>
+      </StyledDeleteButton>
     </StyledCartList>
   )
 }

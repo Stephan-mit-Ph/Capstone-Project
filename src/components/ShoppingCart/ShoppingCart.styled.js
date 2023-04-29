@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 import Bin from '../Icons/Bin'
 
-
 export const StyledCartList = styled.ul`
   list-style: none;
   min-width: 90%;
@@ -68,10 +67,23 @@ export const StyledBin = styled(Bin)`
   fill: var(--text-color);
   width: 1.5rem;
   height: 1.5rem;
-`;
+`
 
 export const StyledCardBin = styled(Bin)`
   fill: var(--text-color);
   width: 1.5rem;
   height: 1.5rem;
-  `;
+`
+
+export const StyledDeleteButton = styled.button`
+  background-color: transparent;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  color: var(--text-color);
+  padding-bottom: 2rem;
+`

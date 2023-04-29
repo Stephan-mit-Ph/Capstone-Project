@@ -30,11 +30,11 @@ export const StyledLinkTitle = styled.h1`
   color: var(--text-color);
 
   @media screen and (min-width: 568px) {
-  :hover {
-    color: var(--secondary-color-800);
-    transition: 1s;
+    :hover {
+      color: var(--secondary-color-800);
+      transition: 1s;
+    }
   }
-}
 `
 
 export const ShopLink = styled(Link)`
@@ -58,8 +58,8 @@ export const StyledBadge = styled.div`
   border-radius: 50%;
   background-color: var(--primary-color-500);
   position: relative;
-  bottom: 0.8rem;
   left: 2.2rem;
+  bottom: 0.3rem;
 `
 
 export const StyledShopIcon = styled(Cart)`
