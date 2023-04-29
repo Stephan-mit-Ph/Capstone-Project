@@ -1,8 +1,6 @@
-import { useShopStore } from '../../store'
 import { ShopLink, StyledHeader, StyledLinkTitle, StyledNavbar } from './Header.styled'
 
 export default function Header({ children }) {
-  const cart = useShopStore((state) => state.cart)
   return (
     <>
       <StyledHeader>
