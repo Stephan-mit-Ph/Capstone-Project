@@ -7,13 +7,13 @@ export default function Header() {
     <>
       <StyledHeader>
         <StyledNavbar>
-        <ShopLink href={'/'} aira-label="Link to Homepage">
-          <StyledLinkTitle>SEC:Tech</StyledLinkTitle>
-        </ShopLink>
-        <CartLink href='/cart' aira-label="Link to Cart">
-          {cart.length > 0 && <StyledBadge />}
-          <StyledShopIcon />
-        </CartLink>
+          <ShopLink href={'/'} aria-label="Link to Homepage">
+            <StyledLinkTitle>SEC:Tech</StyledLinkTitle>
+          </ShopLink>
+          <CartLink href="/cart" aria-label="go to Shopping Cart">
+            {cart.length > 0 && <StyledBadge />}
+            <StyledShopIcon aria-hidden="true" />
+          </CartLink>
         </StyledNavbar>
       </StyledHeader>
     </>

@@ -20,7 +20,7 @@ export default function HomePreview() {
         backed by our quality guarantee.
       </StyledAbout>
       <StyledCard>
-        <StyledLink href="/categories" alt="All Categories">
+        <StyledLink href="/categories" alt="All Categories" aria-label="go to all categories">
           <StyledCardTitle>All Categories</StyledCardTitle>
           <StyledImage src={PreviewImage} alt="iPhone 13 Collection" width={300} height={300} />
         </StyledLink>

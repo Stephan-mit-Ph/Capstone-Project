@@ -29,7 +29,7 @@ const StyledChevronLeft = styled(ChevronLeft)`
 export default function BackToLink({ children, href }) {
   return (
     <StyledLink href={href}>
-      <StyledChevronLeft />
+      <StyledChevronLeft aria-hidden="true" />
       {children}
     </StyledLink>
   )
