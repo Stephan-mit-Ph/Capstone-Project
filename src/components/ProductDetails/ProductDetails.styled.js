@@ -28,18 +28,17 @@ export const StyledButton = styled.button`
   background-color: transparent;
   border-radius: 5px;
 
-  @media (min-width: 768px) {
-    :hover{
-      background-color: rgba(255, 10, 104, 0.5);
+  @media (hover: hover) {
+    &:hover:enabled {
+      background-color: var(--primary-color-500);
       transition: 1s ease-in-out;
     }
   }
+  @media (hover: none) {
+    &:active:enabled {
+      background-color: var(--primary-color-500);
 
-  :active {
-    background-color: rgba(255, 10, 104, 0.5);
-    color: var(--text-color);
-    border: 0.5px solid var(--text-color);
-    
+    }
   }
 `
 
