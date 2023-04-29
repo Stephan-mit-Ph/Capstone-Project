@@ -1,8 +1,6 @@
-import { useShopStore } from '../../store'
-import { ShopLink, CartLink, StyledHeader, StyledLinkTitle, StyledBadge, StyledShopIcon, StyledNavbar } from './Header.styled'
+import { ShopLink, StyledHeader, StyledLinkTitle, StyledNavbar } from './Header.styled'
 
-export default function Header() {
-  const cart = useShopStore((state) => state.cart)
+export default function Header({ children }) {
   return (
     <>
       <StyledHeader>
@@ -10,10 +8,7 @@ export default function Header() {
           <ShopLink href={'/'} aria-label="Link to Homepage">
             <StyledLinkTitle>SEC:Tech</StyledLinkTitle>
           </ShopLink>
-          <CartLink href="/cart" aria-label="go to Shopping Cart">
-            {cart.length > 0 && <StyledBadge />}
-            <StyledShopIcon aria-hidden="true" />
-          </CartLink>
+          {children}
         </StyledNavbar>
       </StyledHeader>
     </>
