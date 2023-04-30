@@ -30,6 +30,10 @@ export const StyledSidebar = styled.aside`
   border-left: 1px solid var(--bg-color-400);
   transform: translateX(${(props) => (props.isOpen ? '0' : '100%')});
   transition: transform 0.6s ease-in-out;
+
+  @media (min-width: 768px) {
+    width: 400px;
+  }
 `
 export const StyledButton = styled.button`
   display: flex;
@@ -37,6 +41,7 @@ export const StyledButton = styled.button`
   border: none;
   width: fit-content;
   color: inherit;
+  transition: color 0.1s ease-in-out;
 
   @media (hover: hover) {
     &:hover:enabled {
@@ -45,15 +50,14 @@ export const StyledButton = styled.button`
     }
 
     &:active:enabled {
-      color: var(--text-color);
+      color: var(--secondary-color-400);
       transition: color 0.1s ease-in-out;
     }
   }
 
   @media (hover: none) {
     &:active:enabled {
-      color: var(--text-color);
-      transition: color 0.1s ease-in-out;
+      color: var(--secondary-color-400);
     }
   }
 `
