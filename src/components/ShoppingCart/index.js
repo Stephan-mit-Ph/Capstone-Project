@@ -52,7 +52,7 @@ function ShoppingCart() {
     )
   }
   return (
-    <StyledCartList >
+    <StyledCartList>
       <StyledSubTitle>My Cart</StyledSubTitle>
       {cart.length === 0 && <p>Your cart is empty</p>}
       {cart.map((item) => (
@@ -64,7 +64,11 @@ function ShoppingCart() {
               <StyledProductInfo>{formatPrice(item.price)}</StyledProductInfo>
               <StyledProductInfo>Qty: {item.quantity}</StyledProductInfo>
             </StyledDetailsWrapper>
-            <StyledDeleteButton type="button" onClick={() => removeFromCart(item.id) & removeFromCartNotification()} aria-label="remove item from cart">
+            <StyledDeleteButton
+              type="button"
+              onClick={() => removeFromCart(item.id) & removeFromCartNotification()}
+              aria-label="remove item from cart"
+            >
               <StyledBin aria-hidden="true" />
             </StyledDeleteButton>
           </StyledImageWrapper>
