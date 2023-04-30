@@ -64,13 +64,7 @@ export const StyledImageWrapper = styled.div`
   justify-content: space-between;
 `
 export const StyledBin = styled(Bin)`
-  fill: var(--text-color);
-  width: 1.5rem;
-  height: 1.5rem;
-`
-
-export const StyledCardBin = styled(Bin)`
-  fill: var(--text-color);
+  color: inherit;
   width: 1.5rem;
   height: 1.5rem;
 `
@@ -84,6 +78,24 @@ export const StyledDeleteButton = styled.button`
   cursor: pointer;
   padding: 0;
   margin: 0;
-  color: var(--text-color);
+  color: inherit;
   padding-bottom: 2rem;
+
+  @media (hover: hover) {
+    :hover {
+      color: var(--primary-color-800);
+      transition: 1s ease-in-out;
+    }
+
+    :active {
+      color: var(--primary-color-400);
+      transition: 0.1s ease-in-out;
+    }
+  }
+  @media (hover: none) {
+    :active {
+      color: var(--primary-color-400);
+      transition: 0.1s ease-in-out;
+    }
+  }
 `

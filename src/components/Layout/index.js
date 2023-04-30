@@ -3,7 +3,7 @@ import { useShopStore } from '../../store'
 import Header from '../Header'
 import { StyledBadge, StyledShopIcon } from '../Header/Header.styled.js'
 import ShoppingCart from '../ShoppingCart/index.js'
-import { StyledCloseSquare, StyledContainer, StyledMain, StyledSidebar, StyledSquareButton } from './Layout.styled.js'
+import { StyledCloseSquare, StyledContainer, StyledMain, StyledSidebar } from './Layout.styled.js'
 import IconButton from '../IconButton/index';
 
 export default function Layout({ children }) {
@@ -24,9 +24,9 @@ export default function Layout({ children }) {
       </Header>
       <StyledMain>{children}</StyledMain>
       <StyledSidebar isOpen={isSidebarOpen}>
-        <StyledSquareButton onClick={handleToggleSidebar} aria-label="close shopping cart">
+        <IconButton onClick={handleToggleSidebar} aria-label="close shopping cart">
           <StyledCloseSquare />
-        </StyledSquareButton>
+        </IconButton>
         <ShoppingCart />
       </StyledSidebar>
     </StyledContainer>

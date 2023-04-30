@@ -6,7 +6,6 @@ import { StyledSubTitle } from '../ProductDetails/ProductDetails.styled'
 import {
   StyledBin,
   StyledButton,
-  StyledCardBin,
   StyledCartItem,
   StyledCartList,
   StyledDeleteButton,
@@ -19,7 +18,7 @@ import {
 function ShoppingCart() {
   const { cart, total, removeFromCart, removeAllItems } = useShopStore()
 
-  const removeFromCartNotification = () => {
+  const removeFromCartNotification = (itemName) => {
     toast.error(
       `Item removed from cart!
     `,
@@ -65,9 +64,9 @@ function ShoppingCart() {
               <StyledProductInfo>{formatPrice(item.price)}</StyledProductInfo>
               <StyledProductInfo>Qty: {item.quantity}</StyledProductInfo>
             </StyledDetailsWrapper>
-            <StyledButton type="button" onClick={() => removeFromCart(item.id) & removeFromCartNotification()} aria-label="remove item from cart">
-              <StyledCardBin aria-hidden="true" />
-            </StyledButton>
+            <StyledDeleteButton type="button" onClick={() => removeFromCart(item.id) & removeFromCartNotification()} aria-label="remove item from cart">
+              <StyledBin aria-hidden="true" />
+            </StyledDeleteButton>
           </StyledImageWrapper>
         </StyledCartItem>
       ))}

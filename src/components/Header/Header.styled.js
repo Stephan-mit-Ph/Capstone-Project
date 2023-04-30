@@ -42,6 +42,7 @@ export const StyledBadge = styled.div`
 export const StyledShopIcon = styled(Cart)`
   color: inherit;
   font-size: 2.3rem;
+  transition: color 0.1 ease-in-out;
 
   @media (min-width: 768px) {
     font-size: 3rem;

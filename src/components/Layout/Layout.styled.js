@@ -27,6 +27,7 @@ export const StyledSidebar = styled.aside`
   width: 300px;
   overflow: auto;
   background-color: var(--bg-color-500);
+  border-left: 1px solid var(--bg-color-400);
   transform: translateX(${(props) => (props.isOpen ? '0' : '100%')});
   transition: transform 0.6s ease-in-out;
 `
@@ -40,11 +41,18 @@ export const StyledButton = styled.button`
   @media (hover: hover) {
     &:hover:enabled {
       color: var(--secondary-color-800-opacity-20);
-      transition: color 0.5s ease-in-out;
+      transition: color 0.3s ease-in-out;
     }
 
     &:active:enabled {
-      color: var(--secondary-color-800);
+      color: var(--text-color);
+      transition: color 0.1s ease-in-out;
+    }
+  }
+
+  @media (hover: none) {
+    &:active:enabled {
+      color: var(--text-color);
       transition: color 0.1s ease-in-out;
     }
   }
@@ -53,14 +61,6 @@ export const StyledButton = styled.button`
 export const StyledCloseSquare = styled(CloseSquare)`
   width: 1.5rem;
   height: 1.5rem;
-  color: var(--text-color);
-`
-export const StyledSquareButton = styled.button`
-  display: flex;
-  background: none;
-  border: none;
-  width: fit-content;
-  position: absolute;
-  top: 1rem;
-  left: 1rem;
+  color: inherit;
+  margin: 1rem 0 0 1rem;
 `

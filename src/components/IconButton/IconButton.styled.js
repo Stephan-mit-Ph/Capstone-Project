@@ -7,7 +7,7 @@ export const StyledButton = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
-  color: inherit;
+  color: var(--text-color);
   transition: color 1s ease-in-out;
 
   :hover {
@@ -27,7 +27,7 @@ export const StyledButton = styled.button`
   }
   @media (hover: none) {
     :active {
-      color: var(--secondary-color-400);
+      color: var(--text-color);
       transition: 0.1s ease-in-out;
     }
   }

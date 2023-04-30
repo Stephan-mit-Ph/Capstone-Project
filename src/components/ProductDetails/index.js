@@ -9,6 +9,7 @@ import ProductQuantity from '../ProductQuantity'
 import ReadMoreLess from '../ReadMoreLess'
 import { StyledButton, StyledCartIcon, StyledPrice, StyledProductDetails, StyledQuantity, StyledSubTitle } from './ProductDetails.styled'
 
+
 export default function ProductDetails({ category, product }) {
   const { addToCart } = useShopStore()
   const [quantity, setQuantity] = useState(1)

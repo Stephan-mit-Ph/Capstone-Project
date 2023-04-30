@@ -10,7 +10,6 @@ export const StyledTitle = styled.h2`
 export const StyledSubTitle = styled.h3`
   font: var(--font-subtitle);
   width: 100%;
-  padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   text-align: center;
 `
@@ -36,7 +35,7 @@ export const StyledButton = styled.button`
     }
 
     &:active:enabled {
-      background-color: var(--secondary-color-800-opacity-20);
+      background-color: var(--secondary-color-800);
       transition: background-color 0.1s ease-in-out;
     }
   }
@@ -50,7 +49,7 @@ export const StyledButton = styled.button`
 `
 
 export const StyledCartIcon = styled(Cart)`
-  fill: currentColor;
+  fill: inherit;
   width: 1.5rem;
   height: 1.5rem;
 `
