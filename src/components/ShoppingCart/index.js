@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { toast } from 'react-toastify'
 import formatPrice from '../../helpers/formatNumberToCurrency'
 import { useShopStore } from '../../store'
 import { StyledSubTitle } from '../ProductDetails/ProductDetails.styled'
@@ -8,13 +9,12 @@ import {
   StyledCardBin,
   StyledCartItem,
   StyledCartList,
+  StyledDeleteButton,
   StyledDetailsWrapper,
   StyledImageWrapper,
   StyledProductInfo,
   StyledProductName,
-  StyledDeleteButton,
 } from './ShoppingCart.styled'
-import { toast } from 'react-toastify'
 
 function ShoppingCart() {
   const { cart, total, removeFromCart, removeAllItems } = useShopStore()
@@ -53,11 +53,11 @@ function ShoppingCart() {
     )
   }
   return (
-    <StyledCartList role="list">
+    <StyledCartList >
       <StyledSubTitle>My Cart</StyledSubTitle>
       {cart.length === 0 && <p>Your cart is empty</p>}
       {cart.map((item) => (
-        <StyledCartItem key={item.id}>
+        <StyledCartItem role="list" key={item.id}>
           <StyledProductName>{item.name}</StyledProductName>
           <StyledImageWrapper>
             <Image src={item.image[0].path} alt={item.name} width={100} height={100} />

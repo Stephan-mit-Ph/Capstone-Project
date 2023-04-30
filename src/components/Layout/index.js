@@ -3,7 +3,8 @@ import { useShopStore } from '../../store'
 import Header from '../Header'
 import { StyledBadge, StyledShopIcon } from '../Header/Header.styled.js'
 import ShoppingCart from '../ShoppingCart/index.js'
-import { StyledButton, StyledCloseSquare, StyledContainer, StyledMain, StyledSidebar, StyledSquareButton } from './Layout.styled.js'
+import { StyledCloseSquare, StyledContainer, StyledMain, StyledSidebar, StyledSquareButton } from './Layout.styled.js'
+import IconButton from '../IconButton/index';
 
 export default function Layout({ children }) {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false)
@@ -16,10 +17,10 @@ export default function Layout({ children }) {
   return (
     <StyledContainer>
       <Header>
-        <StyledButton onClick={handleToggleSidebar} aria-label="open shopping cart">
+        <IconButton onClick={handleToggleSidebar} aria-label="open shopping cart">
           {cart.length > 0 && <StyledBadge />}
           <StyledShopIcon />
-        </StyledButton>
+        </IconButton>
       </Header>
       <StyledMain>{children}</StyledMain>
       <StyledSidebar isOpen={isSidebarOpen}>

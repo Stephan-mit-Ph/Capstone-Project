@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import Link from 'next/link'
 import Cart from '../Icons/Cart3'
 
 export const StyledHeader = styled.header`
@@ -27,30 +26,7 @@ export const StyledNavbar = styled.nav`
 export const StyledLinkTitle = styled.h1`
   font: var(--font-display-title);
   margin: 0;
-  color: var(--text-color);
-
-  @media screen and (min-width: 568px) {
-    :hover {
-      color: var(--secondary-color-800);
-      transition: 1s;
-    }
-  }
-`
-
-export const ShopLink = styled(Link)`
-  font-size: 1.5rem;
-  font-weight: 600;
-  text-decoration: none;
   color: inherit;
-  align-items: baseline;
-`
-
-export const CartLink = styled(Link)`
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  color: inherit;
-  font-size: 1.2rem;
 `
 
 export const StyledBadge = styled.div`
@@ -59,15 +35,15 @@ export const StyledBadge = styled.div`
   border-radius: 50%;
   background-color: var(--primary-color-500);
   position: relative;
-  left: 2.2rem;
-  bottom: 0rem;
+  left: 2rem;
+  bottom: 0.8rem;
 `
 
 export const StyledShopIcon = styled(Cart)`
-  color: var(--text-color);
-  font-size: 3rem;
+  color: inherit;
+  font-size: 2.3rem;
 
-  @media screen and (max-width: 568px) {
-    font-size: 2.3rem;
+  @media (min-width: 768px) {
+    font-size: 3rem;
   }
 `

@@ -26,15 +26,28 @@ export const StyledSidebar = styled.aside`
   bottom: 0;
   width: 300px;
   overflow: auto;
-  background-color: var(--bg-color-400);
+  background-color: var(--bg-color-500);
   transform: translateX(${(props) => (props.isOpen ? '0' : '100%')});
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.6s ease-in-out;
 `
 export const StyledButton = styled.button`
   display: flex;
   background: none;
   border: none;
   width: fit-content;
+  color: inherit;
+
+  @media (hover: hover) {
+    &:hover:enabled {
+      color: var(--secondary-color-800-opacity-20);
+      transition: color 0.5s ease-in-out;
+    }
+
+    &:active:enabled {
+      color: var(--secondary-color-800);
+      transition: color 0.1s ease-in-out;
+    }
+  }
 `
 
 export const StyledCloseSquare = styled(CloseSquare)`

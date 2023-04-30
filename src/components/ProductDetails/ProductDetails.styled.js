@@ -20,24 +20,31 @@ export const StyledButton = styled.button`
   width: fit-content;
   justify-content: center;
   align-items: center;
-  color: var(--text-color);
-  border: 0.5px solid var(--text-color);
   padding: 8px 16px;
   gap: 0.5rem;
   font-size: 0.85rem;
+  color: var(--text-color);
   background-color: transparent;
+  transition: background-color 0.5s ease-in-out;
+  border: 0.5px solid var(--text-color);
   border-radius: 5px;
 
   @media (hover: hover) {
     &:hover:enabled {
-      background-color: var(--primary-color-500);
-      transition: 1s ease-in-out;
+      background-color: var(--secondary-color-800-opacity-20);
+      transition: background-color 0.5s ease-in-out;
+    }
+
+    &:active:enabled {
+      background-color: var(--secondary-color-800-opacity-20);
+      transition: background-color 0.1s ease-in-out;
     }
   }
+
   @media (hover: none) {
     &:active:enabled {
-      background-color: var(--primary-color-500);
-
+      background-color: var(--secondary-color-800);
+      transition: background-color 0.1s ease-in-out;
     }
   }
 `
