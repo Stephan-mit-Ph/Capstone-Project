@@ -8,7 +8,7 @@ export default function HomePage() {
     <>
       <Head>
         <title>SEC:Tech</title>
-        <meta name="E-Commerce Store" content="Capstone Project by Stephan Niendorf @neuefische GmbH -School and Pool for digital Talents" />
+        <meta name="decription" content="Capstone Project by Stephan Niendorf @neuefische GmbH -School and Pool for digital Talents" />
       </Head>
       <HeroImage src={HeroBanner} alt="Herobanner" />
       <HomePreview />
