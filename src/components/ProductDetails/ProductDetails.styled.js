@@ -7,7 +7,7 @@ export const StyledTitle = styled.h2`
   margin-top: 0;
   text-align: left;
 `
-export const StyledSubTitle = styled.h3`
+export const StyledSubTitle = styled.h2`
   font: var(--font-subtitle);
   width: 100%;
   padding-top: 1.5rem;

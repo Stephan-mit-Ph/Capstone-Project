@@ -30,6 +30,10 @@ export const StyledSidebar = styled.aside`
   border-left: 1px solid var(--bg-color-400);
   transform: translateX(${(props) => (props.isOpen ? '0' : '100%')});
   transition: transform 0.3s ease-in-out;
+
+  @media (min-width: 768px) {
+    width: 400px;
+  }
 `
 export const StyledButton = styled.button`
   display: flex;

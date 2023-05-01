@@ -24,7 +24,7 @@ export const StyledCartItem = styled.li`
   padding: 1rem;
 `
 
-export const StyledProductName = styled.h4`
+export const StyledProductName = styled.h3`
   font: var(--font-body-medium);
 `
 
