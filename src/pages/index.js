@@ -7,11 +7,8 @@ export default function HomePage() {
   return (
     <>
       <Head>
-        <title>SEC:Tech E-Commerce App</title>
-        <meta
-          name="description"
-          content="Welcome to our Online-Shop. Looking for high-quality refurbished Apple products at unbeatable prices? Look no further than our e-commerce store! We offer a wide selection of top-of-the-line Apple products, including iPhones, iPads, MacBooks, and more, all professionally refurbished to like-new condition and backed by our quality guarantee."
-        />
+        <title>SEC:Tech</title>
+        <meta name="E-Commerce Store" content="Capstone Project by Stephan Niendorf @neuefische GmbH -School and Pool for digital Talents" />
       </Head>
       <HeroImage src={HeroBanner} alt="Herobanner" />
       <HomePreview />
