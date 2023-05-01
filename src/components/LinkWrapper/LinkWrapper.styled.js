@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import Link from 'next/link'
 
-export const LinkStyle = styled(Link)`
+export const StyledLink = styled(Link)`
   color: var(--text-color);
   text-decoration: none;
   transition: color 0.7s ease-in-out;

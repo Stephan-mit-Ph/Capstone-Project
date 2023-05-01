@@ -1,7 +1,7 @@
 import { categories } from '../../data/categories'
 import { StyledWrapper } from '../HomePreview/HomePreview.styled'
 import { StyledSubTitle } from '../ProductDetails/ProductDetails.styled'
-import StyledLink from '../StyledLink'
+import LinkWrapper from '../LinkWrapper'
 import { StyledCard, StyledCardTitle, StyledChevronRight, StyledChevronWrapper, StyledImage, StyledLinkWrapper, StyledList } from './CategoriesList.styled'
 
 function CategoriesList() {
@@ -12,7 +12,7 @@ function CategoriesList() {
         {categories.map((category) => (
           <li key={category.id}>
             <StyledCard>
-              <StyledLink href={`/categories/${category.slug}`}>
+              <LinkWrapper href={`/categories/${category.slug}`}>
                 <StyledLinkWrapper>
                   <StyledCardTitle>{category.name}</StyledCardTitle>
                 </StyledLinkWrapper>
@@ -21,7 +21,7 @@ function CategoriesList() {
                   Shop Now
                   <StyledChevronRight aria-hidden='true'/>
                 </StyledChevronWrapper>
-              </StyledLink>
+              </LinkWrapper>
             </StyledCard>
           </li>
         ))}

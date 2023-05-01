@@ -1,14 +1,14 @@
 import { StyledHeader, StyledLinkTitle, StyledNavbar } from './Header.styled'
-import StyledLink from '../StyledLink'
+import LinkWrapper from '../LinkWrapper'
 
 export default function Header({ children }) {
   return (
     <>
       <StyledHeader>
         <StyledNavbar>
-          <StyledLink href="/" aria-label="Link to Homepage" alt="Homepage">
+          <LinkWrapper href="/" aria-label="Link to Homepage" alt="Link to Homepage"  >
             <StyledLinkTitle>SEC:Tech</StyledLinkTitle>
-          </StyledLink>
+          </LinkWrapper>
           {children}
         </StyledNavbar>
       </StyledHeader>
