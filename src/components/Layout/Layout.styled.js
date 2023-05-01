@@ -26,28 +26,47 @@ export const StyledSidebar = styled.aside`
   bottom: 0;
   width: 300px;
   overflow: auto;
-  background-color: var(--bg-color-400);
+  background-color: var(--bg-color-500);
+  border-left: 1px solid var(--bg-color-400);
   transform: translateX(${(props) => (props.isOpen ? '0' : '100%')});
   transition: transform 0.3s ease-in-out;
+
+  @media (min-width: 768px) {
+    width: 400px;
+  }
 `
 export const StyledButton = styled.button`
   display: flex;
   background: none;
   border: none;
   width: fit-content;
+  color: inherit;
+  transition: color 0.5s ease-in-out;
+  cursor: pointer;
+
+  @media (hover: hover) {
+    &:hover {
+      color: var(--secondary-color-700);
+      transition: color 0.7s ease-in-out;
+    }
+  }
+
+  &:active {
+    color: var(--secondary-color-400);
+    transition: color 0.1s ease-in-out;
+  }
+
+  @media (hover: none) {
+    &:active {
+      color: var(--secondary-color-400);
+      transition: color 0.1s ease-in-out;
+    }
+  }
 `
 
 export const StyledCloseSquare = styled(CloseSquare)`
   width: 1.5rem;
   height: 1.5rem;
-  color: var(--text-color);
-`
-export const StyledSquareButton = styled.button`
-  display: flex;
-  background: none;
-  border: none;
-  width: fit-content;
-  position: absolute;
-  top: 1rem;
-  left: 1rem;
+  color: inherit;
+  margin: 1rem 0 0 1rem;
 `

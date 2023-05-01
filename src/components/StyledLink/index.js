@@ -1,23 +1,8 @@
-import Link from 'next/link'
-import styled from 'styled-components'
+import { LinkStyle } from './StyledLink.styled'
 
-const LinkStyle = styled(Link)`
-  font-size: 1.2rem;
-  color: inherit;
-  text-decoration: none;
-  text-align: center;
-  font-weight: 500;
-  @media (min-width: 568px) {
-    :hover {
-      color: var(--secondary-color-700);
-      transition: 1s ease-in-out;
-    }
-  }
-`
-
-function StyledLink({ href, alt, children }) {
+function StyledLink({ href, alt, children, ariaLabel }) {
   return (
-    <LinkStyle href={href} alt={alt}>
+    <LinkStyle href={href} alt={alt} aria-label={ariaLabel}>
       {children}
     </LinkStyle>
   )

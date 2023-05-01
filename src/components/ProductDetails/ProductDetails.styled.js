@@ -7,7 +7,7 @@ export const StyledTitle = styled.h2`
   margin-top: 0;
   text-align: left;
 `
-export const StyledSubTitle = styled.h3`
+export const StyledSubTitle = styled.h2`
   font: var(--font-subtitle);
   width: 100%;
   padding-top: 1.5rem;
@@ -27,17 +27,24 @@ export const StyledButton = styled.button`
   font-size: 0.85rem;
   background-color: transparent;
   border-radius: 5px;
+  transition: background-color 0.1s ease-in-out;
 
   @media (hover: hover) {
-    &:hover:enabled {
-      background-color: var(--primary-color-500);
-      transition: 1s ease-in-out;
+    &:hover {
+      background-color: var(--secondary-color-700-opacity-20);
+      transition: background-color 0.7s ease-in-out;
     }
   }
+
+  &:active {
+    background-color: var(--secondary-color-400-opacity-20);
+    transition: background-color 0.1s ease-in-out;
+  }
+
   @media (hover: none) {
     &:active:enabled {
-      background-color: var(--primary-color-500);
-
+      background-color: var(--secondary-color-700-opacity-20);
+      transition: background-color 0.1s ease-in-out;
     }
   }
 `
