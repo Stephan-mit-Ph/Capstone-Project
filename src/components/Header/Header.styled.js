@@ -28,13 +28,25 @@ export const StyledLinkTitle = styled.h1`
   font: var(--font-display-title);
   margin: 0;
   color: var(--text-color);
+  transition: color 0.2s ease-in-out;
 
-  @media screen and (min-width: 568px) {
-    :hover {
+  @media (hover: hover) {
+    &:hover {
       color: var(--secondary-color-800);
-      transition: 1s;
+      transition: color 0.8s ease-in-out;
+    }
+    &:active {
+      color: var(--secondary-color-400);
+      transition: color 0.1s ease-in-out;
     }
   }
+
+  @media (hover: none) {
+    &:active {
+      color: var(--secondary-color-400);
+      transition: color 0.1s ease-in-out;
+  }
+}
 `
 
 export const ShopLink = styled(Link)`
