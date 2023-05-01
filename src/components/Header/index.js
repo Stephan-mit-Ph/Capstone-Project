@@ -1,13 +1,14 @@
-import { ShopLink, StyledHeader, StyledLinkTitle, StyledNavbar } from './Header.styled'
+import { StyledHeader, StyledLinkTitle, StyledNavbar } from './Header.styled'
+import StyledLink from '../StyledLink'
 
 export default function Header({ children }) {
   return (
     <>
       <StyledHeader>
         <StyledNavbar>
-          <ShopLink href={'/'} aria-label="Link to Homepage">
+          <StyledLink href={'/'} aria-label="Link to Homepage">
             <StyledLinkTitle>SEC:Tech</StyledLinkTitle>
-          </ShopLink>
+          </StyledLink>
           {children}
         </StyledNavbar>
       </StyledHeader>

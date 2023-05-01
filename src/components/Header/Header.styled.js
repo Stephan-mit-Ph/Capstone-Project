@@ -28,33 +28,7 @@ export const StyledLinkTitle = styled.h1`
   font: var(--font-display-title);
   margin: 0;
   color: inherit;
-  transition: color 0.2s ease-in-out;
-`
-
-export const ShopLink = styled(Link)`
-  font-size: 1.5rem;
-  font-weight: 600;
-  text-decoration: none;
-  color: inherit;
-  transition: color 0.2s ease-in-out;
-
-  @media (hover: hover) {
-    &:hover {
-      color: var(--secondary-color-800);
-      transition: color 0.8s ease-in-out;
-    }
-    &:active {
-      color: var(--secondary-color-400);
-      transition: color 0.1s ease-in-out;
-    }
-
-    @media (hover: none) {
-      &:active {
-        color: var(--secondary-color-400);
-        transition: color 0.1s ease-in-out;
-      }
-    }
-  }
+  
 `
 
 export const CartLink = styled(Link)`
