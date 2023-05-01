@@ -27,7 +27,15 @@ export const StyledNavbar = styled.nav`
 export const StyledLinkTitle = styled.h1`
   font: var(--font-display-title);
   margin: 0;
-  color: var(--text-color);
+  color: inherit;
+  transition: color 0.2s ease-in-out;
+`
+
+export const ShopLink = styled(Link)`
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: inherit;
   transition: color 0.2s ease-in-out;
 
   @media (hover: hover) {
@@ -39,22 +47,14 @@ export const StyledLinkTitle = styled.h1`
       color: var(--secondary-color-400);
       transition: color 0.1s ease-in-out;
     }
-  }
 
-  @media (hover: none) {
-    &:active {
-      color: var(--secondary-color-400);
-      transition: color 0.1s ease-in-out;
+    @media (hover: none) {
+      &:active {
+        color: var(--secondary-color-400);
+        transition: color 0.1s ease-in-out;
+      }
+    }
   }
-}
-`
-
-export const ShopLink = styled(Link)`
-  font-size: 1.5rem;
-  font-weight: 600;
-  text-decoration: none;
-  color: inherit;
-  align-items: baseline;
 `
 
 export const CartLink = styled(Link)`
