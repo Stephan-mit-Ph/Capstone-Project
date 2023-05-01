@@ -36,19 +36,32 @@ export const StyledButton = styled.button`
   background: none;
   border: none;
   width: fit-content;
+  color: inherit;
+  transition: color 0.5s ease-in-out;
+
+  @media (hover: hover) {
+    &:hover {
+      color: var(--secondary-color-700);
+      transition: color 0.5s ease-in-out;
+    }
+  }
+
+  &:active {
+    color: var(--secondary-color-400);
+    transition: color 0.1s ease-in-out;
+  }
+
+  @media (hover: none) {
+    &:active {
+      color: var(--secondary-color-400);
+      transition: color 0.1s ease-in-out;
+    }
+  }
 `
 
 export const StyledCloseSquare = styled(CloseSquare)`
   width: 1.5rem;
   height: 1.5rem;
-  color: var(--text-color);
-`
-export const StyledSquareButton = styled.button`
-  display: flex;
-  background: none;
-  border: none;
-  width: fit-content;
-  position: absolute;
-  top: 1rem;
-  left: 1rem;
+  color: inherit;
+  margin: 1rem 0 0 1rem;
 `

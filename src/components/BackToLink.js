@@ -40,9 +40,9 @@ const StyledChevronLeft = styled(ChevronLeft)`
   }
 `
 
-export default function BackToLink({ children, href }) {
+export default function BackToLink({ children, href, ariaLabel }) {
   return (
-    <StyledLink href={href}>
+    <StyledLink href={href} aria-label={ariaLabel}>
       <StyledChevronLeft aria-hidden="true" />
       {children}
     </StyledLink>

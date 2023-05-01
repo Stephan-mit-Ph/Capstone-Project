@@ -31,15 +31,6 @@ export const StyledLinkTitle = styled.h1`
   color: inherit;
 
 `
-
-export const CartLink = styled(Link)`
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  color: inherit;
-  font-size: 1.2rem;
-`
-
 export const StyledBadge = styled.div`
   width: 1rem;
   height: 1rem;
@@ -51,8 +42,9 @@ export const StyledBadge = styled.div`
 `
 
 export const StyledShopIcon = styled(Cart)`
-  color: var(--text-color);
+  color: inherit;
   font-size: 3rem;
+  transition: color 0.1s ease-in-out;
 
   @media screen and (max-width: 568px) {
     font-size: 2.3rem;
