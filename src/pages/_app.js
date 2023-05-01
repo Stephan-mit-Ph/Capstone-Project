@@ -11,7 +11,8 @@ export default function App({ Component, pageProps }) {
       <GlobalStyle />
       <Head>
         <title>SEC:Tech</title>
-        <meta name="decription" content="Capstone Project by Stephan Niendorf @neuefische GmbH -School and Pool for digital Talents" />
+        <meta name="decription" content="Capstone Project by Stephan Niendorf @neuefische GmbH -School and Pool for digital Talents.
+        E-Commerce Shop Application" />
       </Head>
       <Layout>
         <Component {...pageProps} categories={categories} />
