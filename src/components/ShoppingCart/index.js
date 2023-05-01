@@ -57,7 +57,7 @@ function ShoppingCart() {
       <StyledSubTitle>My Cart</StyledSubTitle>
       {cart.length === 0 && <p>Your cart is empty</p>}
       {cart.map((item) => (
-        <StyledCartItem key={item.id}>
+        <StyledCartItem role="listitem" key={item.id}>
           <StyledProductName>{item.name}</StyledProductName>
           <StyledImageWrapper>
             <Image src={item.image[0].path} alt={item.name} width={100} height={100} />
