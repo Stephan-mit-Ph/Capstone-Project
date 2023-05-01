@@ -22,13 +22,14 @@ export const StyledNavbar = styled.nav`
   width: 100%;
   max-width: 1140px;
   justify-content: space-between;
+  align-items: center;
 `
 
 export const StyledLinkTitle = styled.h1`
   font: var(--font-display-title);
   margin: 0;
   color: inherit;
-  
+
 `
 
 export const CartLink = styled(Link)`

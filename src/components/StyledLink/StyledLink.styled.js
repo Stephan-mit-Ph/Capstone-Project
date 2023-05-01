@@ -5,6 +5,7 @@ export const LinkStyle = styled(Link)`
   color: var(--text-color);
   text-decoration: none;
   transition: color 0.7s ease-in-out;
+  height: fit-content;
 
   @media (hover: hover) {
     &:hover {

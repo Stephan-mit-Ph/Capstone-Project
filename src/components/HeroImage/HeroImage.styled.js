@@ -31,6 +31,7 @@ export const StyledLink = styled(Link)`
   border: 1px solid var(--text-color);
   border-radius: 5px;
   padding: 6px 12px;
+  transition: color 0.1s ease-in-out;
   font: var(--font-body-medium);
 
   @media (min-width: 768px) {
@@ -38,13 +39,19 @@ export const StyledLink = styled(Link)`
     padding: 8px 16px;
     border-radius: 10px;
   }
-  @media (min-width:524px) {
-  :hover {
-    color: var(--secondary-color-700, 0.2);
-    border: 1px solid var(--secondary-color-700);
-    transition: 1s;
+  @media (min-width: 524px) {
+    &:hover {
+      color: var(--secondary-color-700, 0.2);
+      border: 1px solid var(--secondary-color-700);
+      transition: color 0.1s ease-in-out, border 0.1s ease-in-out;
+    }
   }
-}
+
+  &:active {
+    color: var(--secondary-color-400);
+    border: 1px solid var(--secondary-color-400);
+    transition: color 0.1s ease-in-out, border 0.1s ease-in-out;
+  }
 `
 
 export const StyledButtonWrapper = styled.div`

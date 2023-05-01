@@ -13,9 +13,23 @@ const StyledLink = styled(Link)`
   padding-left: 1rem;
   font-weight: 400;
 
-  :hover {
-    color: var(--secondary-color-500);
-    transition: 1s;
+  @media (hover: hover) {
+    &:hover {
+      color: var(--secondary-color-700);
+      transition: color 0.7s ease-in-out;
+    }
+  }
+
+  &:active {
+    color: var(--secondary-color-400);
+    transition: color 0.1s ease-in-out;
+  }
+
+  @media (hover: none) {
+    &:active {
+      color: var(--secondary-color-400);
+      transition: color 0.1s ease-in-out;
+    }
   }
 `
 const StyledChevronLeft = styled(ChevronLeft)`

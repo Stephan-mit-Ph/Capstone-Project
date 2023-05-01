@@ -6,7 +6,7 @@ export default function Header({ children }) {
     <>
       <StyledHeader>
         <StyledNavbar>
-          <StyledLink href={'/'} aria-label="Link to Homepage">
+          <StyledLink href="/" aria-label="Link to Homepage" alt="Homepage">
             <StyledLinkTitle>SEC:Tech</StyledLinkTitle>
           </StyledLink>
           {children}
