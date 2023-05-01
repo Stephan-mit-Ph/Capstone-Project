@@ -42,11 +42,12 @@ export const StyledButton = styled.button`
   width: fit-content;
   color: inherit;
   transition: color 0.5s ease-in-out;
+  cursor: pointer;
 
   @media (hover: hover) {
     &:hover {
       color: var(--secondary-color-700);
-      transition: color 0.5s ease-in-out;
+      transition: color 0.7s ease-in-out;
     }
   }
 

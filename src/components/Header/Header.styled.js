@@ -44,7 +44,6 @@ export const StyledBadge = styled.div`
 export const StyledShopIcon = styled(Cart)`
   color: inherit;
   font-size: 3rem;
-  transition: color 0.1s ease-in-out;
 
   @media screen and (max-width: 568px) {
     font-size: 2.3rem;
