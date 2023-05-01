@@ -26,7 +26,8 @@ export const StyledSidebar = styled.aside`
   bottom: 0;
   width: 300px;
   overflow: auto;
-  background-color: var(--bg-color-400);
+  background-color: var(--bg-color-500);
+  border-left: 1px solid var(--bg-color-400);
   transform: translateX(${(props) => (props.isOpen ? '0' : '100%')});
   transition: transform 0.3s ease-in-out;
 `
