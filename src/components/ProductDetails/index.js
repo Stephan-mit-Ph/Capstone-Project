@@ -50,16 +50,22 @@ export default function ProductDetails({ category, product }) {
 
   return (
     <>
-      <BackToLink href={`/categories/${category.slug}`} aria-label='back to category'>{category.name}</BackToLink>
+      <BackToLink href={`/categories/${category.slug}`} aria-label="back to category">
+        {category.name}
+      </BackToLink>
       <StyledSubTitle>{product.name}</StyledSubTitle>
       <StyledCard>
         <ProductPreview images={product.image} />
-        <StyledProductDetails>
+        <StyledProductDetails role="list">
           <StyledPrice>Price: {formatNumberToCurrency(product.price)}</StyledPrice>
           <StyledQuantity>Quantity</StyledQuantity>
           <ProductQuantity onDecrementQuantity={decrementQuantity} onIncrementQuantity={incrementQuantity} sum={sum} quantity={quantity} />
-          <StyledButton type="button" onClick={() => handleAddToCart(product.id, productData, quantity) & addToCartNotification()} aria-label='add to cart button'>
-            Add to Cart <StyledCartIcon aria-hidden='true'/>
+          <StyledButton
+            type="button"
+            onClick={() => handleAddToCart(product.id, productData, quantity) & addToCartNotification()}
+            aria-label="add to cart button"
+          >
+            Add to Cart <StyledCartIcon aria-hidden="true" />
           </StyledButton>
           <ReadMoreLess text="Details" content={product.description} />
         </StyledProductDetails>
