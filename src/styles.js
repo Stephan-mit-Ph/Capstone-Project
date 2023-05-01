@@ -35,6 +35,9 @@ const GlobalStyle = createGlobalStyle`
     --secondary-color-700: #0CC2CD;
     --secondary-color-800: #0BAEB8;
 
+    --secondary-color-400-opacity-20: rgba(17, 255, 255, 0.2);;
+    --secondary-color-700-opacity-20: rgba(12, 194, 205, 0.2);
+
     --tertiary-color-500: #FF00F5;    
 
     --toastify-color-dark : var(--bg-color-500);
