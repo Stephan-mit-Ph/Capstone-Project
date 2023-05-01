@@ -1,18 +1,15 @@
 import formatNumberToCurrency from '../../helpers/formatNumberToCurrency'
-import BackToLink from '../BackToLink'
 import { StyledCard, StyledCardTitle, StyledImage, StyledLinkWrapper, StyledList } from '../CategoriesList/CategoriesList.styled'
 import { StyledSubTitle } from '../ProductDetails/ProductDetails.styled'
 import StyledLink from '../StyledLink'
 import { StyledPrice, StyledPriceWrapper } from './CategoryList.styled'
+import BackButton from '../BackButton'
 
 export default function CategoryList({ category }) {
   const products = category.products
 
   return (
     <>
-      <BackToLink href="/categories" alt="all categories" aria-label="back to categories">
-        Categories
-      </BackToLink>
       <StyledSubTitle>{category.name}</StyledSubTitle>
       <StyledList>
         {products.map((product) => (

@@ -1,5 +1,6 @@
 import { useRouter } from 'next/router'
 import CategoryList from '../../components/CategoryList'
+import BackButton from '../../components/BackButton'
 
 export default function CategoryPage({ categories }) {
   const router = useRouter()
@@ -11,5 +12,10 @@ export default function CategoryPage({ categories }) {
     return null
   }
 
-  return <CategoryList category={category} />
+  return (
+    <>
+      <BackButton text="Categories" ariaLabel="Go back to all categories" />
+      <CategoryList category={category} />
+    </>
+  )
 }

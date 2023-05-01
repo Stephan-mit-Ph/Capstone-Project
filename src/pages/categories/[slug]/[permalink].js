@@ -1,5 +1,6 @@
 import { useRouter } from 'next/router'
 import ProductDetails from '../../../components/ProductDetails'
+import BackButton from '../../../components/BackButton'
 
 export default function ProductsPage({ categories }) {
   const router = useRouter()
@@ -16,5 +17,10 @@ export default function ProductsPage({ categories }) {
     return null
   }
 
-  return <ProductDetails product={product} category={category} />
+  return (
+    <>
+      <BackButton ariaLabel={`go back to ${category.name}`} text={category.name} />
+      <ProductDetails product={product} category={category} />
+    </>
+  )
 }

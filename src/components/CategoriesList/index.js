@@ -1,5 +1,4 @@
 import { categories } from '../../data/categories'
-import BackToLink from '../BackToLink'
 import { StyledWrapper } from '../HomePreview/HomePreview.styled'
 import { StyledSubTitle } from '../ProductDetails/ProductDetails.styled'
 import StyledLink from '../StyledLink'
@@ -8,9 +7,6 @@ import { StyledCard, StyledCardTitle, StyledChevronRight, StyledChevronWrapper, 
 function CategoriesList() {
   return (
     <StyledWrapper>
-      <BackToLink href="/" alt="go to Homepage">
-        Home
-      </BackToLink>
       <StyledSubTitle>All Categories</StyledSubTitle>
       <StyledList role="list">
         {categories.map((category) => (

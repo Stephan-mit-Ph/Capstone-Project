@@ -2,12 +2,12 @@ import { useState } from 'react'
 import { toast } from 'react-toastify'
 import formatNumberToCurrency from '../../helpers/formatNumberToCurrency'
 import { useShopStore } from '../../store'
-import BackToLink from '../BackToLink'
 import { StyledCard } from '../CategoriesList/CategoriesList.styled'
 import ProductPreview from '../ProductPreview'
 import ProductQuantity from '../ProductQuantity'
 import ReadMoreLess from '../ReadMoreLess'
 import { StyledButton, StyledCartIcon, StyledPrice, StyledProductDetails, StyledQuantity, StyledSubTitle } from './ProductDetails.styled'
+import BackButton from '../BackButton'
 
 export default function ProductDetails({ category, product }) {
   const { addToCart } = useShopStore()
@@ -50,9 +50,7 @@ export default function ProductDetails({ category, product }) {
 
   return (
     <>
-      <BackToLink href={`/categories/${category.slug}`} aria-label="back to category">
-        {category.name}
-      </BackToLink>
+
       <StyledSubTitle>{product.name}</StyledSubTitle>
       <StyledCard>
         <ProductPreview images={product.image} />

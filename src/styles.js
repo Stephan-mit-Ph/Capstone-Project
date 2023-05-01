@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
-import { Orbitron, Montserrat } from '@next/font/google'
+import { Orbitron, Montserrat } from "next/font/google"
 
 const orbitron = Orbitron({
   subsets: ['latin'],
