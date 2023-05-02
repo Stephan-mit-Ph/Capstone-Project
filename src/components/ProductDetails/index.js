@@ -6,8 +6,7 @@ import { StyledCard } from '../CategoriesList/CategoriesList.styled'
 import ProductPreview from '../ProductPreview'
 import ProductQuantity from '../ProductQuantity'
 import ReadMoreLess from '../ReadMoreLess'
-import { StyledButton, StyledCartIcon, StyledPrice, StyledProductDetails, StyledQuantity, StyledSubTitle } from './ProductDetails.styled'
-import BackButton from '../BackButton'
+import { StyledButton, StyledCartIcon, StyledPrice, StyledProductDetails, StyledQuantity} from './ProductDetails.styled'
 
 export default function ProductDetails({ category, product }) {
   const { addToCart } = useShopStore()
@@ -50,8 +49,6 @@ export default function ProductDetails({ category, product }) {
 
   return (
     <>
-
-      <StyledSubTitle>{product.name}</StyledSubTitle>
       <StyledCard>
         <ProductPreview images={product.image} />
         <StyledProductDetails aria-label="product details" role="list">

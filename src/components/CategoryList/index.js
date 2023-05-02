@@ -1,6 +1,5 @@
 import formatNumberToCurrency from '../../helpers/formatNumberToCurrency'
 import { StyledCard, StyledCardTitle, StyledImage, StyledLinkWrapper, StyledList } from '../CategoriesList/CategoriesList.styled'
-import { StyledSubTitle } from '../ProductDetails/ProductDetails.styled'
 import { StyledPrice, StyledPriceWrapper } from './CategoryList.styled'
 import LinkWrapper from '../LinkWrapper'
 
@@ -9,7 +8,6 @@ export default function CategoryList({ category }) {
 
   return (
     <>
-      <StyledSubTitle>{category.name}</StyledSubTitle>
       <StyledList>
         {products.map((product) => (
           <li key={product.id}>

@@ -34,12 +34,10 @@ const useShopStore = createLocalStorageStore((set) => {
         return { cart: [], total: 0 } // reset the total sum to 0
       }),
 
-    toggleCart: () => {
-      set((state) => ({ isCartOpen: !state.isCartOpen }))
-    },
-    closeCart: () => {
-      set({ isCartOpen: false })
-    },
+    toggleCart: () =>
+      set((state) => {
+        return { ...state, isCartOpen: !state.isCartOpen }
+      }), // add a toggle function
   }
 }, 'shop-store')
 

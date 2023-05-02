@@ -1,12 +1,10 @@
 import { categories } from '../../data/categories'
-import { StyledSubTitle } from '../ProductDetails/ProductDetails.styled'
 import LinkWrapper from '../LinkWrapper'
 import { StyledCard, StyledCardTitle, StyledChevronRight, StyledChevronWrapper, StyledImage, StyledLinkWrapper, StyledList } from './CategoriesList.styled'
 
 function CategoriesList() {
   return (
     <>
-      <StyledSubTitle>All Categories</StyledSubTitle>
       <StyledList role="list">
         {categories.map((category) => (
           <li key={category.id}>

@@ -1,11 +1,9 @@
 import Image from 'next/image'
 import formatPrice from '../../helpers/formatNumberToCurrency'
 import { useShopStore } from '../../store'
-import { StyledSubTitle } from '../ProductDetails/ProductDetails.styled'
 import {
   StyledBin,
   StyledButton,
-  StyledCardBin,
   StyledCartItem,
   StyledCartList,
   StyledDetailsWrapper,
@@ -14,6 +12,7 @@ import {
   StyledProductName,
 } from './ShoppingCart.styled'
 import { toast } from 'react-toastify'
+import SubTitle from '../SubTitle'
 
 function ShoppingCart() {
   const { cart, total, removeFromCart, removeAllItems } = useShopStore()
@@ -53,7 +52,7 @@ function ShoppingCart() {
   }
   return (
     <StyledCartList role="list">
-      <StyledSubTitle>My Cart</StyledSubTitle>
+      <SubTitle text='My Cart' />
       {cart.length === 0 && <p>Your cart is empty</p>}
       {cart.map((item) => (
         <StyledCartItem role="listItem" key={item.id}>
