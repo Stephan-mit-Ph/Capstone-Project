@@ -5,9 +5,10 @@ describe('LinkWrapper', () => {
   it('renders a link with the provided href and aria-label', () => {
     const href = 'https://example.com'
     const ariaLabel = 'Example website'
+    const children = 'Link Text'
     render(
       <LinkWrapper href={href} ariaLabel={ariaLabel}>
-        Link Text
+        {children}
       </LinkWrapper>
     )
 

@@ -14,6 +14,7 @@ export const StyledList = styled.ul`
   gap: 2rem;
 `
 export const StyledCardTitle = styled.h2`
+  text-align: center;
   font: var(--font-card-title);
 `
 
@@ -36,7 +37,6 @@ export const StyledImage = styled(Image)`
 export const StyledChevronRight = styled(SvgChevronRight)`
   fill: currentColor;
   font-size: 1rem;
-
 `
 
 export const StyledLinkWrapper = styled.div`

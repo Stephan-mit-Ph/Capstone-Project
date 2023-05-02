@@ -1,8 +1,8 @@
 import { StyledLink } from './LinkWrapper.styled'
 
-export default function LinkWrapper({ href, alt, children, ariaLabel }) {
+export default function LinkWrapper({ href, children, ariaLabel }) {
   return (
-    <StyledLink href={href} alt={alt} aria-label={ariaLabel}>
+    <StyledLink href={href}  aria-label={ariaLabel}>
       {children}
     </StyledLink>
   )

@@ -1,12 +1,11 @@
 import { categories } from '../../data/categories'
-import { StyledWrapper } from '../HomePreview/HomePreview.styled'
 import { StyledSubTitle } from '../ProductDetails/ProductDetails.styled'
 import LinkWrapper from '../LinkWrapper'
 import { StyledCard, StyledCardTitle, StyledChevronRight, StyledChevronWrapper, StyledImage, StyledLinkWrapper, StyledList } from './CategoriesList.styled'
 
 function CategoriesList() {
   return (
-    <StyledWrapper>
+    <>
       <StyledSubTitle>All Categories</StyledSubTitle>
       <StyledList role="list">
         {categories.map((category) => (
@@ -26,7 +25,7 @@ function CategoriesList() {
           </li>
         ))}
       </StyledList>
-    </StyledWrapper>
+    </>
   )
 }
 
