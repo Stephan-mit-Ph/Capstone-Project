@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import { toast } from 'react-toastify'
 import formatNumberToCurrency from '../../helpers/formatNumberToCurrency'
 import { useShopStore } from '../../store'
 import { StyledCard } from '../CategoriesList/CategoriesList.styled'
@@ -17,16 +16,6 @@ export default function ProductDetails({ category, product }) {
     addToCart(product.id, productData, quantity)
   }
 
-  const addToCartNotification = () =>
-    toast.success(`${quantity}x ${product.name} added to cart!`, {
-      position: 'bottom-center',
-      autoClose: 3000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: false,
-      progress: undefined,
-      theme: 'dark',
-    })
 
   const productData = {
     id: product.id,
@@ -55,7 +44,7 @@ export default function ProductDetails({ category, product }) {
           <StyledQuantity>Quantity:</StyledQuantity>
           <ProductQuantity sum={sum} onIncrementQuantity={incrementQuantity} onDecrementQuantity={decrementQuantity} quantity={quantity} />
           <StyledPrice>{formatNumberToCurrency(sum)}</StyledPrice>
-          <StyledButton type="button" onClick={() => handleAddToCart() & addToCartNotification()}>
+          <StyledButton type="button" onClick={() => handleAddToCart()}>
             <StyledCartIcon aria-hidden="true" />
             Add to cart
           </StyledButton>

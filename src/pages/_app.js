@@ -23,7 +23,7 @@ export default function App({ Component, pageProps }) {
           <meta name="robots" content="index, follow" />
         </Head>
         <Component {...pageProps} categories={categories} />
-        <ToastContainer />
+        <ToastContainer role="alert" />
       </Layout>
     </>
   )
