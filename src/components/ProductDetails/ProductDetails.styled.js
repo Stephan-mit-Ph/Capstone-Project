@@ -55,12 +55,24 @@ export const StyledCartIcon = styled(Cart)`
   height: 1.5rem;
 `
 
-export const StyledProductDetails = styled.ul`
+export const StyledProductDetails = styled.article`
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  gap: 1rem;
+  flex: 1 1 300px;
+  width: 100%;
+  max-width: 330px;
+  margin: 0rem 1.25rem 3.25rem 1.25rem;
+  padding: 2.25rem;
+  border-radius: 15px;
+  background-color: var(--bg-color-400);
+  box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.25);
+  gap: 1.2rem;
+
+  @media (min-width: 768px) {
+    max-width: 380px;
+  }
 `
 
 export const StyledQuantity = styled.p`

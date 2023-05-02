@@ -1,12 +1,10 @@
 import { useState } from 'react'
-import formatNumberToCurrency from '../../helpers/formatNumberToCurrency'
 import { useShopStore } from '../../store'
-import { StyledCard } from '../CategoriesList/CategoriesList.styled'
-
+import ImageContainer from '../ImageContainer'
 import ProductQuantity from '../ProductQuantity'
 import ReadMoreLess from '../ReadMoreLess'
-import { StyledButton, StyledCartIcon, StyledPrice, StyledProductDetails, StyledQuantity } from './ProductDetails.styled'
-import ImageContainer from '../ImageContainer'
+import { StyledButton, StyledCartIcon, StyledProductDetails, StyledQuantity, StyledPrice } from './ProductDetails.styled'
+import formatNumberToCurrency from '../../helpers/formatNumberToCurrency'
 
 export default function ProductDetails({ category, product }) {
   const { addToCart } = useShopStore()
@@ -38,19 +36,17 @@ export default function ProductDetails({ category, product }) {
 
   return (
     <>
-      <StyledCard>
-        <ImageContainer images={product.image} showThumbnails={true} />
-        <StyledProductDetails aria-label="product details" role="list">
-          <StyledQuantity>Quantity:</StyledQuantity>
-          <ProductQuantity sum={sum} onIncrementQuantity={incrementQuantity} onDecrementQuantity={decrementQuantity} quantity={quantity} />
-          <StyledPrice>{formatNumberToCurrency(sum)}</StyledPrice>
-          <StyledButton type="button" onClick={() => handleAddToCart()}>
-            <StyledCartIcon aria-hidden="true" />
-            Add to cart
-          </StyledButton>
-          <ReadMoreLess text="Details" content={product.description} />
-        </StyledProductDetails>
-      </StyledCard>
+      <StyledProductDetails>
+        <ImageContainer images={product.image} showThumbnails={true} alt={`${product.name} images`} />
+        <StyledPrice>{formatNumberToCurrency(product.price)}</StyledPrice>
+        <StyledQuantity>Quantity:</StyledQuantity>
+        <ProductQuantity sum={sum} onIncrementQuantity={incrementQuantity} onDecrementQuantity={decrementQuantity} quantity={quantity} />
+        <StyledButton type="button" onClick={() => handleAddToCart()}>
+          <StyledCartIcon aria-hidden="true" />
+          Add to cart
+        </StyledButton>
+        <ReadMoreLess text="Details" content={product.description} />
+      </StyledProductDetails>
     </>
   )
 }

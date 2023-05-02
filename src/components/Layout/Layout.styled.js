@@ -31,6 +31,9 @@ export const StyledSidebar = styled.aside`
   transform: translateX(${(props) => (props.isOpen ? '0' : '100%')});
   transition: transform 0.5s ease-in-out;
 
+  @media (min-width: 568px) {
+    width: 350px;
+  }
   @media (min-width: 768px) {
     width: 400px;
   }

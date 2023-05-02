@@ -1,15 +1,17 @@
-import PreviewImage from '../../../public/images/iphone-13-pro-max-silver.png'
-import { StyledCard, StyledCardTitle } from '../CategoriesList/CategoriesList.styled'
+import PreviewImage from '../PreviewImage'
+import ListItem from '../ListItem'
+import SubTitle from '../SubTitle'
 import LinkWrapper from '../LinkWrapper'
-import { StyledAbout, StyledImage, StyledTitle } from './HomePreview.styled'
-
+import LinkText from '../LinkText'
+import  ChevronRight  from '../Icons/ChevroRight'
+import { StyledAbout } from './HomePreview.styled'
 
 export default function HomePreview() {
   return (
     <>
-      <StyledTitle>
+      <SubTitle>
         Welcome to our <br /> Online-Shop
-      </StyledTitle>
+      </SubTitle>
       <StyledAbout>
         Looking for high-quality refurbished Apple products at
         <br /> unbeatable prices? Look no further than our e-commerce store!
@@ -20,12 +22,15 @@ export default function HomePreview() {
         <br />
         backed by our quality guarantee.
       </StyledAbout>
-      <StyledCard>
+      <ListItem>
         <LinkWrapper href="/categories" aria-label="go to all categories">
-          <StyledCardTitle>All Categories</StyledCardTitle>
-          <StyledImage src={PreviewImage} alt="iPhone 13 Collection" width={300} height={300} />
+          All Categories
+          <PreviewImage src="/images/iphone-13-pro-max-silver.png" alt="iPhone 13 Pro" width={300} height={300} />
+          <LinkText>
+            Shop Now <ChevronRight aria-hidden="true" />
+          </LinkText>
         </LinkWrapper>
-      </StyledCard>
+      </ListItem>
     </>
   )
 }

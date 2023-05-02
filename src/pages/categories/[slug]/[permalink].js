@@ -20,7 +20,9 @@ export default function ProductsPage({ categories }) {
 
   return (
     <>
-      <BackButton ariaLabel={`go back to ${category.name}`} text={category.name} />
+      <BackButton ariaLabel={`go back to ${category.name}`} text={category.name}>
+        {category.name}
+      </BackButton>
       <SubTitle text={product.name} />
       <ProductDetails product={product} category={category} />
     </>
