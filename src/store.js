@@ -27,6 +27,15 @@ const useShopStore = createLocalStorageStore((set) => {
         }
         const newCart = [...state.cart, { ...productData, quantity }]
         const newTotal = state.total + quantity * productData.price
+        toast.success(`Added ${quantity}x ${productData.name} to cart`, {
+          position: 'bottom-center',
+          theme: 'dark',
+          autoClose: 4000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: false,
+          draggable: true,
+        })
         return { cart: newCart, total: newTotal }
       }),
     removeFromCart: (id) =>
