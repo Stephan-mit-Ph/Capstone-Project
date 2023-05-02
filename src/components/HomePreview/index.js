@@ -3,6 +3,7 @@ import { StyledCard, StyledCardTitle } from '../CategoriesList/CategoriesList.st
 import LinkWrapper from '../LinkWrapper'
 import { StyledAbout, StyledImage, StyledTitle } from './HomePreview.styled'
 
+
 export default function HomePreview() {
   return (
     <>

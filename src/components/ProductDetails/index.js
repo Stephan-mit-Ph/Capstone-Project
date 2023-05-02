@@ -2,10 +2,11 @@ import { useState } from 'react'
 import formatNumberToCurrency from '../../helpers/formatNumberToCurrency'
 import { useShopStore } from '../../store'
 import { StyledCard } from '../CategoriesList/CategoriesList.styled'
-import ProductPreview from '../ProductPreview'
+
 import ProductQuantity from '../ProductQuantity'
 import ReadMoreLess from '../ReadMoreLess'
-import { StyledButton, StyledCartIcon, StyledPrice, StyledProductDetails, StyledQuantity} from './ProductDetails.styled'
+import { StyledButton, StyledCartIcon, StyledPrice, StyledProductDetails, StyledQuantity } from './ProductDetails.styled'
+import ImageContainer from '../ImageContainer'
 
 export default function ProductDetails({ category, product }) {
   const { addToCart } = useShopStore()
@@ -15,7 +16,6 @@ export default function ProductDetails({ category, product }) {
   const handleAddToCart = () => {
     addToCart(product.id, productData, quantity)
   }
-
 
   const productData = {
     id: product.id,
@@ -39,7 +39,7 @@ export default function ProductDetails({ category, product }) {
   return (
     <>
       <StyledCard>
-        <ProductPreview images={product.image} />
+        <ImageContainer images={product.image} showThumbnails={true} />
         <StyledProductDetails aria-label="product details" role="list">
           <StyledQuantity>Quantity:</StyledQuantity>
           <ProductQuantity sum={sum} onIncrementQuantity={incrementQuantity} onDecrementQuantity={decrementQuantity} quantity={quantity} />
