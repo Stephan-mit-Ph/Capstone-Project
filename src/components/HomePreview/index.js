@@ -1,9 +1,10 @@
 import PreviewImage from '../PreviewImage'
+import List from '../List'
 import ListItem from '../ListItem'
 import SubTitle from '../SubTitle'
 import LinkWrapper from '../LinkWrapper'
 import LinkText from '../LinkText'
-import  ChevronRight  from '../Icons/ChevroRight'
+import ChevronRight from '../Icons/ChevroRight'
 import { StyledAbout } from './HomePreview.styled'
 
 export default function HomePreview() {
@@ -22,15 +23,17 @@ export default function HomePreview() {
         <br />
         backed by our quality guarantee.
       </StyledAbout>
-      <ListItem>
-        <LinkWrapper href="/categories" aria-label="go to all categories">
-          All Categories
-          <PreviewImage src="/images/iphone-13-pro-max-silver.png" alt="iPhone 13 Pro" width={300} height={300} />
-          <LinkText>
-            Shop Now <ChevronRight aria-hidden="true" />
-          </LinkText>
-        </LinkWrapper>
-      </ListItem>
+      <List>
+        <ListItem>
+          <LinkWrapper href="/categories" aria-label="go to all categories">
+            All Categories
+            <PreviewImage src="/images/iphone-13-pro-max-silver.png" alt="iPhone 13 Pro" width={300} height={300} />
+            <LinkText>
+              Shop Now <ChevronRight aria-hidden="true" />
+            </LinkText>
+          </LinkWrapper>
+        </ListItem>
+      </List>
     </>
   )
 }
