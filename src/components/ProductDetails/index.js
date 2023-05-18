@@ -1,13 +1,10 @@
 import { useState } from 'react'
-import { toast } from 'react-toastify'
-import formatNumberToCurrency from '../../helpers/formatNumberToCurrency'
 import { useShopStore } from '../../store'
-import BackToLink from '../BackToLink'
-import { StyledCard } from '../CategoriesList/CategoriesList.styled'
-import ProductPreview from '../ProductPreview'
+import ImageContainer from '../ImageContainer'
 import ProductQuantity from '../ProductQuantity'
 import ReadMoreLess from '../ReadMoreLess'
-import { StyledButton, StyledCartIcon, StyledPrice, StyledProductDetails, StyledQuantity, StyledSubTitle } from './ProductDetails.styled'
+import { StyledButton, StyledCartIcon, StyledProductDetails, StyledQuantity, StyledPrice } from './ProductDetails.styled'
+import formatNumberToCurrency from '../../helpers/formatNumberToCurrency'
 
 export default function ProductDetails({ category, product }) {
   const { addToCart } = useShopStore()
@@ -17,17 +14,6 @@ export default function ProductDetails({ category, product }) {
   const handleAddToCart = () => {
     addToCart(product.id, productData, quantity)
   }
-
-  const addToCartNotification = () =>
-    toast.success(`${quantity}x ${product.name} added to cart!`, {
-      position: 'bottom-center',
-      autoClose: 3000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: false,
-      progress: undefined,
-      theme: 'dark',
-    })
 
   const productData = {
     id: product.id,
@@ -50,23 +36,17 @@ export default function ProductDetails({ category, product }) {
 
   return (
     <>
-      <BackToLink href={`/categories/${category.slug}`} aria-label="back to category">
-        {category.name}
-      </BackToLink>
-      <StyledSubTitle>{product.name}</StyledSubTitle>
-      <StyledCard>
-        <ProductPreview images={product.image} />
-        <StyledProductDetails aria-label="product details" role="list">
-          <StyledQuantity>Quantity:</StyledQuantity>
-          <ProductQuantity sum={sum} onIncrementQuantity={incrementQuantity} onDecrementQuantity={decrementQuantity} quantity={quantity} />
-          <StyledPrice>{formatNumberToCurrency(sum)}</StyledPrice>
-          <StyledButton type="button" onClick={() => handleAddToCart() & addToCartNotification()}>
-            <StyledCartIcon aria-hidden="true" />
-            Add to cart
-          </StyledButton>
-          <ReadMoreLess text="Details" content={product.description} />
-        </StyledProductDetails>
-      </StyledCard>
+      <StyledProductDetails>
+        <ImageContainer images={product.image} showThumbnails={true} alt={`${product.name} images`} />
+        <StyledPrice>{formatNumberToCurrency(product.price)}</StyledPrice>
+        <StyledQuantity>Quantity:</StyledQuantity>
+        <ProductQuantity sum={sum} onIncrementQuantity={incrementQuantity} onDecrementQuantity={decrementQuantity} quantity={quantity} />
+        <StyledButton type="button" onClick={() => handleAddToCart()}>
+          <StyledCartIcon aria-hidden="true" />
+          Add to cart
+        </StyledButton>
+        <ReadMoreLess text="Details" content={product.description} />
+      </StyledProductDetails>
     </>
   )
 }

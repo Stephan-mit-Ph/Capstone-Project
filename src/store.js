@@ -2,44 +2,75 @@ import { useEffect } from 'react'
 import { useState } from 'react'
 import { create } from 'zustand'
 import { persist, createJSONStorage } from 'zustand/middleware'
+import { toast } from 'react-toastify'
 
 const useShopStore = createLocalStorageStore((set) => {
   return {
     cart: [],
-    total: 0, // add a new state for the total sum
+    total: 0,
     addToCart: (id, productData, quantity) =>
       set((state) => {
         if (state.cart.some((item) => item.id === id)) {
-          return {
-            cart: state.cart.map((item) => (item.id === id ? { ...item, quantity: item.quantity + quantity } : item)),
-            total: state.total + quantity * productData.price, // update the total sum
-          }
+          const newCart = state.cart.map((item) => (item.id === id ? { ...item, quantity: item.quantity + quantity } : item))
+          const newTotal = state.total + quantity * productData.price
+          toast.success(`Added ${quantity}x ${productData.name} to cart`, {
+            position: 'bottom-center',
+            theme: 'dark',
+            autoClose: 4000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: false,
+            draggable: true,
+          })
+
+          return { cart: newCart, total: newTotal }
         }
-        return {
-          cart: [...state.cart, { ...productData, quantity }],
-          total: state.total + quantity * productData.price, // update the total sum
-        } // add the new item to the cart
+        const newCart = [...state.cart, { ...productData, quantity }]
+        const newTotal = state.total + quantity * productData.price
+        toast.success(`Added ${quantity}x ${productData.name} to cart`, {
+          position: 'bottom-center',
+          theme: 'dark',
+          autoClose: 4000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: false,
+          draggable: true,
+        })
+        return { cart: newCart, total: newTotal }
       }),
     removeFromCart: (id) =>
       set((state) => {
         const itemToRemove = state.cart.find((item) => item.id === id)
-        return {
-          cart: state.cart.filter((item) => item.id !== id),
-          total: state.total - itemToRemove.price * itemToRemove.quantity, // update the total sum
-        }
+        const newCart = state.cart.filter((item) => item.id !== id)
+        const newTotal = state.total - itemToRemove.price * itemToRemove.quantity
+        toast.error(`Removed ${itemToRemove.quantity}x ${itemToRemove.name} from cart`, {
+          position: 'bottom-center',
+          theme: 'dark',
+          autoClose: 4000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: false,
+          draggable: true,
+        })
+        return { cart: newCart, total: newTotal }
       }),
-
     removeAllItems: () =>
       set((state) => {
-        return { cart: [], total: 0 } // reset the total sum to 0
+        toast.error('Removed all items from cart', {
+          position: 'bottom-center',
+          theme: 'dark',
+          autoClose: 4000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: false,
+          draggable: true,
+        })
+        return { cart: [], total: 0 }
       }),
-
-    toggleCart: () => {
-      set((state) => ({ isCartOpen: !state.isCartOpen }))
-    },
-    closeCart: () => {
-      set({ isCartOpen: false })
-    },
+    toggleCart: () =>
+      set((state) => {
+        return { ...state, isCartOpen: !state.isCartOpen }
+      }),
   }
 }, 'shop-store')
 

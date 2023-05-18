@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
-import { Orbitron, Montserrat } from '@next/font/google'
+import { Orbitron, Montserrat } from 'next/font/google'
 
 const orbitron = Orbitron({
   subsets: ['latin'],
@@ -109,8 +109,6 @@ const GlobalStyle = createGlobalStyle`
   }
 
   
-
-
   img, picture, video, canvas, svg {
   display: block;
   max-width: 100%;

@@ -5,7 +5,6 @@ import HeroBanner from '../../public/images/hero-banner.png'
 export default function HomePage() {
   return (
     <>
-      
       <HeroImage src={HeroBanner} alt="Herobanner" />
       <HomePreview />
     </>

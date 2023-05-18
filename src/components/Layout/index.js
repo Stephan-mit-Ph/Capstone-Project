@@ -1,33 +1,24 @@
 import { useState } from 'react'
 import { useShopStore } from '../../store'
 import Header from '../Header'
-import { StyledBadge, StyledShopIcon } from '../Header/Header.styled.js'
 import ShoppingCart from '../ShoppingCart/index.js'
 import { StyledButton, StyledCloseSquare, StyledContainer, StyledMain, StyledSidebar } from './Layout.styled.js'
 
 export default function Layout({ children }) {
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false)
-  const cart = useShopStore((state) => state.cart)
-
-  const handleToggleSidebar = () => {
-    setIsSidebarOpen(!isSidebarOpen)
-  }
+  const { isCartOpen, toggleCart } = useShopStore()
 
   return (
-    <StyledContainer>
-      <Header>
-        <StyledButton onClick={handleToggleSidebar} aria-label="open shopping cart">
-          {cart.length > 0 && <StyledBadge />}
-          <StyledShopIcon aria-hidden="true" />
-        </StyledButton>
-      </Header>
-      <StyledMain>{children}</StyledMain>
-      <StyledSidebar isOpen={isSidebarOpen}>
-        <StyledButton onClick={handleToggleSidebar} aria-label="close shopping cart">
-          <StyledCloseSquare aria-hidden="true" />
-        </StyledButton>
-        <ShoppingCart />
-      </StyledSidebar>
-    </StyledContainer>
+    <>
+      <Header />
+      <StyledContainer>
+        <StyledMain>{children}</StyledMain>
+        <StyledSidebar isOpen={isCartOpen}>
+          <StyledButton onClick={toggleCart} aria-label="close shopping cart">
+            <StyledCloseSquare aria-hidden="true" />
+          </StyledButton>
+          <ShoppingCart />
+        </StyledSidebar>
+      </StyledContainer>
+    </>
   )
 }

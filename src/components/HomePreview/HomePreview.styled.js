@@ -1,14 +1,6 @@
 import styled from 'styled-components'
 import Image from 'next/image'
 
-export const StyledWrapper = styled.div`
-  display: flex;
-  max-width: 1140px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 5rem;
-`
 
 export const StyledAbout = styled.p`
   font: var(--font-body-large);
